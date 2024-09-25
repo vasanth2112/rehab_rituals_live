@@ -1,0 +1,274 @@
+.aboutus {
+  position: relative;
+
+  .anim {
+    position: absolute;
+    z-index: 1000;
+    top: 300px;
+    left: 100px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .anime {
+    position: absolute;
+    z-index: 1000;
+    bottom: 160px;
+    right: 100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about_container {
+    display: flex;
+    justify-content: center;
+    margin: 0px 50px;
+
+    .aboutus_flex {
+      animation: fadeOut linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    .aboutus_flex_reverse {
+      animation: fadeOutReverse linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    .aboutus_flex {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      flex-grow: 1;
+      max-width: 1100px;
+    }
+
+    .aboutus_flex_reverse {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 100px;
+      flex-grow: 1;
+      max-width: 1100px;
+      flex-direction: row-reverse;
+    }
+
+    .image_about {
+      position: relative;
+      padding: 20px;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+
+      .photo-style {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        padding: 20px 20px 0px 20px;
+        text-align: center;
+
+        .mam {
+          padding: 20px 20px 0px 20px;
+        }
+
+        img {
+          height: 350px;
+          width: 250px;
+        }
+
+        p {
+          font-family: "Italianno", cursive;
+          font-weight: 500;
+          font-style: normal;
+          font-size: clamp(1rem, 1.4vw, 3rem);
+          margin: 5px 0px;
+        }
+      }
+    }
+
+    .about_content_reverse {
+      border-radius: 10px;
+      padding: 0px 20px 20px 20px;
+      border-color: gray;
+      border-width: 5px 0px 5px 5px;
+
+      h2 {
+        margin: 0px;
+        font-family: "Cinzel", serif;
+        font-weight: 350;
+        font-size: clamp(1.2rem, 2.5vw, 3rem);
+        color: #004aad;
+      }
+
+      p {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450px;
+        color: rgb(102, 100, 100);
+        line-height: 1.5;
+        font-size: clamp(0.8rem, 1.4vw, 3rem);
+      }
+
+      b {
+        color: #004aad;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .about_content {
+      flex-grow: 1;
+      border-radius: 10px;
+      padding: 0px 20px 20px 20px;
+      border-color: gray;
+      border-width: 5px 5px 5px 0px;
+
+      h2 {
+        margin-bottom: 20px;
+        font-family: "Cinzel", serif;
+        font-weight: 350;
+        font-size: clamp(1.2rem, 2.5vw, 3rem);
+        color: #004aad;
+      }
+
+      p {
+        padding-left: 8px;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450px;
+        color: rgb(102, 100, 100);
+        line-height: 1.5;
+        font-size: clamp(0.8rem, 1.4vw, 3rem);
+      }
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeOutReverse {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+
+/* Media Queries for Responsive Design */
+@media (min-width: 900px) {
+
+  .aboutus .about_container 
+  .about_content p {
+    font-size: 1.2rem;
+}
+
+.aboutus .about_container .about_content_reverse p {
+
+    font-size: 1.3rem;
+}
+
+
+.services_container .services .service_list div p {
+
+  font-size:1rem;
+
+}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {
+  .aboutus {
+
+    .anim {
+      top: 400px;
+      left: 50px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .anime {
+      bottom: 350px;
+      right: 150px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .about_container {
+
+      .aboutus_flex {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+      }
+
+      .aboutus_flex_reverse {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+      }
+
+      .image_about {
+
+        .photo-style {
+
+          img {
+            height: 320px;
+            width: 220px;
+          }
+
+          p {
+            font-family: "Italianno", cursive;
+            font-weight: 500;
+            font-style: normal;
+            font-size: clamp(1.8rem, 2vw, 3rem);
+            margin: 5px 0px;
+          }
+        }
+      }
+
+      .about_content_reverse {
+        padding: 0px;
+        text-align: center;
+        h2{
+          font-weight: 500;
+        }
+
+        p {
+          padding-left: 0px;
+          margin: 15px 5px 5px 5px;
+        }
+      }
+
+      .about_content {
+        padding: 0px;
+        text-align: center;
+        h2{
+          font-weight: 500;
+        }
+
+        p {
+          padding-left: 0px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}

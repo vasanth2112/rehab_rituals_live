@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  color: #004aad;
+}
+
+.scroll-to-top {
+  position: fixed;
+  opacity: 0.7;
+  bottom: 40px;
+  right: 30px;
+  width: 50px;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+ // box-shadow: rgba(0, 75, 173, 0.322) 0px 3px 8px;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1); /* Scale the image slightly on hover */
+  opacity: 1;
+}
+
+/* Mobile devices (max width 480px) */
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 23px;
+    width: 30px; /* Smaller size for mobile */
+  }
+}
+
+/* Tablet devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 20px;
+    width: 35px; /* Medium size for tablet */
+  }
+}
+
+/* Larger tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 25px;
+    width: 40px; /* Slightly larger size for larger tablets */
+  }
+}
+
+/* Larger screens (above 1024px) */
+@media (min-width: 1025px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 30px;
+    width: 50px; /* Default size for desktop and larger devices */
+  }
+}

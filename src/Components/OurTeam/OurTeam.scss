@@ -1,0 +1,315 @@
+.our_team_container {
+
+  margin-top: 100px;
+
+  .our_team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .our_team_header {
+      animation: scaleOpacityAnime linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      p {
+        width: 80%;
+        text-align: center;
+        color: #939494e6;
+        font-family: "Anton", sans-serif;
+        font-weight: 430;
+        font-style: normal;
+        letter-spacing: 1px;
+        margin: 8px 0px;
+        font-size: clamp(0.7rem, 1.4vw, 3rem);
+      }
+    }
+
+    .our_team_facility {
+      display: flex;
+      gap: 50px;
+      max-width: 1100px;
+      margin: 0px 50px;
+
+      .our_team_img {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+          rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        // border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        padding: 10px;
+        background-color: #fff;
+        animation: scaleOpacityAnime linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+
+        img {
+          height: 250px;
+          width: 190px;
+        }
+
+        h4 {
+          color: #004aad;
+          text-align: center;
+          margin: 5px 0px 0px 0px;
+          font-family: "Yesteryear", cursive;
+          font-weight: 300;
+          font-size: clamp(1.5rem, 1.4vw, 3rem);
+        }
+
+        p {
+          text-align: center;
+          color: #5c5d5ee6;
+          font-family: "Anton", sans-serif;
+          font-weight: 450;
+          font-style: normal;
+          letter-spacing: 1px;
+          margin: 8px 0px;
+          font-size: clamp(0.8rem, 0.8vw, 3rem);
+        }
+      }
+
+      .our_team_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        animation: translateXAnimation linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+
+        h2 {
+          margin: 0px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 550;
+          font-size: clamp(1rem, 1.8vw, 3rem);
+          color: #004aad;
+        }
+
+        p {
+          padding-left: 8px;
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 450px;
+          color: rgb(102, 100, 100);
+          line-height: 1.3;
+          font-size: clamp(0.8rem, 1.5vw, 3rem);
+        }
+      }
+    }
+
+    div{
+      h2 {
+        margin: 30px 0px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 550;
+        font-size: clamp(1rem, 1.8vw, 3rem);
+        color: #004aad;
+      }
+    }
+
+    //OUR
+    .our_team_content {
+      margin: 0px 15px 50px 15px;
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .our_team_border {
+        background: rgb(93, 225, 233);
+        background: linear-gradient(180deg,
+            rgba(93, 225, 233, 1) 0%,
+            rgba(255, 255, 255, 1) 76%);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        // /border-radius: 0px;
+        border-radius: 5px;
+
+        .our_team_img {
+          padding: 4px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          animation: scaleOpacityAnime linear;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 120px;
+          width: 120px;
+          border-radius: 50%;
+        }
+
+        h4 {
+          //  color: #004AAD;
+          color: #004aad;
+          text-align: center;
+          margin: 5px 0px 0px 0px;
+          font-family: "Yesteryear", cursive;
+          font-weight: 300;
+          font-size: clamp(1.2rem, 1.4vw, 3rem);
+          font-style: normal;
+        }
+
+        p {
+          text-align: center;
+          color: #8c8c8db9;
+          font-family: "Anton", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: 1px;
+          margin: 0px 0px 0px 0px;
+
+          font-size: clamp(0.7rem, 0.9vw, 3rem);
+        }
+      }
+    }
+
+    .our_team_border:hover {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+        rgb(209, 213, 219) 0px 0px 0px 1px inset;
+      transition: all 0.1s linear;
+      scale: 1.02;
+    }
+  }
+
+  @keyframes translateXAnimation {
+    from {
+      opacity: 0.5;
+      transform: translateX(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes scaleOpacityAnime {
+    from {
+      opacity: 0.5;
+      scale: 0.5;
+    }
+
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
+
+
+@media (min-width: 750px) {
+
+  .our_team_container .our_team .our_team_facility .our_team_details p {
+
+    font-size: 1rem;
+}
+}
+
+@media (min-width: 1000px) {
+
+  .our_team_container .our_team .our_team_facility .our_team_details p {
+
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {
+
+  .our_team_container {
+
+
+
+    .our_team {
+
+
+      .our_team_header {
+
+
+        p {}
+      }
+
+      .our_team_facility {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .our_team_details {
+
+          align-items: center;
+          animation: scaleOpacityAnime linear;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+          @keyframes scaleOpacityAnime {
+            from {
+              opacity: 0.5;
+              scale: 0.5;
+            }
+        
+            to {
+              opacity: 1;
+              scale: 1;
+            }
+          }
+
+          h2 {}
+
+          p {
+            text-align: center;
+            padding: 0px;
+          }
+        }
+      }
+
+      //OUR
+      .our_team_content {
+
+        .our_team_border {
+          padding: 10px;
+
+          .our_team_img {
+
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+          }
+
+          img {
+            height: 90px;
+            width: 90px;
+          }
+
+          h4 {
+            text-align: center;
+            margin: 5px 0px 0px 0px;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+
+  }
+}
