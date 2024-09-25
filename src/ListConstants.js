@@ -211,11 +211,11 @@ export const SERVICES = {
 };
 
     export const OUR_TEAM = [
-        {
-            image: men,
-            name: "Gnana Oli",
-            role: "Physiotherapist"
-        },
+        // {
+        //     image: men,
+        //     name: "Gnana Oli",
+        //     role: "Physiotherapist"
+        // },
         {
             image: women,
             name: "Vimala S",
