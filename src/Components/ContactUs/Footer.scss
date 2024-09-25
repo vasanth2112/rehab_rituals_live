@@ -109,10 +109,9 @@
       border-radius: 30px;
       background-color: #fff;
       padding: 10px;
+      border: solid 3px #64b161ab;
       gap: 6px;
-      box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-        transition: all 0.5s linear;
+
 
       .wa_img {
         display: flex;
@@ -136,7 +135,11 @@
     }
 
     .contact_whatsapp:hover {
-      background-color: #004aad;
+      background-color: #64B161;
+      box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+      transition: all 0.5s linear;
+      border-color: #fff;
 
       p {
         color: #fff;
