@@ -210,32 +210,106 @@ export const SERVICES = {
     }
 };
 
-    export const OUR_TEAM = [
-        // {
-        //     image: men,
-        //     name: "Gnana Oli",
-        //     role: "Physiotherapist"
-        // },
-        {
-            image: women,
-            name: "Vimala S",
-            role: "Special Educator"
-        },
-        {
-            image: women,
-            name: "Valli R",
-            role: "IEP specialist"
-        },
-        {
-            image: women,
-            name: "Hiranmayi",
-            role: "Speech Therapist"
-        },
-        {
-            image: women,
-            name: "Lakshmi S",
-            role: "Admin/Accounts"
-        },
-    ];
+export const OUR_TEAM = [
+    // {
+    //     image: men,
+    //     name: "Gnana Oli",
+    //     role: "Physiotherapist"
+    // },
+    {
+        image: women,
+        name: "Vimala S",
+        role: "Special Educator"
+    },
+    {
+        image: women,
+        name: "Valli R",
+        role: "IEP specialist"
+    },
+    {
+        image: women,
+        name: "Hiranmayi",
+        role: "Speech Therapist"
+    },
+    {
+        image: women,
+        name: "Lakshmi S",
+        role: "Admin/Accounts"
+    },
+];
 
 
+export const GALLERY_IMAGES = [
+    {
+        img: YOGA,
+        title: 'YOGA',
+        rows: 3,
+    },
+    {
+        img: YOGA,
+        title: 'Image 1',
+    },
+    {
+        img: SDP,
+        title: 'Image 2',
+    },
+    {
+        img: HRP,
+        title: 'Image 3',
+    },
+    {
+        img: YOGA,
+        title: 'Image 4',
+    },
+    {
+        img: HAP,
+        title: 'Image 5',
+    },
+    {
+        img: GPT,
+        title: 'Image 6',
+    },
+    {
+        img: YOGA,
+        title: 'Image 7',
+    },
+    {
+        img: DSE,
+        title: 'Image 8',
+
+    },
+    {
+        img: YOGA,
+        title: 'Image 9',
+    },
+    {
+        img: YOGA,
+        title: 'Image 10',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: CONSULTATION,
+        title: 'Image 12',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: ST_REVIEW,
+        title: 'Image 13',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: ST_SESSION,
+        title: 'Image 14',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: ST_ASSESMENT,
+        title: 'Image 15',
+        rows: 1,
+        cols: 1,
+    }
+];

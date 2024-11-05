@@ -51,6 +51,7 @@ export default function HeaderContainer() {
                 <a href="#ourTeam">Our Team</a>
                 <a href="#service">Services</a>
                 <a href="#contact">Contact</a>
+                <a href="#gallery">Gallery</a>
               </div>
 
               <div className="burger-menu" onClick={toggleMenu}>
@@ -104,6 +105,11 @@ export default function HeaderContainer() {
                         <div>
                           <a href="#contact" style={{ paddingBottom: "5px" }}>
                             Contact
+                          </a>
+                        </div>
+                        <div>
+                          <a href="#gallery" style={{ paddingBottom: "5px" }}>
+                            Gallery
                           </a>
                         </div>
                       </div>
