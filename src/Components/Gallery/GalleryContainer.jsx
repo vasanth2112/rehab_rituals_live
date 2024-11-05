@@ -35,7 +35,7 @@ export default function GalleryContainer() {
     };
 
     return (
-        <div className="gallery-container">
+        <div id="gallery" className="gallery-container">
             <h1>Growth Gallery</h1>
 
             <div className="image-container">

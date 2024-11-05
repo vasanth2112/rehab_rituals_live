@@ -107,12 +107,17 @@ export default function HeaderContainer() {
                             Contact
                           </a>
                         </div>
+                      </div>
+                      <div className="menu_img">
+                        <div>
+                          <img src="./gallery/gallery.png" alt="Services" />
+                        </div>
                         <div>
                           <a href="#gallery" style={{ paddingBottom: "5px" }}>
                             Gallery
                           </a>
                         </div>
-                      </div>
+                    </div>
                     </div>
                   </div>
                 )}
