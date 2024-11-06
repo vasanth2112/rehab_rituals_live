@@ -243,31 +243,38 @@ export const GALLERY_IMAGES = [
     {
         img: YOGA,
         title: 'YOGA',
-        rows: 3,
+        rows: 1,
+        cols:2,
     },
     {
-        img: YOGA,
+        img: HRP,
         title: 'Image 1',
+        cols:2,
     },
     {
         img: SDP,
         title: 'Image 2',
+        rows: 3,
+        cols:2,
     },
     {
         img: HRP,
         title: 'Image 3',
     },
     {
-        img: YOGA,
+        img: CONSULTATION,
         title: 'Image 4',
     },
     {
         img: HAP,
         title: 'Image 5',
+        rows: 2,
+        cols:2,
     },
     {
         img: GPT,
         title: 'Image 6',
+        cols:4,
     },
     {
         img: YOGA,
@@ -276,7 +283,7 @@ export const GALLERY_IMAGES = [
     {
         img: DSE,
         title: 'Image 8',
-
+        cols:2,
     },
     {
         img: YOGA,
@@ -285,31 +292,24 @@ export const GALLERY_IMAGES = [
     {
         img: YOGA,
         title: 'Image 10',
-        rows: 1,
-        cols: 1,
     },
     {
         img: CONSULTATION,
         title: 'Image 12',
-        rows: 1,
-        cols: 1,
     },
     {
         img: ST_REVIEW,
         title: 'Image 13',
-        rows: 1,
-        cols: 1,
+        cols:2,
     },
     {
         img: ST_SESSION,
         title: 'Image 14',
-        rows: 1,
-        cols: 1,
+        cols:2,
     },
     {
         img: ST_ASSESMENT,
         title: 'Image 15',
-        rows: 1,
-        cols: 1,
+        cols:2,
     }
 ];

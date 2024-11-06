@@ -39,8 +39,8 @@ export default function GalleryContainer() {
             <h1>Growth Gallery</h1>
 
             <div className="image-container">
-                <Box className="box_scroll" sx={{ width: '100%', height: 600, overflowY: 'scroll' }}>
-                    <ImageList variant="masonry" cols={3} gap={15}>
+                {/* <Box className="box_scroll" sx={{ width: '100%', height: 600, overflowY: 'scroll' }}>
+                    <ImageList variant="masonry" cols={3} gap={8}>
                         {GALLERY_IMAGES.map((item) => (
                             <ImageListItem key={item.img} onClick={() => handleClickOpen(item.img)}
 
@@ -55,7 +55,27 @@ export default function GalleryContainer() {
                             </ImageListItem>
                         ))}
                     </ImageList>
-                </Box>
+                </Box> */}
+
+                <ImageList
+                    className="box_scroll" sx={{ width: '100%', height: 600,paddingRight:'12px', overflowY: 'scroll' }}
+                    variant="quilted"
+                    cols={4}
+                    rowHeight={'100%'}
+                >
+                    {GALLERY_IMAGES.map((item) => (
+                        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}
+                            onClick={() => handleClickOpen(item.img)}
+
+                            className={open ? '' : 'hoverable'}>
+                            <img
+                                {...srcset(item.img, 121, item.rows, item.cols)}
+                                alt={item.title}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
             </div>
 
 
@@ -77,12 +97,12 @@ export default function GalleryContainer() {
                     }} />
 
                 {/* <DialogActions> */}
-                {/* <IconButton edge="end" color="inherit"  aria-label="close" */}
+            {/* <IconButton edge="end" color="inherit"  aria-label="close" */}
 
 
-                {/* </IconButton> */}
-                {/* </DialogActions> */}
-                {/* <DialogContent sx={{ padding: 0 }}>
+            {/* </IconButton> */}
+            {/* </DialogActions> */}
+            {/* <DialogContent sx={{ padding: 0 }}>
                     <img
                         src={selectedImage}
                         alt="Selected"
