@@ -4,9 +4,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
+import Modal from '@mui/material/Modal';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -17,6 +15,15 @@ function srcset(image, size, rows = 1, cols = 1) {
             }&fit=crop&auto=format&dpr=2 2x`,
     };
 }
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: 'transparent',
+    p: 4,
+};
 
 export default function GalleryContainer() {
     const [open, setOpen] = React.useState(false); // State to control the modal
@@ -39,29 +46,13 @@ export default function GalleryContainer() {
             <h1>Growth Gallery</h1>
 
             <div className="image-container">
-                {/* <Box className="box_scroll" sx={{ width: '100%', height: 600, overflowY: 'scroll' }}>
-                    <ImageList variant="masonry" cols={3} gap={8}>
-                        {GALLERY_IMAGES.map((item) => (
-                            <ImageListItem key={item.img} onClick={() => handleClickOpen(item.img)}
-
-                                className={open ? '' : 'hoverable'}>
-                                <img
-
-                                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                                    alt={item.title}
-                                    loading="lazy"
-                                />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
-                </Box> */}
 
                 <ImageList
-                    className="box_scroll" sx={{ width: '100%', height: 600,paddingRight:'12px', overflowY: 'scroll' }}
+                    className="box_scroll" sx={{ width: '100%', height: 600, padding: '12px', overflowY: 'scroll' }}
                     variant="quilted"
                     cols={4}
                     rowHeight={'100%'}
+                    gap= {10}
                 >
                     {GALLERY_IMAGES.map((item) => (
                         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}
@@ -79,41 +70,36 @@ export default function GalleryContainer() {
             </div>
 
 
-            {/* Dialog Modal */}
-            {/* <Dialog open={open} onClose={handleClose} maxWidth="md"
-                sx={{
-                    width: '100%',
-                    backdropFilter: 'blur(5px)', // Optional: Add a blur effect on the background
-                    backgroundColor: 'rgba(255, 255, 255, 0.2)', // Transparent background
-                    boxShadow: 'none',
-                }}>
-
-                <CloseIcon onClick={handleClose}
-                    sx={{
-                        padding: '10px',
-                         // Removes padding around the icon
-                        cursor: 'pointer',
-                        borderRadius: '50',
-                    }} />
-
-                {/* <DialogActions> */}
-            {/* <IconButton edge="end" color="inherit"  aria-label="close" */}
-
-
-            {/* </IconButton> */}
-            {/* </DialogActions> */}
-            {/* <DialogContent sx={{ padding: 0 }}>
-                    <img
-                        src={selectedImage}
-                        alt="Selected"
-                        style={{
-                            width: '100%',     // Ensure the image width is 100% of the modal
-                            height: '100%',    // Auto height to maintain aspect ratio
-                            objectFit: 'contain', // Ensure the entire image is contained within the modal without distortion
+            <Modal
+                open={open}
+                onClose={handleClose}
+            >
+                {/* Wrapper for positioning the button correctly */}
+                <Box sx={{ position: 'relative', width: '100%', height: '100%' }}>
+                    {/* IconButton positioned outside the Box but still within the modal */}
+                    <IconButton
+                        onClick={handleClose}
+                        sx={{
+                            position: 'absolute',
+                            color: '#ffff',
+                            top: 16,
+                            right: 16,
+                            zIndex: 1301, // Ensures it's above modal content
                         }}
-                    />
-                </DialogContent> */}
-            {/* </Dialog> */}
+                    >
+                        <CloseIcon />
+                    </IconButton>
+
+                    {/* Modal content */}
+                    <Box sx={style}>
+                        <img
+                            src={selectedImage}
+                            alt="Online Image"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                    </Box>
+                </Box>
+            </Modal>
         </div>
     );
 }
