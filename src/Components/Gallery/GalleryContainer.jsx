@@ -43,7 +43,7 @@ export default function GalleryContainer() {
 
     return (
         <div id="gallery" className="gallery-container">
-            <h1>Growth Gallery</h1>
+            <h1>Children’s Journey</h1>
 
             <div className="image-container">
 
