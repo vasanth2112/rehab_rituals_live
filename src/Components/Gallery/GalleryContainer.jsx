@@ -115,7 +115,8 @@ export default function GalleryContainer() {
                         <img
                             src={selectedImage}
                             alt="Online Image"
-                            style={{ width: '100%', height: '80%' }}
+                            className="imgGallery"
+
                         />
                     </Box>
                 </Box>
