@@ -1,12 +1,14 @@
 import "../Gallery/Gallery.scss";
 import { GALLERY_IMAGES } from "../../ListConstants.js";
-import * as React from 'react';
+import React, { useEffect, useRef } from "react";
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Modal from '@mui/material/Modal';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import dontworry from "../../../public/gallery/dontworry.json";
+import Lottie from "lottie-web";
 
 function srcset(image, size, rows = 1, cols = 1) {
     return {
@@ -28,6 +30,22 @@ const style = {
 export default function GalleryContainer() {
     const [open, setOpen] = React.useState(false); // State to control the modal
     const [selectedImage, setSelectedImage] = React.useState(null); // State to store the selected image
+
+    const beHappyAnimation = useRef(null);
+
+    useEffect(() => {
+        const dontworryAnimation = Lottie.loadAnimation({
+            container: beHappyAnimation.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: dontworry,
+        });
+
+        return () => {
+            dontworryAnimation.destroy();
+        };
+    }, []);
 
     // Open the modal with the clicked image
     const handleClickOpen = (image) => {
@@ -52,7 +70,7 @@ export default function GalleryContainer() {
                     variant="quilted"
                     cols={4}
                     rowHeight={'100%'}
-                    gap= {10}
+                    gap={10}
                 >
                     {GALLERY_IMAGES.map((item) => (
                         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}
@@ -68,6 +86,8 @@ export default function GalleryContainer() {
                     ))}
                 </ImageList>
             </div>
+
+            <div ref={beHappyAnimation} className="beHappyAnime"></div>
 
 
             <Modal
@@ -95,11 +115,13 @@ export default function GalleryContainer() {
                         <img
                             src={selectedImage}
                             alt="Online Image"
-                            style={{ width: '100%', height: 'auto' }}
+                            style={{ width: '100%', height: '80%' }}
                         />
                     </Box>
                 </Box>
             </Modal>
+
+
         </div>
     );
 }
