@@ -112,7 +112,7 @@ export default function FooterContainer() {
                         <h4>Working Hours</h4>
                         <div>
                             <p>Monday to Saturday</p>
-                            <p>09:00 AM - 05:00 PM</p>
+                            <p>09:30 AM - 08:00 PM</p>
                         </div>
                     </div>
                     <div className="address">

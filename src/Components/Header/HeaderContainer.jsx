@@ -1,5 +1,5 @@
 import "../Header/Header.scss";
-import { useState,useRef,useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import background_video from "../../assets/videos/baby_walk.webm";
 import loader from "../../../public/loader.json";
 import Lottie from "lottie-web";
@@ -35,7 +35,7 @@ export default function HeaderContainer() {
   return (
     <div id="home" className="header-container">
       {!isVideoLoaded && (
-       <div ref={loaderAnimation} className="loader"></div> // Replace with your loader design
+        <div ref={loaderAnimation} className="loader"></div> // Replace with your loader design
       )}
       <video autoPlay loop muted onCanPlayThrough={handleVideoLoad}>
         <source src={background_video} type="video/webm" />
@@ -50,8 +50,8 @@ export default function HeaderContainer() {
                 <a href="#aboutUs">About Us</a>
                 <a href="#ourTeam">Our Team</a>
                 <a href="#service">Services</a>
-                <a href="#contact">Contact</a>
                 <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
               </div>
 
               <div className="burger-menu" onClick={toggleMenu}>
@@ -100,6 +100,16 @@ export default function HeaderContainer() {
                       </div>
                       <div className="menu_img">
                         <div>
+                          <img src="./gallery/gallery.png" alt="Services" />
+                        </div>
+                        <div>
+                          <a href="#gallery" style={{ paddingBottom: "5px" }}>
+                            Gallery
+                          </a>
+                        </div>
+                      </div>
+                      <div className="menu_img">
+                        <div>
                           <img src="./header/menu/contact.png" alt="Contact" />
                         </div>
                         <div>
@@ -108,16 +118,6 @@ export default function HeaderContainer() {
                           </a>
                         </div>
                       </div>
-                      <div className="menu_img">
-                        <div>
-                          <img src="./gallery/gallery.png" alt="Services" />
-                        </div>
-                        <div>
-                          <a href="#gallery" style={{ paddingBottom: "5px" }}>
-                            Gallery
-                          </a>
-                        </div>
-                    </div>
                     </div>
                   </div>
                 )}
