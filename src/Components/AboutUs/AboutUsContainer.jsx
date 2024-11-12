@@ -39,7 +39,7 @@ export default function AboutUsContainer() {
           <div className="image_about">
             <div className="photo-style">
               <div style={{ paddingBottom: "40px" }}>
-                <img src="./aboutus/welcome.webp"></img>
+                <img src="./aboutus/welcome.jpg"></img>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function AboutUsContainer() {
         <div className="aboutus_flex_reverse">
           <div className="image_about">
             <div className="photo-style">
-              <img src="./aboutus/knowme.webp"></img>
+              <img src="./aboutus/knowme.jpg"></img>
 
               <p>Vinodhini C</p>
             </div>

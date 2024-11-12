@@ -1,33 +1,51 @@
 import men from "../public/team/men.png";
 import women from "../public/team/women.png";
-import AT_ASSESMENT from "../public/services/AT/AT_ASSESMENT.webp";
-import AT_ADV_ASSESMENT from "../public/services/AT/AT_ADV_ASSESMENT.webp";
-import AT_REVIEW from "../public/services/AT/AT_REVIEW.webp";
-import AT_SESSION from "../public/services/AT/AT_SESSION.webp";
-import ST_ASSESMENT from "../public/services/ST/ST_ASSESMENT.webp";
-import ST_REVIEW from "../public/services/ST/ST_REVIEW.webp";
-import ST_SESSION from "../public/services/ST/ST_SESSION.webp";
-import PH_REVIEW from "../public/services/PH/PH_REVIEW.webp";
-import PH_SESSION1 from "../public/services/PH/PH_SESSION1.webp";
-import PH_SESSION2 from "../public/services/PH/PH_SESSION2.webp";
-import SE_SESSION from "../public/services/SE/SE_SESSION.webp";
-import SE_REVIEW from "../public/services/SE/SE_REVIEW.webp";
-import SE_ASSESMENT from "../public/services/SE/SE_ASSESMENT.webp";
-import FOLLOW_UP from "../public/services/NUTRITION/FOLLOW_UP.webp";
-import CONSULTATION from "../public/services/NUTRITION/CONSULTATION.webp";
-import YOGA from "../public/services/SPECIAL/YOGA.webp";
-import IEP from "../public/services/SPECIAL/IEP.webp";
-import DSE from "../public/services/SPECIAL/DSE.webp";
-import PEC from "../public/services/SPECIAL/PEC.webp";
-import SRP from "../public/services/SPECIAL/SRP.webp";
-import FEI from "../public/services/SPECIAL/FEI.webp";
-import SDP from "../public/services/SPECIAL/SDP.webp";
-import TLP from "../public/services/SPECIAL/TLP.webp";
-import GPT from "../public/services/SPECIAL/GPT.webp";
-import HRP from "../public/services/SPECIAL/HRP.webp";
-import HAP from "../public/services/SPECIAL/HAP.webp";
-import SOONZE_THERAPY from "../public/services/SPECIAL/SOONZE_THERAPY.webp";
-import VR from "../public/services/SPECIAL/VR.webp";
+import AT_ASSESMENT from "../public/services/AT/AT_ASSESMENT.jpg";
+import AT_ADV_ASSESMENT from "../public/services/AT/AT_ADV_ASSESMENT.jpg";
+import AT_REVIEW from "../public/services/AT/AT_REVIEW.jpg";
+import AT_SESSION from "../public/services/AT/AT_SESSION.jpg";
+import ST_ASSESMENT from "../public/services/ST/ST_ASSESMENT.jpg";
+import ST_REVIEW from "../public/services/ST/ST_REVIEW.jpg";
+import ST_SESSION from "../public/services/ST/ST_SESSION.jpg";
+import PH_REVIEW from "../public/services/PH/PH_REVIEW.jpg";
+import PH_SESSION1 from "../public/services/PH/PH_SESSION1.jpg";
+import PH_SESSION2 from "../public/services/PH/PH_SESSION2.jpg";
+import SE_SESSION from "../public/services/SE/SE_SESSION.jpg";
+import SE_REVIEW from "../public/services/SE/SE_REVIEW.jpg";
+import SE_ASSESMENT from "../public/services/SE/SE_ASSESMENT.jpg";
+import FOLLOW_UP from "../public/services/NUTRITION/FOLLOW_UP.jpg";
+import CONSULTATION from "../public/services/NUTRITION/CONSULTATION.jpg";
+import YOGA from "../public/services/SPECIAL/YOGA.jpg";
+import IEP from "../public/services/SPECIAL/IEP.jpg";
+import DSE from "../public/services/SPECIAL/DSE.jpg";
+import PEC from "../public/services/SPECIAL/PEC.jpg";
+import SRP from "../public/services/SPECIAL/SRP.jpg";
+import FEI from "../public/services/SPECIAL/FEI.jpg";
+import SDP from "../public/services/SPECIAL/SDP.jpg";
+import TLP from "../public/services/SPECIAL/TLP.jpg";
+import GPT from "../public/services/SPECIAL/GPT.jpg";
+import HRP from "../public/services/SPECIAL/HRP.jpg";
+import HAP from "../public/services/SPECIAL/HAP.jpg";
+import SOONZE_THERAPY from "../public/services/SPECIAL/SOONZE_THERAPY.jpg";
+import VR from "../public/services/SPECIAL/VR.jpg";
+import BODY_PARTS from "../public/gallery/image1.jpg";
+import TWO_BOYS from "../public/gallery/image2.jpg";
+import LEAF_GIRL from "../public/gallery/image3.jpg";
+import WATER_GIRL from "../public/gallery/image4.jpg";
+import PAINT_HAND from "../public/gallery/image5.jpg";
+import PARK from "../public/gallery/image6.jpg";
+import PAINT_TWO from "../public/gallery/image7.jpg";
+import DRAWING from "../public/gallery/image8.jpg";
+import CRAFT from "../public/gallery/image9.jpg";
+import BEACH_PLAY from "../public/gallery/image10.jpg";
+import DIWALI from "../public/gallery/image11.jpg";
+import COOK_NUTS from "../public/gallery/image12.jpg";
+import PAINT_RED from "../public/gallery/image13.jpg";
+import POT from "../public/gallery/image14.jpg";
+import BEACH_CLAP from "../public/gallery/image15.jpg";
+import VINO_CHILD from "../public/gallery/image16.jpg";
+import LIGHT from "../public/gallery/image17.jpg";
+import HAND_POWDER from "../public/gallery/image18.jpg";
 
 
 export const SERVICE_CATEGORIES = [
@@ -241,75 +259,92 @@ export const OUR_TEAM = [
 
 export const GALLERY_IMAGES = [
     {
-        img: YOGA,
-        title: 'YOGA',
-        rows: 1,
-        cols:2,
-    },
-    {
-        img: HRP,
+        img: DRAWING,
         title: 'Image 1',
-        cols:2,
+        rows:1,
+        cols:4,
     },
     {
-        img: SDP,
+        img: BODY_PARTS,
         title: 'Image 2',
-        rows: 3,
-        cols:2,
     },
     {
-        img: HRP,
+        img: LEAF_GIRL,
         title: 'Image 3',
     },
     {
-        img: CONSULTATION,
+        img: HAND_POWDER,
         title: 'Image 4',
+        cols:2,
     },
     {
-        img: HAP,
+        img: BEACH_PLAY,
         title: 'Image 5',
+        rows:1,
+        cols:4,
+    },
+    {
+        img: VINO_CHILD,
+        title: 'Image 6',
         rows: 2,
         cols:2,
     },
     {
-        img: GPT,
-        title: 'Image 6',
-        cols:4,
-    },
-    {
-        img: YOGA,
+        img: COOK_NUTS,
         title: 'Image 7',
+        cols:2,
     },
     {
-        img: DSE,
+        img: DIWALI,
         title: 'Image 8',
         cols:2,
     },
     {
-        img: YOGA,
+        img: BEACH_CLAP,
         title: 'Image 9',
+        cols:2,
     },
     {
-        img: YOGA,
+        img: WATER_GIRL,
         title: 'Image 10',
     },
     {
-        img: CONSULTATION,
-        title: 'Image 12',
+        img: LIGHT,
+        title: 'Image 15',
     },
     {
-        img: ST_REVIEW,
+        img: PARK,
+        title: 'Image 11',
+        cols:2,
+    },
+    {
+        img: PAINT_HAND,
+        title: 'Image 12',
+        cols:2,
+    },
+    {
+        img: CRAFT,
+        title: 'Image 18',
+        cols:4,
+    },
+    {
+        img: PAINT_TWO,
         title: 'Image 13',
         cols:2,
     },
     {
-        img: ST_SESSION,
+        img: TWO_BOYS,
         title: 'Image 14',
         cols:2,
     },
     {
-        img: ST_ASSESMENT,
-        title: 'Image 15',
+        img: PAINT_RED,
+        title: 'Image 16',
         cols:2,
-    }
+    },
+    {
+        img: POT,
+        title: 'Image 17',
+        cols:2,
+    },
 ];
