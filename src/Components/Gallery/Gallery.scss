@@ -46,27 +46,27 @@
 /* For screens smaller than 600px (typically mobile) */
 @media (max-width: 600px) {
     .imgGallery {
-        width: 250px;  /* Smaller width for mobile devices */
+        width: 300px;  /* Smaller width for mobile devices */
     }
 }
 
 /* For screens between 601px and 900px (tablet-sized devices) */
 @media (min-width: 601px) and (max-width: 900px) {
     .imgGallery {
-        width: 350px;  /* Smaller width for tablets */
+        width: 400px;  /* Smaller width for tablets */
     }
 }
 
 /* For screens between 901px and 1200px (small desktops and laptops) */
 @media (min-width: 901px) and (max-width: 1200px) {
     .imgGallery {
-        width: 400px;  /* Standard width for laptops or larger tablets */
+        width: 450px;  /* Standard width for laptops or larger tablets */
     }
 }
 
 /* For screens larger than 1200px (desktops and large displays) */
 @media (min-width: 1200px) {
     .imgGallery {
-        width: 450px;  /* Larger width for large displays */
+        width: 500px;  /* Larger width for large displays */
     }
 }
