@@ -1,4 +1,6 @@
-import men from "../public/team/men.png";
+import Valli from "../public/team/Valli.jpg";
+import Vinodhini from "../public/team/Vinodhini.jpg";
+import Hiranmayi from "../public/team/Hiranmayi.jpg";
 import women from "../public/team/women.png";
 import AT_ASSESMENT from "../public/services/AT/AT_ASSESMENT.jpg";
 import AT_ADV_ASSESMENT from "../public/services/AT/AT_ADV_ASSESMENT.jpg";
@@ -240,12 +242,12 @@ export const OUR_TEAM = [
         role: "Special Educator"
     },
     {
-        image: women,
+        image: Valli,
         name: "Valli R",
         role: "IEP specialist"
     },
     {
-        image: women,
+        image: Hiranmayi,
         name: "Hiranmayi",
         role: "Speech Therapist"
     },
