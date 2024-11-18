@@ -78,11 +78,23 @@
         }
 
         p {
+          color: #004aad;
           font-family: "Italianno", cursive;
           font-weight: 500;
           font-style: normal;
-          font-size: clamp(1rem, 1.4vw, 3rem);
+          font-size: clamp(1rem, 2vw, 3rem);
           margin: 5px 0px;
+        }
+        .job{
+          font-family: "Lexend", sans-serif;
+          text-align: center;
+          color: rgba(92, 93, 94, 0.9019607843);
+          //font-family: "Anton", sans-serif;
+          font-weight: 450;
+          font-style: normal;
+          letter-spacing: 1px;
+          margin: 0px 0px 10px 0px;
+          font-size: clamp(0.8rem, 0.8vw, 3rem);
         }
       }
     }

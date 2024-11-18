@@ -70,6 +70,7 @@ export default function AboutUsContainer() {
               <img src="./aboutus/knowme.jpg"></img>
 
               <p>Vinodhini C</p>
+              <p className="job">MOT(Neurosciences)., RYT., TLP</p>
             </div>
           </div>
           <div className="about_content_reverse">

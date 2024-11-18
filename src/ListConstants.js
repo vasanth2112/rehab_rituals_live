@@ -1,7 +1,7 @@
 import Valli from "../public/team/Valli.jpg";
-import Vinodhini from "../public/team/Vinodhini.jpg";
 import Hiranmayi from "../public/team/Hiranmayi.jpg";
-import women from "../public/team/women.png";
+import Lakshmi from "../public/team/Lakshmi.jpg";
+import Vimala from "../public/team/women.png";
 import AT_ASSESMENT from "../public/services/AT/AT_ASSESMENT.jpg";
 import AT_ADV_ASSESMENT from "../public/services/AT/AT_ADV_ASSESMENT.jpg";
 import AT_REVIEW from "../public/services/AT/AT_REVIEW.jpg";
@@ -237,7 +237,7 @@ export const OUR_TEAM = [
     //     role: "Physiotherapist"
     // },
     {
-        image: women,
+        image: Vimala,
         name: "Vimala S",
         role: "Special Educator"
     },
@@ -252,7 +252,7 @@ export const OUR_TEAM = [
         role: "Speech Therapist"
     },
     {
-        image: women,
+        image: Lakshmi,
         name: "Lakshmi S",
         role: "Admin/Accounts"
     },
