@@ -12,7 +12,7 @@ export default function OurServiceContainer() {
 
   const [categoryId, setCategoryId] = useState(SERVICE_CATEGORIES[0].id);
 
-  console.log(SERVICES["OT"]);
+  //console.log(SERVICES["OT"]);
 
   function handleSelect(selectedButton) {
     setSelectedTopic(SERVICES[selectedButton.id]);

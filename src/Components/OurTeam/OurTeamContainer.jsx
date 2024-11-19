@@ -19,6 +19,7 @@ export default function OurTeamContainer() {
                     <div className="our_team_img">
                         <img src="./team/Vinodhini.jpg"></img>
                         <h4>Vinodhini C</h4>
+                        <p>Lead Occupational Therapist</p>
                         <p>MOT(Neurosciences)., RYT., TLP</p>
                     </div>
                 </div>

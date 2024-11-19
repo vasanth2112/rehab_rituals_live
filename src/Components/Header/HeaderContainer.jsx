@@ -1,6 +1,6 @@
 import "../Header/Header.scss";
 import { useState, useRef, useEffect } from "react";
-import background_video from "../../assets/videos/baby_walk.webm";
+import background_video from "../../assets/videos/baby.webm";
 import loader from "../../../public/loader.json";
 import Lottie from "lottie-web";
 
