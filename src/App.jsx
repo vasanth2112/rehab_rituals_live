@@ -7,6 +7,7 @@ import OurTeamContainer from "./Components/OurTeam/OurTeamContainer.jsx";
 import FooterContainer from "./Components/ContactUs/FooterContainer.jsx";
 import Tooltip from '@mui/material/Tooltip';
 import GalleryContainer from "./Components/Gallery/GalleryContainer.jsx";
+import BlogsContainer from "./Components/Blogs/BlogsContainer.jsx";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -49,14 +50,15 @@ function App() {
   return (
     <>
       {/* Add ref to HeaderContainer */}
-      <div ref={headerRef}>
+      {/* <div ref={headerRef}>
         <HeaderContainer />
       </div>
       <AboutUsContainer />
       <OurServiceContainer />
       <OurTeamContainer />
       <GalleryContainer />
-      <FooterContainer />
+      <FooterContainer /> */}
+      <BlogsContainer/>
 
 
       {/* Scroll to Top Button */}
