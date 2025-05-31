@@ -50,6 +50,7 @@ export default function HeaderContainer() {
                 <a href="#aboutUs">About Us</a>
                 <a href="#ourTeam">Our Team</a>
                 <a href="#service">Services</a>
+                <a href="#blogs">Blogs</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
               </div>
@@ -96,6 +97,16 @@ export default function HeaderContainer() {
                         </div>
                         <div>
                           <a href="#service">Services</a>
+                        </div>
+                      </div>
+                      <div className="menu_img">
+                        <div>
+                          <img src="./header/menu/blogging.png" alt="Services" />
+                        </div>
+                        <div>
+                          <a href="#blogs" style={{ paddingBottom: "5px" }}>
+                            Blogs
+                          </a>
                         </div>
                       </div>
                       <div className="menu_img">

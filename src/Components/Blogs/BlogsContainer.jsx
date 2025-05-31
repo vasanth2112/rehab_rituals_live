@@ -1,101 +1,75 @@
 import "../Blogs/Blogs.scss";
 import React from "react";
 import { Chip, Button } from "@mui/material";
-import FaceIcon from "@mui/icons-material/Face";
+import Avatar from "@mui/material/Avatar";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
+import Divider from "@mui/material/Divider";
+import { BLOGS_CONTENT } from "../Blogs/BlogsListConstant.jsx";
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { useNavigate } from "react-router-dom";
 
 export default function BlogsContainer() {
+  const navigate = useNavigate();
   return (
-    <div className="blogContainer">
+    <div className="blogContainer" id="blogs">
       <div>
         <h1>Blogs</h1>
       </div>
       <div className="blogContainer_content">
-        <div className="blogcontent">
-          <div className="blog_icon">
-            <img src="./blogs/blogging.png"></img>
-          </div>
-          <div>
-            <h2>Understanding Autism: Embracing Neurodiversity</h2>
-          </div>
-          <div>
-            <p>
-              In recent years, awareness of autism has grown tremendously — but
-              there’s still much to learn, especially when it comes to true
-              understanding and acceptance. Autism, formally known as Autism
-              Spectrum Disorder (ASD), isn’t a one-size-fits-all condition.{" "}
-            </p>
-          </div>
-          <div className="blogcontent_end">
-            <div>
-              <div>
-                <Chip
-                  icon={<FaceIcon />}
-                  label="Reeba Shyrin"
-                  variant="outlined"
-                />
-              </div>
-              <div>
-                <p>May 07, 2025</p>
-              </div>
+        {BLOGS_CONTENT.slice(-2).map((blog) => (
+          <div className="blogcontent" key={blog.id}>
+            <div className="blog_img">
+              <img src={blog.cardImg}></img>
             </div>
             <div>
-              <Button
-                className="readMoreBtn"
-                size="small"
-                endIcon={<NavigateNext />}
-                sx={{ textTransform: "none" }}
-              >
-                Read More
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        <div className="blogcontent">
-          <div className="blog_icon">
-            <img src="./blogs/blogging.png"></img>
-          </div>
-          <div>
-            <h2>Understanding Autism: Embracing Neurodiversity</h2>
-          </div>
-          <div>
-            <p>
-              In recent years, awareness of autism has grown tremendously — but
-              there’s still much to learn, especially when it comes to true
-              understanding and acceptance. Autism, formally known as Autism
-              Spectrum Disorder (ASD), isn’t a one-size-fits-all condition.{" "}
-            </p>
-          </div>
-          <div className="blogcontent_end">
-            <div>
-              <div>
-                <Chip
-                  icon={<FaceIcon />}
-                  label="Reeba Shyrin"
-                  variant="outlined"
-                />
-              </div>
-              <div>
-                <p>May 07, 2025</p>
-              </div>
+              <h2>{blog.heading}</h2>
             </div>
             <div>
-              <Button
-                className="readMoreBtn"
-                size="small"
-                endIcon={<NavigateNext />}
-                sx={{ textTransform: "none" }}
-              >
-                Read More
-              </Button>
+              <p>{blog.cardContent}</p>
+            </div>
+            <Divider variant="middle" />
+            <div className="blogcontent_end">
+              <div>
+                <div>
+                  <Chip
+                    avatar={
+                      <Avatar
+                        alt={blog.author}
+                        src={blog.profileImg}
+                        sx={{ width: 32, height: 32 }}
+                      />
+                    }
+                    label={blog.author.name}
+                    variant="outlined"
+                  />
+                </div>
+                <div className="dateOfPost">
+                  <div><CalendarMonthIcon fontSize="small" sx={{ color: 'rgb(102, 100, 100)', height:'18px'}}/></div>
+                  <div><p>{blog.dateOfPost}</p></div>
+                </div>
+              </div>
+              <div>
+                <Button
+                  className="readMoreBtn"
+                  size="small"
+                  endIcon={<NavigateNext />}
+                  sx={{ textTransform: "none" }}
+                  onClick={() => navigate(`/blog/${blog.id}`, { state: { blog } })}
+                >
+                  Read More
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
       <div>
-        <Button className="viewAllBtn" variant="contained" endIcon={<ReadMoreIcon />}>
+        <Button
+          className="viewAllBtn"
+          variant="contained"
+          endIcon={<ReadMoreIcon />}
+        >
           View All Blogs
         </Button>
       </div>
