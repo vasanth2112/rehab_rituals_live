@@ -1,5 +1,6 @@
 import B10625 from "../../../public/blogs/content/B10625.jpg";
 import B20625 from "../../../public/blogs/content/B20625.jpg";
+import VINODHINI from "../../../public/blogs/profile/Vinodhini.jpg";
 
 export const BLOGS_CONTENT = [
   {
@@ -8,9 +9,9 @@ export const BLOGS_CONTENT = [
       name: "Vinodhini S",
       designation: "Lead Occupational Therapist",
       workplace: "Rehab Rituals, Ekkatuthangal",
-      profileImg: "../../../public/blogs/profile/Vinodhini.jpg",
+      profileImg: VINODHINI,
     },
-    profileImg: "../../../public/blogs/profile/Vinodhini.jpg",
+    profileImg: VINODHINI,
     heading:
       "Untangling the Confusion: Understanding Developmental...",
     cardImg: B10625,
@@ -120,9 +121,9 @@ export const BLOGS_CONTENT = [
       name: "Vinodhini S",
       designation: "Child Psychologist",
       workplace: "City Hospital, Pediatrics Dept",
-      profileImg: "../../../public/blogs/profile/Vinodhini.jpg",
+      profileImg: VINODHINI,
     },
-    profileImg: "../../../public/blogs/profile/women.png",
+    profileImg: VINODHINI,
     heading: "Understanding Autism: Supporting Autistic Individuals",
     cardImg: B20625,
     cardContent:
