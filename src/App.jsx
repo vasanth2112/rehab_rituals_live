@@ -75,7 +75,7 @@ function App() {
                 <AboutUsContainer />
                 <OurServiceContainer />
                 <OurTeamContainer />
-                {/* <BlogsContainer /> */}
+                <BlogsContainer />
                 <GalleryContainer />
                 <FooterContainer />
                 {showButton && (
@@ -93,7 +93,7 @@ function App() {
           />
 
           {/* Blog Detail Route */}
-          <Route path="/blog/:id" element={<BlogContent />} />
+          <Route path="/blog/allblogs" element={<BlogContent />} />
         </Routes>
       </Router>
       {/* Add ref to HeaderContainer */}

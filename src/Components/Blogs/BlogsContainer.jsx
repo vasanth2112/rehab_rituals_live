@@ -6,7 +6,7 @@ import NavigateNext from "@mui/icons-material/NavigateNext";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import Divider from "@mui/material/Divider";
 import { BLOGS_CONTENT } from "../Blogs/BlogsListConstant.jsx";
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useNavigate } from "react-router-dom";
 
 export default function BlogsContainer() {
@@ -23,10 +23,10 @@ export default function BlogsContainer() {
               <img src={blog.cardImg}></img>
             </div>
             <div>
-              <h2>{blog.heading}</h2>
+              <h2 className="clamp-2-lines">{blog.heading}</h2>
             </div>
             <div>
-              <p>{blog.cardContent}</p>
+              <p className="clamp-3-lines">{blog.cardContent}</p>
             </div>
             <Divider variant="middle" />
             <div className="blogcontent_end">
@@ -45,8 +45,15 @@ export default function BlogsContainer() {
                   />
                 </div>
                 <div className="dateOfPost">
-                  <div><CalendarMonthIcon fontSize="small" sx={{ color: 'rgb(102, 100, 100)', height:'18px'}}/></div>
-                  <div><p>{blog.dateOfPost}</p></div>
+                  <div>
+                    <CalendarMonthIcon
+                      fontSize="small"
+                      sx={{ color: "rgb(102, 100, 100)", height: "15px" }}
+                    />
+                  </div>
+                  <div>
+                    <p>{blog.dateOfPost}</p>
+                  </div>
                 </div>
               </div>
               <div>
@@ -55,7 +62,9 @@ export default function BlogsContainer() {
                   size="small"
                   endIcon={<NavigateNext />}
                   sx={{ textTransform: "none" }}
-                  onClick={() => navigate(`/blog/${blog.id}`, { state: { blog } })}
+                  onClick={() =>
+                    navigate(`/blog/allBlogs`, { state: { blog } })
+                  }
                 >
                   Read More
                 </Button>
@@ -69,6 +78,9 @@ export default function BlogsContainer() {
           className="viewAllBtn"
           variant="contained"
           endIcon={<ReadMoreIcon />}
+          onClick={() => {
+            navigate(`/blog/allBlogs`, { state: { blog: BLOGS_CONTENT[0] } });
+          }}
         >
           View All Blogs
         </Button>

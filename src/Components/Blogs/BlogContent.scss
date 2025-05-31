@@ -119,11 +119,13 @@ button.backToHome {
   cursor: pointer;
   background-color: #1976d2 !important;
   text-transform: none !important;
+  margin-left: 15px;
+}
+
+.bottomButtons {
   position: fixed;
   z-index: 1000;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -162,8 +164,8 @@ button.backToHome {
     }
   }
 
-  button.backToHome {
-    bottom: 25px;
+  .bottomButtons {
+    bottom: 10px;
     font-size: 10px;
     padding: 8px;
   }
@@ -188,15 +190,14 @@ button.backToHome {
       width: 130px;
     }
   }
-  button.backToHome {
-    bottom: 20px;
+  .bottomButtons {
+    bottom: 0px;
     font-size: 10px;
     padding: 7px;
   }
 }
 
 @media (max-width: 425px) {
-  
   .blogDetail {
     border-radius: 5px;
     padding: 15px 20px 50px 20px;
@@ -204,7 +205,7 @@ button.backToHome {
   }
 
   button.backToHome {
-    bottom: 15px;
+    bottom: 0px;
   }
 }
 
@@ -215,8 +216,14 @@ button.backToHome {
     }
   }
   button.backToHome {
-    bottom: 20px;
+    bottom: 10px;
     font-size: 10px;
     padding: 5px;
+    margin-left: 5px;
+  }
+
+  .arrowIcon {
+  font-size: 15px !important;
+    color: #ffffff; // optional
   }
 }

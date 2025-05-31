@@ -60,3 +60,25 @@ h1 {
     width: 50px; /* Default size for desktop and larger devices */
   }
 }
+
+.clamp-2-lines {
+  display: -webkit-box;
+  display: box; /* Fallback for older specs */
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* Standard */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clamp-3-lines {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

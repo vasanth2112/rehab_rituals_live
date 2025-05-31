@@ -98,7 +98,7 @@ button.viewAllBtn {
 .blog_img {
   img {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
     display: block;
@@ -111,6 +111,8 @@ button.viewAllBtn {
   //  justify-content: center;
   align-items: center;
 }
+
+
 
 //Media Query
 
@@ -126,4 +128,9 @@ button.viewAllBtn {
   .blogcontent {
     width: 300px;
   }
+  .blog_img {
+  img {
+    height: 25vh;
+  }
+}
 }
