@@ -11,8 +11,15 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import EmailIcon from "@mui/icons-material/Email";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import ShareIcon from "@mui/icons-material/Share";
 
 export default function BlogContent() {
+  const shareUrl = encodeURIComponent("https://rehabrituals.in");
+  const shareText = encodeURIComponent("Check out Rehab Rituals Blogs!");
   const location = useLocation();
   const blog = location.state?.blog;
 
@@ -51,7 +58,7 @@ export default function BlogContent() {
     <>
       <div className="blogContent">
         <div className="blogDetail">
-          <img src={blog.content.headerImage}></img>
+          <img className="head_img" src={blog.content.headerImage}></img>
           <h1>{blog.content.heading}</h1>
           {renderBody(blog.content.body)}
 
@@ -106,51 +113,139 @@ export default function BlogContent() {
                 </p>
               </div>
             </div>
-            <div className="reference">
-              <h3>References</h3>
-              <ul>
-                {blog.content.references.map((ref, i) => (
-                  <li key={i}>{ref}</li>
-                ))}
-              </ul>
+            {blog.content.references && blog.content.references.length > 0 && (
+              <div className="reference">
+                <h3>References</h3>
+                <ul>
+                  {blog.content.references.map(
+                    (ref, i) => ref && <li key={i}>{ref}</li>
+                  )}
+                </ul>
+              </div>
+            )}
+
+            <div>
+              <div className="post">
+                <p>Post By</p>
+              </div>
+              <div className="bottom">
+                <div className="post_by">
+                  <div>
+                    <Chip
+                      avatar={
+                        <Avatar
+                          alt="Author"
+                          src={blog.profileImg}
+                          sx={{ width: 32, height: 32 }}
+                        />
+                      }
+                      label={blog.author.name}
+                      variant="outlined"
+                    />
+                  </div>
+                  <div className="dateOfPost">
+                    <div>
+                      <CalendarMonthIcon
+                        fontSize="small"
+                        sx={{ color: "rgb(102, 100, 100)", height: "15px" }}
+                      />
+                    </div>
+                    <div>
+                      <p>{blog.dateOfPost}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="share">
+                  {/* <div>
+                    <p>Share</p>
+                  </div> */}
+                  <div className="socia_icons">
+                    <ShareIcon style={{ fontSize: "25px", color: "#000" }} />
+                    <a
+                      href="https://www.instagram.com/rehabrituals"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <InstagramIcon
+                        style={{ color: "#E1306C", fontSize: "25px" }}
+                      />
+                    </a>
+
+                    {/* WhatsApp Share */}
+                    <a
+                      href={`https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <WhatsAppIcon
+                        style={{ color: "#25D366", fontSize: "25px" }}
+                      />
+                    </a>
+
+                    {/* Email Share */}
+                    <a
+                      href={`mailto:?subject=${shareText}&body=${shareUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <EmailIcon
+                        style={{ color: "#D44638", fontSize: "25px" }}
+                      />
+                    </a>
+
+                    {/* Facebook Share */}
+                    <a
+                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FacebookIcon
+                        style={{ color: "#1877F2", fontSize: "25px" }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className="bottomButtons">
-          <Button
-            className="backToHome"
-            variant="contained"
-            startIcon={<ArrowBackIcon className="arrowIcon"/>}
-            onClick={() => navigate(`/`)}
-          >
-            Back to Home
-          </Button>
-          <Button
-            className="backToHome"
-            variant="contained"
-            startIcon={<ArrowDownwardIcon className="arrowIcon"/>}
-            onClick={() => {
-              const element = document.getElementById("blogs");
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" }); // smooth scroll
-              }
-            }}
-          > 
-            View All Blogs
-          </Button>
-          <Button
-            className="backToHome"
-            variant="contained"
-            startIcon={<ArrowUpwardIcon className="arrowIcon"/>}
-            onClick={() => {
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              setTimeout(() => {
-                navigate(`/blog/allblogs`, { state: { blog } });
-              }, 300);
-            }}
-          >
-            Back to Top
-          </Button>
+          <div className="back_color">
+            <Button
+              className="backToHome"
+              variant="contained"
+              startIcon={<ArrowBackIcon className="arrowIcon" />}
+              onClick={() => navigate(`/`)}
+            >
+              Back to Home
+            </Button>
+            <Button
+              className="backToHome"
+              variant="contained"
+              startIcon={<ArrowDownwardIcon className="arrowIcon" />}
+              onClick={() => {
+                const element = document.getElementById("blogs");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" }); // smooth scroll
+                }
+              }}
+            >
+              View All Blogs
+            </Button>
+            <Button
+              className="backToHome"
+              variant="contained"
+              startIcon={<ArrowUpwardIcon className="arrowIcon" />}
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setTimeout(() => {
+                  navigate(`/blog/allblogs`, { state: { blog } });
+                }, 300);
+              }}
+            >
+              Back to Top
+            </Button>
+          </div>
         </div>
       </div>
       <div

@@ -14,7 +14,7 @@ export default function BlogsContainer() {
   return (
     <div className="blogContainer" id="blogs">
       <div>
-        <h1>Blogs</h1>
+        <h1>Latest Blogs</h1>
       </div>
       <div className="blogContainer_content">
         {BLOGS_CONTENT.slice(-2).map((blog) => (
