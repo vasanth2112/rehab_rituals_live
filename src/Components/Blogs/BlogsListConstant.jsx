@@ -21,23 +21,23 @@ export const BLOGS_CONTENT = [
     content: {
       headerImage: B10625,
       heading:"Understanding Developmental Disorders and How They Differ",
-      body:"Developmental disorders can be quite confusing, especially for parents and caregivers trying to understand their child’s behavior and growth patterns. One of the biggest challenges is that many of these disorders overlap in their symptoms and can often co-occur, making diagnosis and intervention tricky. In this blog, we’ll break down the diff erent types of developmental conditions — both neurodivergent and neurotypical — and highlight the key features that set them apart. This can help parents identify early signs and seek timely support from professionals.",
+      body:"Developmental disorders can be quite confusing, especially for parents and caregivers trying to understand their child’s behavior and growth patterns. One of the biggest challenges is that many of these disorders overlap in their symptoms and can often co-occur, making diagnosis and intervention tricky. In this blog, we’ll break down the different types of developmental conditions — both neurodivergent and neurotypical — and highlight the key features that set them apart. This can help parents identify early signs and seek timely support from professionals.",
       sections: [
         {
           heading: "What Are Developmental Disorders?",
           body: [
             "Developmental disorders are a group of conditions that typically appear during the early years of a child's life. These disorders impact the child’s ability to reach developmental milestones on time. These milestones may include motor skills, speech, language, social interaction, and academic abilities. Recognizing the signs early can help guide intervention and improve outcomes.",
-            "Let’s explore some common developmental conditions and how they diff er:",
+            "Let’s explore some common developmental conditions and how they differ:",
           ],
         },
         {
           heading: "Neurodivergent Conditions",
-          body:"These are brain-based diff erences in how a child thinks, learns, and processes the world around them.",
+          body:"These are brain-based differences in how a child thinks, learns, and processes the world around them.",
           subSections: [
             {
               heading: "Autism Spectrum Disorder (ASD)",
               body: [
-                "Autism is a neurodevelopmental disorder characterized by signifi cant delays in social communication and speech and the presence of stereotypical or repetitive behaviors. Children with autism may prefer routines, have diffi culty making eye contact, and may not engage in typical forms of play.",
+                "Autism is a neurodevelopmental disorder characterized by significant delays in social communication and speech and the presence of stereotypical or repetitive behaviors. Children with autism may prefer routines, have difficulty making eye contact, and may not engage in typical forms of play.",
                 {
                   type: "list",
                   items: [
@@ -52,7 +52,7 @@ export const BLOGS_CONTENT = [
             {
               heading: "Attention-Deficit/Hyperactivity Disorder (ADHD)",
               body: [
-                "ADHD is another neurodevelopmental disorder, but unlike autism, it primarily aff ects a child's ability to focus, stay still, and control impulses. These children often struggle with following instructions or sitting through a classroom session.",
+                "ADHD is another neurodevelopmental disorder, but unlike autism, it primarily affects a child's ability to focus, stay still, and control impulses. These children often struggle with following instructions or sitting through a classroom session.",
                 {
                   type: "list",
                   items: [
@@ -105,7 +105,7 @@ export const BLOGS_CONTENT = [
       ],
       summary: [{
         type: "para",
-        item:["While developmental disorders may look similar on the surface, understanding the subtle diff erences can make a big impact. Autism, ADHD, GDD, and virtual autism each have distinct characteristics and require diff erent approaches for support and intervention. Early diagnosis and appropriate therapy can empower children to reach their full potential.",
+        item:["While developmental disorders may look similar on the surface, understanding the subtle diff erences can make a big impact. Autism, ADHD, GDD, and virtual autism each have distinct characteristics and require different approaches for support and intervention. Early diagnosis and appropriate therapy can empower children to reach their full potential.",
         "If you're concerned about your child’s development, it’s always best to consult a developmental pediatrician or therapist who can guide you with accurate assessments and therapy plans."]
       }
 ],
