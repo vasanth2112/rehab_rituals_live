@@ -75,7 +75,7 @@ function App() {
                 <AboutUsContainer />
                 <OurServiceContainer />
                 <OurTeamContainer />
-                {/* <BlogsContainer /> */}
+                <BlogsContainer />
                 <GalleryContainer />
                 <FooterContainer />
                 {showButton && (
