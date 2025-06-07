@@ -18,7 +18,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import ShareIcon from "@mui/icons-material/Share";
 
 export default function BlogContent() {
-  const shareUrl = encodeURIComponent("https://rehabrituals.in");
+  const shareUrl = encodeURIComponent("https://rehabrituals.com");
   const shareText = encodeURIComponent("Check out Rehab Rituals Blogs!");
   const location = useLocation();
   const blog = location.state?.blog;
