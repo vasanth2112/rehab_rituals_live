@@ -6,7 +6,7 @@ export const BLOGS_CONTENT = [
   {
     id: "B10525",
     author: {
-      name: "Vinodhini S",
+      name: "Vinodhini C",
       designation: "Lead Occupational Therapist",
       workplace: "Rehab Rituals, Ekkatuthangal",
       profileImg: VINODHINI,
@@ -68,12 +68,12 @@ export const BLOGS_CONTENT = [
         },
         {
           heading: "Neurotypical Conditions",
-          body:"These conditions are not necessarily linked to neurological diff erences but can still cause delays in development.",
+          body:"These conditions are not necessarily linked to neurological differences but can still cause delays in development.",
           subSections: [
             {
               heading: "Global Developmental Delay (GDD)",
               body: [
-                "This condition is usually diagnosed when a child shows delays in multiple developmental areas. It can be identifi ed in early childhood and may aff ect motor skills, cognitive abilities, speech, and academic performance.",
+                "This condition is usually diagnosed when a child shows delays in multiple developmental areas. It can be identified in early childhood and may affect motor skills, cognitive abilities, speech, and academic performance.",
                 {
                   type: "list",
                   items: [
