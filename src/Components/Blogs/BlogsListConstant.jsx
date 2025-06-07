@@ -105,7 +105,7 @@ export const BLOGS_CONTENT = [
       ],
       summary: [{
         type: "para",
-        item:["While developmental disorders may look similar on the surface, understanding the subtle diff erences can make a big impact. Autism, ADHD, GDD, and virtual autism each have distinct characteristics and require different approaches for support and intervention. Early diagnosis and appropriate therapy can empower children to reach their full potential.",
+        item:["While developmental disorders may look similar on the surface, understanding the subtle differences can make a big impact. Autism, ADHD, GDD, and virtual autism each have distinct characteristics and require different approaches for support and intervention. Early diagnosis and appropriate therapy can empower children to reach their full potential.",
         "If you're concerned about your child’s development, it’s always best to consult a developmental pediatrician or therapist who can guide you with accurate assessments and therapy plans."]
       }
 ],
