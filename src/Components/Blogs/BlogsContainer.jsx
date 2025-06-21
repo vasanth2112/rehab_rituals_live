@@ -36,11 +36,11 @@ export default function BlogsContainer() {
                     avatar={
                       <Avatar
                         alt={blog.author}
-                        src={blog.profileImg}
+                        src={blog.posted.profileImg}
                         sx={{ width: 32, height: 32 }}
                       />
                     }
-                    label={blog.author.name}
+                    label={blog.posted.name}
                     variant="outlined"
                   />
                 </div>

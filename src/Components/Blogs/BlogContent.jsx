@@ -96,7 +96,7 @@ export default function BlogContent() {
           <div className="author_reference">
             <div className="author">
               <div>
-                <img src={blog.profileImg} />
+                <img src={blog.author.profileImg} />
               </div>
               <div>
                 <h3>Author</h3>
@@ -135,11 +135,11 @@ export default function BlogContent() {
                       avatar={
                         <Avatar
                           alt="Author"
-                          src={blog.profileImg}
+                          src={blog.posted.profileImg}
                           sx={{ width: 32, height: 32 }}
                         />
                       }
-                      label={blog.author.name}
+                      label={blog.posted.name}
                       variant="outlined"
                     />
                   </div>
@@ -280,11 +280,11 @@ export default function BlogContent() {
                       avatar={
                         <Avatar
                           alt={blog.author}
-                          src={blog.profileImg}
+                          src={blog.posted.profileImg}
                           sx={{ width: 32, height: 32 }}
                         />
                       }
-                      label={blog.author.name}
+                      label={blog.posted.name}
                       variant="outlined"
                     />
                   </div>
