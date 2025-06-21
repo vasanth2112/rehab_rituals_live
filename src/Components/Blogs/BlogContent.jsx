@@ -68,7 +68,7 @@ export default function BlogContent() {
               {renderBody(section.body)}
 
               {section.subSections?.map((sub, k) => (
-                <div key={k} style={{ marginLeft: "20px" }}>
+                <div key={k} style={{ marginLeft: "10px" }}>
                   <h3>{sub.heading}</h3>
                   {renderBody(sub.body)}
                 </div>

@@ -15,7 +15,7 @@
   h1 {
     text-align: center;
     font-family: "Cinzel", serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: clamp(1.2rem, 3.4vw, 2.3rem);
     color: #004aad;
   }
@@ -24,7 +24,7 @@
     margin: 0px;
     font-family: "Lexend", sans-serif;
     font-weight: 600;
-    font-size: clamp(1.2rem, 1.4vw, 3rem);
+    font-size: clamp(0.8rem, 1.4vw, 3rem);
     color: #004aad;
   }
 
@@ -49,6 +49,7 @@
   }
   ul {
     line-height: 2;
+    padding-left: 30px;
   }
 }
 
@@ -126,9 +127,10 @@ button.backToHome {
   position: fixed;
   z-index: 1000;
   bottom: 20px;
-  .back_color{
+  .back_color {
     background-color: #ffffff;
-     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     //box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     //box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 5px;
@@ -200,9 +202,9 @@ button.backToHome {
   gap: 20px;
 
   .socia_icons {
-  display: flex;
-  gap: 15px;
-}
+    display: flex;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -211,6 +213,10 @@ button.backToHome {
       .head_img {
         height: 30vh;
       }
+    }
+    ul {
+      line-height: 1.5;
+      padding-left: 20px;
     }
   }
   .blogDetail {
@@ -243,6 +249,11 @@ button.backToHome {
   button.backToHome {
     bottom: 0px;
   }
+
+  ul {
+    line-height: 1.5;
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -261,5 +272,11 @@ button.backToHome {
   .arrowIcon {
     font-size: 15px !important;
     color: #ffffff; // optional
+  }
+  .blogContent {
+    ul {
+      line-height: 1.5;
+      padding-left: 20px;
+    }
   }
 }
