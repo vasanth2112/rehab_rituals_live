@@ -2,7 +2,7 @@ import B10625 from "../../../public/blogs/content/B10625.jpg";
 import B2062501 from "../../../public/blogs/content/B2062501.jpg";
 import B2062502 from "../../../public/blogs/content/B2062502.png";
 import VINODHINI from "../../../public/blogs/profile/Vinodhini.jpg";
-import WOMEN from "../../../public/blogs/profile/women.png";
+import WOMEN from "../../../public/blogs/profile/Reeba.png";
 
 export const BLOGS_CONTENT = [
   {
