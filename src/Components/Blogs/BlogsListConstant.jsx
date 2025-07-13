@@ -243,7 +243,7 @@ export const BLOGS_CONTENT = [
       "Screen time is defined as the duration an individual spends utilizing electronic devices equipped with screens, including but not limited to smartphones, computers, televisions, and video game consoles. This term is frequently employed in discussions regarding the time allocated to activities such as television viewing, internet Browse, video gaming, and engagement with social media platforms.",
     dateOfPost: "July 12, 2025",
     content: {
-      headerImage: B3072502,
+      headerImage: B3072501,
       heading: "Understanding Screen Time: Duration and Developmental Impact",
       body: "Screen time is defined as the duration an individual spends utilizing electronic devices equipped with screens, including but not limited to smartphones, computers, televisions, and video game consoles. This term is frequently employed in discussions regarding the time allocated to activities such as television viewing, internet Browse, video gaming, and engagement with social media platforms.",
       sections: [
