@@ -137,6 +137,34 @@ button.backToHome {
   }
 }
 
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ccc;
+  padding: 12px 10px;
+  text-align: left;
+  vertical-align: top;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450px;
+  color: rgb(102, 100, 100);
+  font-size: clamp(0.7rem, 1.2vw, 2.5rem);
+}
+
+.custom-table th {
+  background-color: #1976d242;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.65rem, 1vw, 1.5rem);
+  color: #004aad;
+}
+
 @media (max-width: 1000px) {
   .blogContent {
     .head_img {

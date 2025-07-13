@@ -50,6 +50,28 @@ export default function BlogContent() {
           </ul>
         );
       }
+      if (item.type === "table") {
+        return (
+          <table key={i} className="custom-table">
+            <thead>
+              <tr>
+                {item.headers.map((header, hIndex) => (
+                  <th key={`header-${hIndex}`}>{header}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {item.rows.map((row, rowIndex) => (
+                <tr key={`row-${rowIndex}`}>
+                  {row.map((cell, cellIndex) => (
+                    <td key={`cell-${rowIndex}-${cellIndex}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        );
+      }
       return null;
     });
   };
@@ -88,6 +110,30 @@ export default function BlogContent() {
                       <li key={`${i}-li-${j}`}>{li}</li>
                     ))}
                   </ul>
+                );
+              }
+              if (point.type === "table") {
+                return (
+                  <table key={i} className="custom-table">
+                    <thead>
+                      <tr>
+                        {point.headers.map((header, hIndex) => (
+                          <th key={`header-${hIndex}`}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {point.rows.map((row, rowIndex) => (
+                        <tr key={`row-${rowIndex}`}>
+                          {row.map((cell, cellIndex) => (
+                            <td key={`cell-${rowIndex}-${cellIndex}`}>
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 );
               }
               return null;

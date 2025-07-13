@@ -1,8 +1,11 @@
 import B10625 from "../../../public/blogs/content/B10625.jpg";
 import B2062501 from "../../../public/blogs/content/B2062501.jpg";
 import B2062502 from "../../../public/blogs/content/B2062502.png";
+import B3072501 from "../../../public/blogs/content/B3072501.png";
+import B3072502 from "../../../public/blogs/content/B3072502.png";
 import VINODHINI from "../../../public/blogs/profile/Vinodhini.jpg";
 import WOMEN from "../../../public/blogs/profile/Reeba.png";
+import POOJA from "../../../public/blogs/profile/Pooja.jpg";
 
 export const BLOGS_CONTENT = [
   {
@@ -126,7 +129,7 @@ export const BLOGS_CONTENT = [
       profileImg: VINODHINI,
     },
     author: {
-      name: "Reeba Shyrin",
+      name: "Reeba Shyrin S",
       designation: "Psychologist",
       workplace: "SARASWATHI KENDRA LEARNING CENTRE FOR CHILDREN, Teynampet",
       profileImg: WOMEN,
@@ -215,6 +218,192 @@ export const BLOGS_CONTENT = [
           item: [
             "Gratitude journaling is not about ignoring challenges but about building emotional strength and joy through awareness. It's an easy yet impactful way to create calm, connection, and resilience in your family.",
             "Try it out and notice how your perspective — and your household — can shift for the better.",
+          ],
+        },
+      ],
+      references: [],
+    },
+  },
+
+  {
+    id: "B30725",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Pooja Mohan",
+      designation: "Speech Language Pathologist",
+      workplace: "Wonderbees Therapy Center",
+      profileImg: POOJA,
+    },
+    heading: "Understanding Screen Time: Duration and Developmental Impact",
+    cardImg: B3072501, // replace with the actual image import or URL
+    cardContent:
+      "Screen time is defined as the duration an individual spends utilizing electronic devices equipped with screens, including but not limited to smartphones, computers, televisions, and video game consoles. This term is frequently employed in discussions regarding the time allocated to activities such as television viewing, internet Browse, video gaming, and engagement with social media platforms.",
+    dateOfPost: "July 12, 2025",
+    content: {
+      headerImage: B3072502,
+      heading: "Understanding Screen Time: Duration and Developmental Impact",
+      body: "Screen time is defined as the duration an individual spends utilizing electronic devices equipped with screens, including but not limited to smartphones, computers, televisions, and video game consoles. This term is frequently employed in discussions regarding the time allocated to activities such as television viewing, internet Browse, video gaming, and engagement with social media platforms.",
+      sections: [
+        {
+          heading: "Recommended Screen Time Durations:",
+          body: [
+            "Guidelines from prominent health organizations offer recommendations for screen time across various age groups, as presented in the following table:",
+            {
+              type: "table",
+              headers: [
+                "Age Group",
+                "WHO Recommendation (2019)",
+                "American Academy of Pediatrics (AAP) Recommendation (2025)",
+              ],
+              rows: [
+                [
+                  "0–1 years",
+                  "No screen time",
+                  "Avoid, except for video chatting",
+                ],
+                [
+                  "1–2 years",
+                  "None to <1 hour/day",
+                  "Limited, only high-quality, co-viewed",
+                ],
+                [
+                  "3–4 years",
+                  "≤1 hour/day",
+                  "≤1 hour/day, high-quality, co-viewed",
+                ],
+                [
+                  "5–6+ years",
+                  "Not specified (WHO stops at 5)",
+                  "Set consistent limits; balance with sleep, activity, and relationships",
+                ],
+              ],
+            },
+          ],
+        },
+        {
+          heading:
+            "The Contribution of Excessive Screen Time to Speech and Language Delay:",
+          body: [
+            "Excessive screen time can significantly impede speech and language development through several key mechanisms:",
+          ],
+          subSections: [
+            {
+              heading: "Reduced Parent-Child Interaction:",
+              body: [
+                "Language acquisition is critically dependent on responsive interactions between adults and children. Passive screen use, such as watching cartoons, frequently supplants these essential interactive moments.",
+              ],
+            },
+            {
+              heading: "Displacement of Real-Life Experiences:",
+              body: [
+                "Time spent on screens can displace pivotal developmental activities. These include conversational interaction, imaginative and free play, storytelling, singing, exploration of physical environments, and real-world social interactions. These activities are fundamental for the development of vocabulary and grammar.",
+              ],
+            },
+            {
+              heading: "One-Way Communication:",
+              body: [
+                "The majority of screen media facilitates one-way communication. While children may hear words, they do not engage in reciprocal, back-and-forth conversational dialogue. This absence of interaction restricts opportunities to acquire pragmatic language skills.",
+              ],
+            },
+            {
+              heading: "Overstimulation:",
+              body: [
+                "Fast-paced and highly stimulating screen content has the potential to affect attention regulation. This can subsequently hinder a child's ability to focus during real-life conversations and learning situations.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "Impact of Screen Time on Language Components:",
+          body: [
+            "The impact of screen time extends to various components of language:",
+          ],
+          subSections: [
+            {
+              heading: "Reduced phonological skills:",
+              body: [
+                "Limited exposure to live speech hinders children’s ability to accurately recognize and produce speech sounds.",
+              ],
+            },
+            {
+              heading: "Impaired morphological and syntactic development:",
+              body: [
+                "Less interactive conversation translates to fewer opportunities for children to learn correct word forms and sentence structures.",
+              ],
+            },
+            {
+              heading: "Smaller vocabulary:",
+              body: [
+                "Passive screen use offers fewer opportunities for new word acquisition compared to real-life communication.",
+              ],
+            },
+            {
+              heading: "Weakened pragmatic skills:",
+              body: [
+                "A lack of face-to-face interaction diminishes the understanding of social language use.",
+              ],
+            },
+            {
+              heading: "Limited semantic understanding:",
+              body: [
+                "Children may lack the context and cues necessary to fully grasp word meanings.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "Key Recommendations:",
+          body: [
+            "To mitigate potential adverse effects and promote healthy development, the following recommendations are advised:",
+          ],
+          subSections: [
+            {
+              heading: "Quality over quantity:",
+              body: [
+                "Prioritize educational, age-appropriate content that encourages active interaction.",
+              ],
+            },
+            {
+              heading: "Co-viewing:",
+              body: [
+                "Engage with children during screen time to facilitate learning and discussion.",
+              ],
+            },
+            {
+              heading: "Screen-free zones:",
+              body: [
+                "Designate specific areas, such as bedrooms and mealtime spaces, as screen-free environments.",
+              ],
+            },
+            {
+              heading: "Pre-screening content:",
+              body: [
+                "Parents should review applications and programs before allowing children access.",
+              ],
+            },
+            {
+              heading: "Implement the 20-20-20 Rule:",
+              body: [
+                "To minimize eye strain, advise taking a 20-second break every 20 minutes to focus on an object 20 feet away.",
+              ],
+            },
+            {
+              heading: "Modeling behavior:",
+              body: [
+                "Adults should exemplify positive screen time habits by managing their own usage.",
+              ],
+            },
+          ],
+        },
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "This article provides a comprehensive overview of screen time, encompassing its definition and recommended usage durations as advised by the WHO and AAP. It elaborates on the mechanisms through which excessive screen time contributes to speech and language delays, specifically highlighting reduced parent-child interaction, displacement of critical real-life experiences, the prevalence of one-way communication, and the potential for overstimulation. Furthermore, the article details the specific impacts on phonological skills, morphological and syntactic development, vocabulary, pragmatic skills, and semantic understanding. Concluding recommendations emphasize the importance of content quality, co-viewing, establishing screen-free zones, parental pre-screening, adherence to the 20-20-20 rule, and adult modeling of responsible screen behavior.",
           ],
         },
       ],
