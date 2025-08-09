@@ -39,7 +39,7 @@ export default function BlogContent() {
 
     return body.map((item, i) => {
       if (typeof item === "string") {
-        return <p key={i}>{item}</p>;
+       return <p key={i} dangerouslySetInnerHTML={{ __html: item }} />;
       }
       if (item.type === "list") {
         return (

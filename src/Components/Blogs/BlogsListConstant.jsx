@@ -2,7 +2,7 @@ import B10625 from "../../../public/blogs/content/B10625.jpg";
 import B2062501 from "../../../public/blogs/content/B2062501.jpg";
 import B2062502 from "../../../public/blogs/content/B2062502.png";
 import B3072501 from "../../../public/blogs/content/B3072501.png";
-import B3072502 from "../../../public/blogs/content/B3072502.png";
+import B4082501 from "../../../public/blogs/content/B4082501.png";
 import VINODHINI from "../../../public/blogs/profile/Vinodhini.jpg";
 import WOMEN from "../../../public/blogs/profile/Reeba.png";
 import POOJA from "../../../public/blogs/profile/Pooja.jpg";
@@ -404,6 +404,100 @@ export const BLOGS_CONTENT = [
           type: "para",
           item: [
             "This article provides a comprehensive overview of screen time, encompassing its definition and recommended usage durations as advised by the WHO and AAP. It elaborates on the mechanisms through which excessive screen time contributes to speech and language delays, specifically highlighting reduced parent-child interaction, displacement of critical real-life experiences, the prevalence of one-way communication, and the potential for overstimulation. Furthermore, the article details the specific impacts on phonological skills, morphological and syntactic development, vocabulary, pragmatic skills, and semantic understanding. Concluding recommendations emphasize the importance of content quality, co-viewing, establishing screen-free zones, parental pre-screening, adherence to the 20-20-20 rule, and adult modeling of responsible screen behavior.",
+          ],
+        },
+      ],
+      references: [],
+    },
+  },
+
+  {
+    id: "B40825",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
+    heading: "When Peekaboo Falls Flat: 8 Early Signs of Autism in Your Baby",
+    cardImg: B4082501, // replace with the actual image import or URL
+    cardContent:
+      "Autism Spectrum Disorder can show signs before your baby’s first birthday — but they’re often subtle. Here’s how to spot early indicators with honesty, humor, and hope.",
+    dateOfPost: "August 9, 2025",
+    content: {
+      headerImage: B4082501,
+      heading: "When Peekaboo Falls Flat: 8 Early Signs of Autism in Your Baby",
+      body: [
+        "Let’s face it—parenting under one year feels like detective work on no sleep. Is that cry because of gas, a growth spurt, or existential dread? And in between guessing games, a worry pops up: “Is my baby developing typically?”",
+        "Autism Spectrum Disorder (ASD) often starts showing signs before your child blows out their first birthday candle. But because babies are basically adorable blobs of unpredictability, these early signs can be subtle. The good news? Noticing these signs early can lead to early autism treatment and occupational therapy—both game changers for your child’s development.",
+        "So here are <strong>8 early signs of autism in children under 1 year</strong>, served with a side of honesty, a dash of humor, and a sprinkle of hope.",
+      ],
+      sections: [
+        {
+          heading: "1. Lack of Eye Contact",
+          body: [
+            "Babies are social sponges. If your baby avoids eye contact consistently—like staring at ceiling fans more than your face—it could be a sign. Most babies start locking eyes by 2 months.",
+          ],
+        },
+        {
+          heading: "2. Limited Social Smiling",
+          body: [
+            "By 6–8 weeks, babies usually flash their first gummy grin. If your baby isn’t smiling back or responding socially, it might be more than just a serious personality.",
+          ],
+        },
+        {
+          heading: "3. No Response to Name",
+          body: [
+            "You call their name with love. Or cookies. Or both. And… nothing. By around 6 months, babies typically turn to familiar voices. A consistent lack of response might need evaluation.",
+          ],
+        },
+        {
+          heading: "4. Delayed Babbling",
+          body: [
+            "Goo-goo and ga-ga aren’t just cute — they’re milestones. If by 6–9 months your baby isn’t experimenting with sounds or “talking back,” it could be an early autism sign.",
+          ],
+        },
+        {
+          heading: "5. Repetitive Movements",
+          body: [
+            "Hand flapping, rocking, or staring at fingers a lot — these can be normal but if intense or persistent, it’s worth a chat with a pediatrician or occupational therapist.",
+          ],
+        },
+        {
+          heading: "6. Lack of Gestures",
+          body: [
+            "By 9–12 months, most babies wave, clap, or point. If your child isn’t using gestures to communicate — or understand yours — it may be time to explore further.",
+          ],
+        },
+        {
+          heading: "7. Sensory Sensitivities",
+          body: [
+            "Some babies startle at every sound, while others seem unfazed by loud noises. Extreme sensitivity or lack of response to light, touch, or sound can be linked to sensory processing differences.",
+          ],
+        },
+        {
+          heading: "8. Not Showing or Sharing Interests",
+          body: [
+            "By 9 months, babies typically want to show you things — like a toy or even a random find. If your baby isn’t trying to share attention, it could be a red flag.",
+          ],
+        },
+        {
+          heading: "Early Help is Smart Help",
+          body: [
+            "If a few of these signs are familiar, don’t panic. Every baby is unique. But trust your instincts—early autism treatment through occupational therapy and developmental support can make a world of difference.",
+            "Many children who show early signs of autism grow into thriving individuals with the right interventions. Occupational therapists help with social skills, sensory regulation, and play—turning worry into wonder.",
+          ],
+        },
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "You’re not a bad parent for not noticing sooner — you’re a great parent for noticing now. Talk to your pediatrician or an early intervention clinic if you’re unsure. Raising a child with autism isn’t the end of the road — it’s a detour with its own scenery, milestones, and joy.",
           ],
         },
       ],
