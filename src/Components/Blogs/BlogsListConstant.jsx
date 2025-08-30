@@ -3,6 +3,8 @@ import B2062501 from "../../../public/blogs/content/B2062501.jpg";
 import B2062502 from "../../../public/blogs/content/B2062502.png";
 import B3072501 from "../../../public/blogs/content/B3072501.png";
 import B4082501 from "../../../public/blogs/content/B4082501.png";
+import B5082501 from "../../../public/blogs/content/B5082501.jpg";
+import B6082501 from "../../../public/blogs/content/B6082501.jpg";
 import VINODHINI from "../../../public/blogs/profile/Vinodhini.jpg";
 import WOMEN from "../../../public/blogs/profile/Reeba.png";
 import POOJA from "../../../public/blogs/profile/Pooja.jpg";
@@ -504,4 +506,170 @@ export const BLOGS_CONTENT = [
       references: [],
     },
   },
+
+  {
+    id: "B50825",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
+    heading:
+      "When Your Toddler’s Not Talking Yet: Red Flags, Support, and Hope",
+    cardImg: B5082501, // Replace with the actual image import or URL
+    cardContent:
+      "Is your toddler not talking yet? Here's a guide to help you differentiate between normal language delays and signs that may require intervention.",
+    dateOfPost: "August 30, 2025",
+    content: {
+      headerImage: B5082501,
+      heading:
+        "When Your Toddler’s Not Talking Yet: Red Flags, Support, and Hope",
+      body: [
+        "Every parent looks forward to hearing that first 'Mama' or 'Dada.' But what if your toddler is still silent while the playgroup chatterboxes won’t stop talking? Before panic sets in, let’s separate red flags from what’s actually developmentally appropriate. Understanding the difference helps you know when to wait patiently and when to seek speech therapy or early intervention.",
+      ],
+      sections: [
+        {
+          heading:
+            "Myth 1: 'My toddler isn’t saying many words, but that’s normal.'",
+          body: [
+            "<strong>Developmentally Appropriate:</strong> At 18 months, toddlers usually have around 10–20 words (they may sound like 'ba' for ball, but it still counts!). They’ll add new ones slowly.",
+            "<strong>Red Flag:</strong> By 18 months, if your child has fewer than 5–10 words, isn’t imitating sounds, or only uses gestures, it may signal a speech delay.",
+          ],
+        },
+        {
+          heading: "Myth 2: 'He’ll grow out of it. Boys talk later.'",
+          body: [
+            "<strong>Developmentally Appropriate:</strong> Some variation is normal—yes, boys may start a tad later than girls, but the difference is usually months, not years.",
+            "<strong>Red Flag:</strong> By 2 years, if your toddler isn’t combining two words ('more juice,' 'mama come'), can’t follow simple instructions, or mostly communicates through pointing and whining, early intervention is recommended.",
+          ],
+        },
+        {
+          heading:
+            "Myth 3: 'She understands me, so I don’t need to worry about talking.'",
+          body: [
+            "<strong>Developmentally Appropriate:</strong> Many toddlers understand more than they say—that’s a good sign. Receptive language (understanding) develops faster than expressive language (speaking).",
+            "<strong>Red Flag:</strong> If your child isn’t responding to their name, doesn’t follow basic directions, or shows little interest in communication, this goes beyond late talking and may point toward a broader language delay—or in some cases, autism.",
+          ],
+        },
+        {
+          heading: "Myth 4: 'He just doesn’t like to talk in public.'",
+          body: [
+            "<strong>Developmentally Appropriate:</strong> Some toddlers are shy. They may clam up around strangers but chatter at home with family.",
+            "<strong>Red Flag:</strong> If your toddler rarely uses words in any setting, avoids eye contact, or doesn’t attempt to interact with others, it could indicate more than shyness. This is where a speech therapy screening can help clarify.",
+          ],
+        },
+        {
+          heading: "Myth 5: 'Screens will teach her to talk.'",
+          body: [
+            "<strong>Developmentally Appropriate:</strong> A little singing along to nursery rhymes or pointing at animals on the screen can be fine—but only with parent interaction.",
+            "<strong>Red Flag:</strong> If your toddler spends hours with gadgets but struggles to imitate sounds, gestures, or words, it can actually delay speech development. Children learn best through live human interaction.",
+          ],
+        },
+        {
+          heading: "When Autism Might Be Part of the Picture",
+          body: [
+            "If delayed speech comes with limited gestures, lack of pretend play, repetitive behaviors, or minimal eye contact, it could be an early sign of autism. But here’s the hopeful part: children with autism benefit greatly from early speech therapy and communication-focused interventions.",
+          ],
+        },
+      ],
+
+      summary: [
+        {
+          type: "para",
+          item: [
+            "Speech delay myths can give false comfort—or unnecessary worry. The key is balance: don’t panic if your toddler isn’t reciting poems at age two, but don’t ignore genuine red flags either. Speech therapy and early intervention can work wonders.",
+            "So, if your toddler isn’t talking yet, remember—silence today doesn’t predict silence forever. With the right support, those first magical words are closer than you think.",
+          ],
+        },
+      ],
+
+      references: [],
+    },
+  },
+
+
+  {
+  id: "B60825",
+  posted: {
+    name: "Vinodhini C",
+    profileImg: VINODHINI,
+  },
+  author: {
+    name: "Vinodhini C",
+    designation: "Lead Occupational Therapist",
+    workplace: "Rehab Rituals, Ekkatuthangal",
+    profileImg: VINODHINI,
+  },
+  heading: "The ADHD Sensory Struggle: When Socks Ruin Mornings",
+  cardImg: B6082501, // Replace with actual image import or URL
+  cardContent:
+    "If you’ve ever had a morning derailed by socks—yes, socks—you’re not alone. Parents of children with ADHD often describe battles that sound like small fashion wars.",
+  dateOfPost: "August 30, 2025",
+  content: {
+    headerImage: B6082501,
+    heading: "The ADHD Sensory Struggle: When Socks Ruin Mornings",
+    body: [
+      "If you’ve ever had a morning derailed by socks—yes, socks—you’re not alone. Parents of children with ADHD often describe battles that sound like small fashion wars: “This tag itches!” “These socks feel weird!” or “I can’t wear THAT shirt!” What looks like stubbornness is often something much deeper: sensory sensitivities. For children with ADHD, the world can feel louder, brighter, itchier, and sometimes unbearable.",
+      "The good news? With the right support—especially through Occupational Therapy (OT) for ADHD—kids can learn strategies to manage these struggles. Let’s unpack five common <strong>sensory sensitivities</strong> in ADHD and how OT can help."
+    ],
+    sections: [
+      {
+        heading: "1. Tactile Sensitivity (a.k.a. The Sock Saga)",
+        body: [
+          "<strong>What it looks like:</strong> Clothes that seem “fine” to you feel like sandpaper to your child. Seams in socks, shirt tags, or scratchy sweaters can trigger meltdowns.",
+          "<strong>Why it happens:</strong> The brain in ADHD often processes sensory input differently, amplifying tiny irritations.",
+          "<strong>How OT helps:</strong> Occupational therapists use sensory integration therapy—gradual exposure, play-based touch activities, and recommending seamless clothing options—to help children build tolerance without morning drama."
+        ]
+      },
+      {
+        heading: "2. Noise Sensitivity (The Vacuum Monster)",
+        body: [
+          "<strong>What it looks like:</strong> Everyday sounds—like the blender, vacuum, or even a classroom pencil sharpener—feel unbearably loud. Your child may cover their ears or run away.",
+          "<strong>Why it happens:</strong> Kids with ADHD may struggle to filter background noise, so all sounds compete for attention.",
+          "<strong>How OT helps:</strong> OTs introduce calming tools like noise-canceling headphones, teach coping strategies (deep breathing, movement breaks), and create structured routines to reduce sound-related anxiety."
+        ]
+      },
+      {
+        heading: "3. Movement Cravings (The Wiggly Wonder)",
+        body: [
+          "<strong>What it looks like:</strong> Constant climbing, bouncing, spinning, or fidgeting. Sitting still at school feels like a punishment.",
+          "<strong>Why it happens:</strong> ADHD often comes with a high need for vestibular (movement) and proprioceptive (body position) input.",
+          "<strong>How OT helps:</strong> Instead of fighting the wiggles, OTs channel them! Activities like swinging, jumping, or using fidget tools provide controlled movement. This helps regulate attention and supports hyperactivity treatment in everyday life."
+        ]
+      },
+      {
+        heading: "4. Taste & Texture Sensitivity (Picky Eating on Steroids)",
+        body: [
+          "<strong>What it looks like:</strong> Mealtime negotiations rival United Nations meetings. Your child gags at mushy textures, refuses crunchy foods, or insists on eating only beige-colored snacks.",
+          "<strong>Why it happens:</strong> Sensory defensiveness in the mouth makes certain textures overwhelming.",
+          "<strong>How OT helps:</strong> Through playful feeding therapy, OTs gradually introduce new textures, starting with tolerating them on the plate, then smelling, touching, and eventually tasting—making mealtimes less stressful."
+        ]
+      },
+      {
+        heading: "5. Visual Sensitivity (Bright Lights, Big Meltdowns)",
+        body: [
+          "<strong>What it looks like:</strong> Squinting under fluorescent lights, getting distracted by flickering screens, or struggling with visual clutter.",
+          "<strong>Why it happens:</strong> ADHD brains can be hyper-alert to visual input, making environments overstimulating.",
+          "<strong>How OT helps:</strong> Therapists may recommend softer lighting, visual schedules, and decluttered workspaces to reduce overwhelm and improve focus."
+        ]
+      }
+    ],
+    summary: [
+      {
+        type: "para",
+        item: [
+          "Hope Beyond the Socks",
+          "Living with ADHD doesn’t mean mornings have to be a battlefield. ADHD intervention through occupational therapy gives children practical tools to manage sensory challenges, making daily life smoother—for them and for you. Whether it’s seamless socks, calming strategies, or structured routines, OT helps children thrive in a world that sometimes feels “too much.”",
+          "So the next time your child declares socks as the ultimate enemy, remember—it’s not about the socks. It’s about their sensory world, and with the right support, mornings can shift from chaos to calm."
+        ]
+      }
+    ],
+    references: []
+  }
+},
 ];
