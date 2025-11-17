@@ -672,4 +672,179 @@ export const BLOGS_CONTENT = [
     references: []
   }
 },
+
+{
+  id: "B70725",
+  posted: {
+    name: "Vinodhini C",
+    profileImg: VINODHINI,
+  },
+  author: {
+    name: "Vinodhini C",
+    designation: "Lead Occupational Therapist",
+    workplace: "Rehab Rituals, Ekkatuthangal",
+    profileImg: VINODHINI,
+  },
+  heading: "Is It ADHD or Just High Energy?",
+  cardImg: B70925, // Replace with actual image import or URL
+  cardContent:
+    "Every parent knows that one child who never stops moving or exploring. But when does high energy cross the line into ADHD? Here’s a professional yet reassuring breakdown.",
+  dateOfPost: "October 2025",
+  content: {
+    headerImage: B7092501,
+    heading: "Is It ADHD or Just High Energy?",
+    body: [
+      "Every parent knows that one child who never stops moving, talking, or exploring. They’re bright, curious, and endlessly active — but sometimes that energy makes you pause. Is this just high energy, or could it be ADHD?",
+      "As pediatric occupational therapists, this is one of the most common questions we hear. And understandably so — the line between “active” and “attention difficulties” can feel blurry. Let’s break it down in a clear and reassuring way through an <strong>ADHD vs. High Energy</strong> comparison."
+    ],
+    sections: [
+      {
+        heading: "1. Focus: Can They Tune In or Do They Tune Out?",
+        body: [
+          "<strong>High Energy:</strong> The child can focus well when they’re interested — reading a favorite story, playing a game, or building with blocks. Their attention may drift with less-preferred tasks but returns with redirection.",
+          "<strong>ADHD:</strong> The difficulty is consistent and across situations. Even during engaging activities, the child is easily distracted, misses details, and struggles to sustain attention.",
+          "<strong>OT Insight:</strong> In ADHD, the challenge lies in self-regulating attention — not in motivation. Occupational therapy supports this through structured routines, sensory-based attention strategies, and environmental modifications."
+        ]
+      },
+      {
+        heading: "2. Activity Level: Lively or Overdriven?",
+        body: [
+          "<strong>High Energy:</strong> Movement is purposeful and flexible. They may run, jump, and fidget but can pause when asked or during calm activities.",
+          "<strong>ADHD:</strong> Activity feels constant and unregulated — as if the child is “driven by a motor.” They struggle to slow down even when it’s time for rest or focused work.",
+          "<strong>OT Approach:</strong> Therapists design hyperactivity treatment plans using sensory diets — intentional movement activities that satisfy sensory needs while teaching pacing and self-control."
+        ]
+      },
+      {
+        heading: "3. Impulsivity: Enthusiastic or Impulsive?",
+        body: [
+          "<strong>High Energy:</strong> Impulses occur occasionally — blurting out answers or interrupting — but the child learns from feedback and adjusts.",
+          "<strong>ADHD:</strong> Impulsivity is frequent and difficult to manage. The child may act before thinking, interrupt repeatedly, or take physical risks without awareness of consequences.",
+          "<strong>OT Role:</strong> Occupational therapy for ADHD integrates behavioral regulation techniques, mindfulness, and proprioceptive activities to strengthen self-awareness and impulse control."
+        ]
+      },
+      {
+        heading: "4. Attention Span: Variable or Persistently Short?",
+        body: [
+          "<strong>High Energy:</strong> Short attention spans appear during less-preferred or repetitive tasks. However, interest can sustain attention for long periods.",
+          "<strong>ADHD:</strong> Attention challenges are consistent across all settings — home, school, and play. The child often leaves tasks incomplete or moves quickly between activities.",
+          "<strong>Reference Insight:</strong> As described by Anderson & Godber (2003), ADHD symptoms must be persistent for six months or more and observed across multiple environments to warrant evaluation."
+        ]
+      },
+      {
+        heading: "5. Impact: Manageable or Disruptive?",
+        body: [
+          "<strong>High Energy:</strong> The child’s behavior may be tiring but remains within functional limits. They are socially engaged and responsive to structure.",
+          "<strong>ADHD:</strong> Symptoms significantly impact daily functioning — from school learning to friendships and self-esteem. Difficulties persist despite consistent parenting strategies or routines.",
+          "<strong>Therapeutic Focus:</strong> Early ADHD intervention can improve executive functioning, emotional regulation, and academic participation — helping children thrive in structured and playful settings."
+        ]
+      }
+    ],
+    summary: [
+      {
+        type: "para",
+        item: [
+          "When to Seek an Evaluation vs. When to Relax",
+          "• When to Relax: If your child’s activity and focus improve with rest, engagement, or gentle structure, it’s likely within normal developmental range.",
+          "• When to Evaluate: If challenges are persistent, cross-situational, and interfere with daily routines or relationships, consult a pediatrician or occupational therapist for an assessment.",
+          "High energy is a normal and often delightful part of childhood. ADHD, however, represents a neurodevelopmental difference that benefits from understanding and support.",
+          "With structured guidance and the right occupational therapy for ADHD, children can learn to channel their energy into focus, resilience, and meaningful participation — both at school and at home."
+        ]
+      }
+    ],
+    references: [
+      "Anderson, V., & Godber, T. (2003). Rethinking ADHD: Integrated Approaches to Helping Children at Home and at School. Allen & Unwin."
+    ]
+  }
+},
+
+{
+  id: "B71025",
+  posted: {
+    name: "Vinodhini C",
+    profileImg: VINODHINI,
+  },
+  author: {
+    name: "Vinodhini C",
+    designation: "Lead Occupational Therapist",
+    workplace: "Rehab Rituals, Ekkatuthangal",
+    profileImg: VINODHINI,
+  },
+  heading: "Screen Time, Speech Delays & Sensory Tantrums: Is It All Connected?",
+  cardImg: B71025, // Replace with actual image import
+  cardContent:
+    "Screens soothe toddlers — but can they also contribute to speech delays or sensory meltdowns? Here’s the science-backed truth from occupational and speech therapists.",
+  dateOfPost: "November 2025",
+  content: {
+    headerImage: B7102501,
+    heading: "Screen Time, Speech Delays & Sensory Tantrums: Is It All Connected?",
+    body: [
+      "It starts innocently enough — a fussy toddler, a tired parent, and a magical glowing rectangle that buys you five minutes of peace. Soon, “just one cartoon” becomes the soundtrack of every mealtime, and you realize Peppa Pig speaks more to your child than you do.",
+      "So, are screens really to blame for speech delays and those mysterious sensory meltdowns? As occupational and speech therapists, the short answer is — yes, they can be connected, though not always in the way you think.",
+      "Let’s take a lighthearted but science-backed look at what’s really happening behind those glowing screens."
+    ],
+    sections: [
+      {
+        heading: "1. Speech Development Needs Real People, Not Pixels",
+        body: [
+          "Speech and language thrive on human interaction — facial expressions, turn-taking, and tone changes. When a child’s brain is still wiring itself, it needs live feedback — a smile, a response, a question — not just flashing lights and prerecorded words.",
+          "As Myra Kers (2017) explains, language learning is a social process rooted in responsive communication. Screens, however, offer one-way interaction. The child hears words but doesn’t practice back-and-forth conversation, which delays expressive and receptive language growth.",
+          "In short — your toddler might know how to “swipe,” but not how to “say hi.”"
+        ]
+      },
+      {
+        heading: "2. Sensory Overload: When the Brain Can’t Switch Off",
+        body: [
+          "Occupational therapists often see children who experience “sensory overstimulation” after too much screen time. Every beep, flash, and zoom triggers the brain’s alert system.",
+          "Over time, the nervous system adapts to that high-speed input — meaning calm, quiet play feels boring by comparison.",
+          "According to <em>Tech Generation</em> (Uhls & Lasser, 2019), constant digital stimulation disrupts the brain’s ability to self-regulate, increasing tantrums, impulsivity, and attention difficulties. Some children even show ADHD-like symptoms — not because they have ADHD, but because their sensory system has been trained for instant reward and fast feedback."
+        ]
+      },
+      {
+        heading: "3. The Screen–Attention–Language Loop",
+        body: [
+          "Here’s where things overlap:",
+          "● Screen time replaces play, reducing real-world sensory exploration.",
+          "● Less play means fewer chances to build attention and imagination.",
+          "● Poor attention and imagination directly affect language organization and comprehension.",
+          "Dr. Douglas Gentile’s research (cited in <em>Tech Generation</em>, 2019) found a bidirectional relationship between heavy screen use and attention problems — more screen time predicts more inattention, which then leads to even more screen-seeking.",
+          "It’s a sensory spiral many families find themselves in."
+        ]
+      },
+      {
+        heading: "4. The Role of Occupational Therapy: Rebalancing the Senses",
+        body: [
+          "Occupational therapy (OT) doesn’t just limit screen time — it rebuilds balance. Through sensory play, movement-based regulation, and parent education, OTs help children strengthen real-world engagement skills:",
+          "● Tactile play (sand, clay, textures) to ground sensory systems.",
+          "● Movement breaks to reduce restlessness.",
+          "● Interactive communication games to build attention and connection.",
+          "● Screen-free routines that reintroduce rhythm, eye contact, and calm.",
+          "When screens become a substitute for regulation, OT restores the child’s internal balance — teaching them how to process the world without a glowing crutch."
+        ]
+      },
+      {
+        heading: "5. So, Should You Panic? Absolutely Not.",
+        body: [
+          "Screens aren’t evil; they’re tools. The key, as Uhls & Lasser (2019) emphasize, is balance and mindful modeling.",
+          "Children mirror what they see — so if we scroll less and talk more, they follow.",
+          "Use screens with your child — talk about what they see, pause, ask questions. Make sure screen time doesn’t replace playtime, mealtime conversations, or cuddle time.",
+          "Because ultimately, children learn language not from what’s on the screen — but from who’s on the other side of it."
+        ]
+      }
+    ],
+    summary: [
+      {
+        type: "para",
+        item: [
+          "Screen time becomes a problem only when it replaces real-world interaction, sensory play, or communication.",
+          "With the right balance — and support from occupational and speech therapy when needed — children can build stronger language, attention, and regulation skills.",
+          "The goal isn’t to eliminate screens, but to ensure they don’t replace the rich human experiences children need to grow."
+        ]
+      }
+    ],
+    references: [
+      "Uhls, Y., & Lasser, J. (2019). Tech Generation: Raising Balanced Kids in a Hyper-Connected World. Oxford University Press.",
+      "Kers, M. (2017). Speech and Language Therapy. Routledge."
+    ]
+  }
+},
 ];
