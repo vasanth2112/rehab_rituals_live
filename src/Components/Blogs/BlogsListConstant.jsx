@@ -6,9 +6,13 @@ import B4082501 from "../../../public/blogs/content/B4082501.png";
 import B5082501 from "../../../public/blogs/content/B5082501.jpg";
 import B6082501 from "../../../public/blogs/content/B6082501.jpg";
 import B7092501 from "../../../public/blogs/content/B7092501.jpg";
+import B71025 from "../../../public/blogs/content/B71025.jpg";
 import B70925 from "../../../public/blogs/content/B70925.jpg";
 import B7102501 from "../../../public/blogs/content/B7102501.jpg";
-import B71025 from "../../../public/blogs/content/B71025.jpg";
+import B91225 from "../../../public/blogs/content/B91225.jpg";
+import B9122501 from "../../../public/blogs/content/B9122501.jpg";
+import B101225 from "../../../public/blogs/content/B101225.jpg";
+import B10122501 from "../../../public/blogs/content/B10122501.jpg";
 import VINODHINI from "../../../public/blogs/profile/Vinodhini.jpg";
 import WOMEN from "../../../public/blogs/profile/Reeba.png";
 import POOJA from "../../../public/blogs/profile/Pooja.jpg";
@@ -598,257 +602,460 @@ export const BLOGS_CONTENT = [
 
 
   {
-  id: "B60825",
-  posted: {
-    name: "Vinodhini C",
-    profileImg: VINODHINI,
-  },
-  author: {
-    name: "Vinodhini C",
-    designation: "Lead Occupational Therapist",
-    workplace: "Rehab Rituals, Ekkatuthangal",
-    profileImg: VINODHINI,
-  },
-  heading: "The ADHD Sensory Struggle: When Socks Ruin Mornings",
-  cardImg: B6082501, // Replace with actual image import or URL
-  cardContent:
-    "If you’ve ever had a morning derailed by socks—yes, socks—you’re not alone. Parents of children with ADHD often describe battles that sound like small fashion wars.",
-  dateOfPost: "August 30, 2025",
-  content: {
-    headerImage: B6082501,
+    id: "B60825",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
     heading: "The ADHD Sensory Struggle: When Socks Ruin Mornings",
-    body: [
-      "If you’ve ever had a morning derailed by socks—yes, socks—you’re not alone. Parents of children with ADHD often describe battles that sound like small fashion wars: “This tag itches!” “These socks feel weird!” or “I can’t wear THAT shirt!” What looks like stubbornness is often something much deeper: sensory sensitivities. For children with ADHD, the world can feel louder, brighter, itchier, and sometimes unbearable.",
-      "The good news? With the right support—especially through Occupational Therapy (OT) for ADHD—kids can learn strategies to manage these struggles. Let’s unpack five common <strong>sensory sensitivities</strong> in ADHD and how OT can help."
-    ],
-    sections: [
-      {
-        heading: "1. Tactile Sensitivity (a.k.a. The Sock Saga)",
-        body: [
-          "<strong>What it looks like:</strong> Clothes that seem “fine” to you feel like sandpaper to your child. Seams in socks, shirt tags, or scratchy sweaters can trigger meltdowns.",
-          "<strong>Why it happens:</strong> The brain in ADHD often processes sensory input differently, amplifying tiny irritations.",
-          "<strong>How OT helps:</strong> Occupational therapists use sensory integration therapy—gradual exposure, play-based touch activities, and recommending seamless clothing options—to help children build tolerance without morning drama."
-        ]
-      },
-      {
-        heading: "2. Noise Sensitivity (The Vacuum Monster)",
-        body: [
-          "<strong>What it looks like:</strong> Everyday sounds—like the blender, vacuum, or even a classroom pencil sharpener—feel unbearably loud. Your child may cover their ears or run away.",
-          "<strong>Why it happens:</strong> Kids with ADHD may struggle to filter background noise, so all sounds compete for attention.",
-          "<strong>How OT helps:</strong> OTs introduce calming tools like noise-canceling headphones, teach coping strategies (deep breathing, movement breaks), and create structured routines to reduce sound-related anxiety."
-        ]
-      },
-      {
-        heading: "3. Movement Cravings (The Wiggly Wonder)",
-        body: [
-          "<strong>What it looks like:</strong> Constant climbing, bouncing, spinning, or fidgeting. Sitting still at school feels like a punishment.",
-          "<strong>Why it happens:</strong> ADHD often comes with a high need for vestibular (movement) and proprioceptive (body position) input.",
-          "<strong>How OT helps:</strong> Instead of fighting the wiggles, OTs channel them! Activities like swinging, jumping, or using fidget tools provide controlled movement. This helps regulate attention and supports hyperactivity treatment in everyday life."
-        ]
-      },
-      {
-        heading: "4. Taste & Texture Sensitivity (Picky Eating on Steroids)",
-        body: [
-          "<strong>What it looks like:</strong> Mealtime negotiations rival United Nations meetings. Your child gags at mushy textures, refuses crunchy foods, or insists on eating only beige-colored snacks.",
-          "<strong>Why it happens:</strong> Sensory defensiveness in the mouth makes certain textures overwhelming.",
-          "<strong>How OT helps:</strong> Through playful feeding therapy, OTs gradually introduce new textures, starting with tolerating them on the plate, then smelling, touching, and eventually tasting—making mealtimes less stressful."
-        ]
-      },
-      {
-        heading: "5. Visual Sensitivity (Bright Lights, Big Meltdowns)",
-        body: [
-          "<strong>What it looks like:</strong> Squinting under fluorescent lights, getting distracted by flickering screens, or struggling with visual clutter.",
-          "<strong>Why it happens:</strong> ADHD brains can be hyper-alert to visual input, making environments overstimulating.",
-          "<strong>How OT helps:</strong> Therapists may recommend softer lighting, visual schedules, and decluttered workspaces to reduce overwhelm and improve focus."
-        ]
-      }
-    ],
-    summary: [
-      {
-        type: "para",
-        item: [
-          "Hope Beyond the Socks",
-          "Living with ADHD doesn’t mean mornings have to be a battlefield. ADHD intervention through occupational therapy gives children practical tools to manage sensory challenges, making daily life smoother—for them and for you. Whether it’s seamless socks, calming strategies, or structured routines, OT helps children thrive in a world that sometimes feels “too much.”",
-          "So the next time your child declares socks as the ultimate enemy, remember—it’s not about the socks. It’s about their sensory world, and with the right support, mornings can shift from chaos to calm."
-        ]
-      }
-    ],
-    references: []
-  }
-},
+    cardImg: B6082501, // Replace with actual image import or URL
+    cardContent:
+      "If you’ve ever had a morning derailed by socks—yes, socks—you’re not alone. Parents of children with ADHD often describe battles that sound like small fashion wars.",
+    dateOfPost: "August 30, 2025",
+    content: {
+      headerImage: B6082501,
+      heading: "The ADHD Sensory Struggle: When Socks Ruin Mornings",
+      body: [
+        "If you’ve ever had a morning derailed by socks—yes, socks—you’re not alone. Parents of children with ADHD often describe battles that sound like small fashion wars: “This tag itches!” “These socks feel weird!” or “I can’t wear THAT shirt!” What looks like stubbornness is often something much deeper: sensory sensitivities. For children with ADHD, the world can feel louder, brighter, itchier, and sometimes unbearable.",
+        "The good news? With the right support—especially through Occupational Therapy (OT) for ADHD—kids can learn strategies to manage these struggles. Let’s unpack five common <strong>sensory sensitivities</strong> in ADHD and how OT can help."
+      ],
+      sections: [
+        {
+          heading: "1. Tactile Sensitivity (a.k.a. The Sock Saga)",
+          body: [
+            "<strong>What it looks like:</strong> Clothes that seem “fine” to you feel like sandpaper to your child. Seams in socks, shirt tags, or scratchy sweaters can trigger meltdowns.",
+            "<strong>Why it happens:</strong> The brain in ADHD often processes sensory input differently, amplifying tiny irritations.",
+            "<strong>How OT helps:</strong> Occupational therapists use sensory integration therapy—gradual exposure, play-based touch activities, and recommending seamless clothing options—to help children build tolerance without morning drama."
+          ]
+        },
+        {
+          heading: "2. Noise Sensitivity (The Vacuum Monster)",
+          body: [
+            "<strong>What it looks like:</strong> Everyday sounds—like the blender, vacuum, or even a classroom pencil sharpener—feel unbearably loud. Your child may cover their ears or run away.",
+            "<strong>Why it happens:</strong> Kids with ADHD may struggle to filter background noise, so all sounds compete for attention.",
+            "<strong>How OT helps:</strong> OTs introduce calming tools like noise-canceling headphones, teach coping strategies (deep breathing, movement breaks), and create structured routines to reduce sound-related anxiety."
+          ]
+        },
+        {
+          heading: "3. Movement Cravings (The Wiggly Wonder)",
+          body: [
+            "<strong>What it looks like:</strong> Constant climbing, bouncing, spinning, or fidgeting. Sitting still at school feels like a punishment.",
+            "<strong>Why it happens:</strong> ADHD often comes with a high need for vestibular (movement) and proprioceptive (body position) input.",
+            "<strong>How OT helps:</strong> Instead of fighting the wiggles, OTs channel them! Activities like swinging, jumping, or using fidget tools provide controlled movement. This helps regulate attention and supports hyperactivity treatment in everyday life."
+          ]
+        },
+        {
+          heading: "4. Taste & Texture Sensitivity (Picky Eating on Steroids)",
+          body: [
+            "<strong>What it looks like:</strong> Mealtime negotiations rival United Nations meetings. Your child gags at mushy textures, refuses crunchy foods, or insists on eating only beige-colored snacks.",
+            "<strong>Why it happens:</strong> Sensory defensiveness in the mouth makes certain textures overwhelming.",
+            "<strong>How OT helps:</strong> Through playful feeding therapy, OTs gradually introduce new textures, starting with tolerating them on the plate, then smelling, touching, and eventually tasting—making mealtimes less stressful."
+          ]
+        },
+        {
+          heading: "5. Visual Sensitivity (Bright Lights, Big Meltdowns)",
+          body: [
+            "<strong>What it looks like:</strong> Squinting under fluorescent lights, getting distracted by flickering screens, or struggling with visual clutter.",
+            "<strong>Why it happens:</strong> ADHD brains can be hyper-alert to visual input, making environments overstimulating.",
+            "<strong>How OT helps:</strong> Therapists may recommend softer lighting, visual schedules, and decluttered workspaces to reduce overwhelm and improve focus."
+          ]
+        }
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "Hope Beyond the Socks",
+            "Living with ADHD doesn’t mean mornings have to be a battlefield. ADHD intervention through occupational therapy gives children practical tools to manage sensory challenges, making daily life smoother—for them and for you. Whether it’s seamless socks, calming strategies, or structured routines, OT helps children thrive in a world that sometimes feels “too much.”",
+            "So the next time your child declares socks as the ultimate enemy, remember—it’s not about the socks. It’s about their sensory world, and with the right support, mornings can shift from chaos to calm."
+          ]
+        }
+      ],
+      references: []
+    }
+  },
 
-{
-  id: "B70725",
-  posted: {
-    name: "Vinodhini C",
-    profileImg: VINODHINI,
-  },
-  author: {
-    name: "Vinodhini C",
-    designation: "Lead Occupational Therapist",
-    workplace: "Rehab Rituals, Ekkatuthangal",
-    profileImg: VINODHINI,
-  },
-  heading: "Is It ADHD or Just High Energy?",
-  cardImg: B70925, // Replace with actual image import or URL
-  cardContent:
-    "Every parent knows that one child who never stops moving or exploring. But when does high energy cross the line into ADHD? Here’s a professional yet reassuring breakdown.",
-  dateOfPost: "October 2025",
-  content: {
-    headerImage: B7092501,
+  {
+    id: "B71025",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
     heading: "Is It ADHD or Just High Energy?",
-    body: [
-      "Every parent knows that one child who never stops moving, talking, or exploring. They’re bright, curious, and endlessly active — but sometimes that energy makes you pause. Is this just high energy, or could it be ADHD?",
-      "As pediatric occupational therapists, this is one of the most common questions we hear. And understandably so — the line between “active” and “attention difficulties” can feel blurry. Let’s break it down in a clear and reassuring way through an <strong>ADHD vs. High Energy</strong> comparison."
-    ],
-    sections: [
-      {
-        heading: "1. Focus: Can They Tune In or Do They Tune Out?",
-        body: [
-          "<strong>High Energy:</strong> The child can focus well when they’re interested — reading a favorite story, playing a game, or building with blocks. Their attention may drift with less-preferred tasks but returns with redirection.",
-          "<strong>ADHD:</strong> The difficulty is consistent and across situations. Even during engaging activities, the child is easily distracted, misses details, and struggles to sustain attention.",
-          "<strong>OT Insight:</strong> In ADHD, the challenge lies in self-regulating attention — not in motivation. Occupational therapy supports this through structured routines, sensory-based attention strategies, and environmental modifications."
-        ]
-      },
-      {
-        heading: "2. Activity Level: Lively or Overdriven?",
-        body: [
-          "<strong>High Energy:</strong> Movement is purposeful and flexible. They may run, jump, and fidget but can pause when asked or during calm activities.",
-          "<strong>ADHD:</strong> Activity feels constant and unregulated — as if the child is “driven by a motor.” They struggle to slow down even when it’s time for rest or focused work.",
-          "<strong>OT Approach:</strong> Therapists design hyperactivity treatment plans using sensory diets — intentional movement activities that satisfy sensory needs while teaching pacing and self-control."
-        ]
-      },
-      {
-        heading: "3. Impulsivity: Enthusiastic or Impulsive?",
-        body: [
-          "<strong>High Energy:</strong> Impulses occur occasionally — blurting out answers or interrupting — but the child learns from feedback and adjusts.",
-          "<strong>ADHD:</strong> Impulsivity is frequent and difficult to manage. The child may act before thinking, interrupt repeatedly, or take physical risks without awareness of consequences.",
-          "<strong>OT Role:</strong> Occupational therapy for ADHD integrates behavioral regulation techniques, mindfulness, and proprioceptive activities to strengthen self-awareness and impulse control."
-        ]
-      },
-      {
-        heading: "4. Attention Span: Variable or Persistently Short?",
-        body: [
-          "<strong>High Energy:</strong> Short attention spans appear during less-preferred or repetitive tasks. However, interest can sustain attention for long periods.",
-          "<strong>ADHD:</strong> Attention challenges are consistent across all settings — home, school, and play. The child often leaves tasks incomplete or moves quickly between activities.",
-          "<strong>Reference Insight:</strong> As described by Anderson & Godber (2003), ADHD symptoms must be persistent for six months or more and observed across multiple environments to warrant evaluation."
-        ]
-      },
-      {
-        heading: "5. Impact: Manageable or Disruptive?",
-        body: [
-          "<strong>High Energy:</strong> The child’s behavior may be tiring but remains within functional limits. They are socially engaged and responsive to structure.",
-          "<strong>ADHD:</strong> Symptoms significantly impact daily functioning — from school learning to friendships and self-esteem. Difficulties persist despite consistent parenting strategies or routines.",
-          "<strong>Therapeutic Focus:</strong> Early ADHD intervention can improve executive functioning, emotional regulation, and academic participation — helping children thrive in structured and playful settings."
-        ]
-      }
-    ],
-    summary: [
-      {
-        type: "para",
-        item: [
-          "When to Seek an Evaluation vs. When to Relax",
-          "• When to Relax: If your child’s activity and focus improve with rest, engagement, or gentle structure, it’s likely within normal developmental range.",
-          "• When to Evaluate: If challenges are persistent, cross-situational, and interfere with daily routines or relationships, consult a pediatrician or occupational therapist for an assessment.",
-          "High energy is a normal and often delightful part of childhood. ADHD, however, represents a neurodevelopmental difference that benefits from understanding and support.",
-          "With structured guidance and the right occupational therapy for ADHD, children can learn to channel their energy into focus, resilience, and meaningful participation — both at school and at home."
-        ]
-      }
-    ],
-    references: [
-      "Anderson, V., & Godber, T. (2003). Rethinking ADHD: Integrated Approaches to Helping Children at Home and at School. Allen & Unwin."
-    ]
-  }
-},
+    cardImg: B70925, // Replace with actual image import or URL
+    cardContent:
+      "Every parent knows that one child who never stops moving or exploring. But when does high energy cross the line into ADHD? Here’s a professional yet reassuring breakdown.",
+    dateOfPost: "October 18, 2025",
+    content: {
+      headerImage: B7092501,
+      heading: "Is It ADHD or Just High Energy?",
+      body: [
+        "Every parent knows that one child who never stops moving, talking, or exploring. They’re bright, curious, and endlessly active — but sometimes that energy makes you pause. Is this just high energy, or could it be ADHD?",
+        "As pediatric occupational therapists, this is one of the most common questions we hear. And understandably so — the line between “active” and “attention difficulties” can feel blurry. Let’s break it down in a clear and reassuring way through an <strong>ADHD vs. High Energy</strong> comparison."
+      ],
+      sections: [
+        {
+          heading: "1. Focus: Can They Tune In or Do They Tune Out?",
+          body: [
+            "<strong>High Energy:</strong> The child can focus well when they’re interested — reading a favorite story, playing a game, or building with blocks. Their attention may drift with less-preferred tasks but returns with redirection.",
+            "<strong>ADHD:</strong> The difficulty is consistent and across situations. Even during engaging activities, the child is easily distracted, misses details, and struggles to sustain attention.",
+            "<strong>OT Insight:</strong> In ADHD, the challenge lies in self-regulating attention — not in motivation. Occupational therapy supports this through structured routines, sensory-based attention strategies, and environmental modifications."
+          ]
+        },
+        {
+          heading: "2. Activity Level: Lively or Overdriven?",
+          body: [
+            "<strong>High Energy:</strong> Movement is purposeful and flexible. They may run, jump, and fidget but can pause when asked or during calm activities.",
+            "<strong>ADHD:</strong> Activity feels constant and unregulated — as if the child is “driven by a motor.” They struggle to slow down even when it’s time for rest or focused work.",
+            "<strong>OT Approach:</strong> Therapists design hyperactivity treatment plans using sensory diets — intentional movement activities that satisfy sensory needs while teaching pacing and self-control."
+          ]
+        },
+        {
+          heading: "3. Impulsivity: Enthusiastic or Impulsive?",
+          body: [
+            "<strong>High Energy:</strong> Impulses occur occasionally — blurting out answers or interrupting — but the child learns from feedback and adjusts.",
+            "<strong>ADHD:</strong> Impulsivity is frequent and difficult to manage. The child may act before thinking, interrupt repeatedly, or take physical risks without awareness of consequences.",
+            "<strong>OT Role:</strong> Occupational therapy for ADHD integrates behavioral regulation techniques, mindfulness, and proprioceptive activities to strengthen self-awareness and impulse control."
+          ]
+        },
+        {
+          heading: "4. Attention Span: Variable or Persistently Short?",
+          body: [
+            "<strong>High Energy:</strong> Short attention spans appear during less-preferred or repetitive tasks. However, interest can sustain attention for long periods.",
+            "<strong>ADHD:</strong> Attention challenges are consistent across all settings — home, school, and play. The child often leaves tasks incomplete or moves quickly between activities.",
+            "<strong>Reference Insight:</strong> As described by Anderson & Godber (2003), ADHD symptoms must be persistent for six months or more and observed across multiple environments to warrant evaluation."
+          ]
+        },
+        {
+          heading: "5. Impact: Manageable or Disruptive?",
+          body: [
+            "<strong>High Energy:</strong> The child’s behavior may be tiring but remains within functional limits. They are socially engaged and responsive to structure.",
+            "<strong>ADHD:</strong> Symptoms significantly impact daily functioning — from school learning to friendships and self-esteem. Difficulties persist despite consistent parenting strategies or routines.",
+            "<strong>Therapeutic Focus:</strong> Early ADHD intervention can improve executive functioning, emotional regulation, and academic participation — helping children thrive in structured and playful settings."
+          ]
+        }
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "When to Seek an Evaluation vs. When to Relax",
+            "• When to Relax: If your child’s activity and focus improve with rest, engagement, or gentle structure, it’s likely within normal developmental range.",
+            "• When to Evaluate: If challenges are persistent, cross-situational, and interfere with daily routines or relationships, consult a pediatrician or occupational therapist for an assessment.",
+            "High energy is a normal and often delightful part of childhood. ADHD, however, represents a neurodevelopmental difference that benefits from understanding and support.",
+            "With structured guidance and the right occupational therapy for ADHD, children can learn to channel their energy into focus, resilience, and meaningful participation — both at school and at home."
+          ]
+        }
+      ],
+      references: [
+        "Anderson, V., & Godber, T. (2003). Rethinking ADHD: Integrated Approaches to Helping Children at Home and at School. Allen & Unwin."
+      ]
+    }
+  },
 
-{
-  id: "B71025",
-  posted: {
-    name: "Vinodhini C",
-    profileImg: VINODHINI,
-  },
-  author: {
-    name: "Vinodhini C",
-    designation: "Lead Occupational Therapist",
-    workplace: "Rehab Rituals, Ekkatuthangal",
-    profileImg: VINODHINI,
-  },
-  heading: "Screen Time, Speech Delays & Sensory Tantrums: Is It All Connected?",
-  cardImg: B71025, // Replace with actual image import
-  cardContent:
-    "Screens soothe toddlers — but can they also contribute to speech delays or sensory meltdowns? Here’s the science-backed truth from occupational and speech therapists.",
-  dateOfPost: "November 2025",
-  content: {
-    headerImage: B7102501,
+  {
+    id: "B71125",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
     heading: "Screen Time, Speech Delays & Sensory Tantrums: Is It All Connected?",
-    body: [
-      "It starts innocently enough — a fussy toddler, a tired parent, and a magical glowing rectangle that buys you five minutes of peace. Soon, “just one cartoon” becomes the soundtrack of every mealtime, and you realize Peppa Pig speaks more to your child than you do.",
-      "So, are screens really to blame for speech delays and those mysterious sensory meltdowns? As occupational and speech therapists, the short answer is — yes, they can be connected, though not always in the way you think.",
-      "Let’s take a lighthearted but science-backed look at what’s really happening behind those glowing screens."
-    ],
-    sections: [
-      {
-        heading: "1. Speech Development Needs Real People, Not Pixels",
-        body: [
-          "Speech and language thrive on human interaction — facial expressions, turn-taking, and tone changes. When a child’s brain is still wiring itself, it needs live feedback — a smile, a response, a question — not just flashing lights and prerecorded words.",
-          "As Myra Kers (2017) explains, language learning is a social process rooted in responsive communication. Screens, however, offer one-way interaction. The child hears words but doesn’t practice back-and-forth conversation, which delays expressive and receptive language growth.",
-          "In short — your toddler might know how to “swipe,” but not how to “say hi.”"
-        ]
-      },
-      {
-        heading: "2. Sensory Overload: When the Brain Can’t Switch Off",
-        body: [
-          "Occupational therapists often see children who experience “sensory overstimulation” after too much screen time. Every beep, flash, and zoom triggers the brain’s alert system.",
-          "Over time, the nervous system adapts to that high-speed input — meaning calm, quiet play feels boring by comparison.",
-          "According to <em>Tech Generation</em> (Uhls & Lasser, 2019), constant digital stimulation disrupts the brain’s ability to self-regulate, increasing tantrums, impulsivity, and attention difficulties. Some children even show ADHD-like symptoms — not because they have ADHD, but because their sensory system has been trained for instant reward and fast feedback."
-        ]
-      },
-      {
-        heading: "3. The Screen–Attention–Language Loop",
-        body: [
-          "Here’s where things overlap:",
-          "● Screen time replaces play, reducing real-world sensory exploration.",
-          "● Less play means fewer chances to build attention and imagination.",
-          "● Poor attention and imagination directly affect language organization and comprehension.",
-          "Dr. Douglas Gentile’s research (cited in <em>Tech Generation</em>, 2019) found a bidirectional relationship between heavy screen use and attention problems — more screen time predicts more inattention, which then leads to even more screen-seeking.",
-          "It’s a sensory spiral many families find themselves in."
-        ]
-      },
-      {
-        heading: "4. The Role of Occupational Therapy: Rebalancing the Senses",
-        body: [
-          "Occupational therapy (OT) doesn’t just limit screen time — it rebuilds balance. Through sensory play, movement-based regulation, and parent education, OTs help children strengthen real-world engagement skills:",
-          "● Tactile play (sand, clay, textures) to ground sensory systems.",
-          "● Movement breaks to reduce restlessness.",
-          "● Interactive communication games to build attention and connection.",
-          "● Screen-free routines that reintroduce rhythm, eye contact, and calm.",
-          "When screens become a substitute for regulation, OT restores the child’s internal balance — teaching them how to process the world without a glowing crutch."
-        ]
-      },
-      {
-        heading: "5. So, Should You Panic? Absolutely Not.",
-        body: [
-          "Screens aren’t evil; they’re tools. The key, as Uhls & Lasser (2019) emphasize, is balance and mindful modeling.",
-          "Children mirror what they see — so if we scroll less and talk more, they follow.",
-          "Use screens with your child — talk about what they see, pause, ask questions. Make sure screen time doesn’t replace playtime, mealtime conversations, or cuddle time.",
-          "Because ultimately, children learn language not from what’s on the screen — but from who’s on the other side of it."
-        ]
-      }
-    ],
-    summary: [
-      {
-        type: "para",
-        item: [
-          "Screen time becomes a problem only when it replaces real-world interaction, sensory play, or communication.",
-          "With the right balance — and support from occupational and speech therapy when needed — children can build stronger language, attention, and regulation skills.",
-          "The goal isn’t to eliminate screens, but to ensure they don’t replace the rich human experiences children need to grow."
-        ]
-      }
-    ],
-    references: [
-      "Uhls, Y., & Lasser, J. (2019). Tech Generation: Raising Balanced Kids in a Hyper-Connected World. Oxford University Press.",
-      "Kers, M. (2017). Speech and Language Therapy. Routledge."
-    ]
-  }
-},
+    cardImg: B71025, // Replace with actual image import
+    cardContent:
+      "Screens soothe toddlers — but can they also contribute to speech delays or sensory meltdowns? Here’s the science-backed truth from occupational and speech therapists.",
+    dateOfPost: "November 8, 2025",
+    content: {
+      headerImage: B7102501,
+      heading: "Screen Time, Speech Delays & Sensory Tantrums: Is It All Connected?",
+      body: [
+        "It starts innocently enough — a fussy toddler, a tired parent, and a magical glowing rectangle that buys you five minutes of peace. Soon, “just one cartoon” becomes the soundtrack of every mealtime, and you realize Peppa Pig speaks more to your child than you do.",
+        "So, are screens really to blame for speech delays and those mysterious sensory meltdowns? As occupational and speech therapists, the short answer is — yes, they can be connected, though not always in the way you think.",
+        "Let’s take a lighthearted but science-backed look at what’s really happening behind those glowing screens."
+      ],
+      sections: [
+        {
+          heading: "1. Speech Development Needs Real People, Not Pixels",
+          body: [
+            "Speech and language thrive on human interaction — facial expressions, turn-taking, and tone changes. When a child’s brain is still wiring itself, it needs live feedback — a smile, a response, a question — not just flashing lights and prerecorded words.",
+            "As Myra Kers (2017) explains, language learning is a social process rooted in responsive communication. Screens, however, offer one-way interaction. The child hears words but doesn’t practice back-and-forth conversation, which delays expressive and receptive language growth.",
+            "In short — your toddler might know how to “swipe,” but not how to “say hi.”"
+          ]
+        },
+        {
+          heading: "2. Sensory Overload: When the Brain Can’t Switch Off",
+          body: [
+            "Occupational therapists often see children who experience “sensory overstimulation” after too much screen time. Every beep, flash, and zoom triggers the brain’s alert system.",
+            "Over time, the nervous system adapts to that high-speed input — meaning calm, quiet play feels boring by comparison.",
+            "According to <em>Tech Generation</em> (Uhls & Lasser, 2019), constant digital stimulation disrupts the brain’s ability to self-regulate, increasing tantrums, impulsivity, and attention difficulties. Some children even show ADHD-like symptoms — not because they have ADHD, but because their sensory system has been trained for instant reward and fast feedback."
+          ]
+        },
+        {
+          heading: "3. The Screen–Attention–Language Loop",
+          body: [
+            "Here’s where things overlap:",
+            "● Screen time replaces play, reducing real-world sensory exploration.",
+            "● Less play means fewer chances to build attention and imagination.",
+            "● Poor attention and imagination directly affect language organization and comprehension.",
+            "Dr. Douglas Gentile’s research (cited in <em>Tech Generation</em>, 2019) found a bidirectional relationship between heavy screen use and attention problems — more screen time predicts more inattention, which then leads to even more screen-seeking.",
+            "It’s a sensory spiral many families find themselves in."
+          ]
+        },
+        {
+          heading: "4. The Role of Occupational Therapy: Rebalancing the Senses",
+          body: [
+            "Occupational therapy (OT) doesn’t just limit screen time — it rebuilds balance. Through sensory play, movement-based regulation, and parent education, OTs help children strengthen real-world engagement skills:",
+            "● Tactile play (sand, clay, textures) to ground sensory systems.",
+            "● Movement breaks to reduce restlessness.",
+            "● Interactive communication games to build attention and connection.",
+            "● Screen-free routines that reintroduce rhythm, eye contact, and calm.",
+            "When screens become a substitute for regulation, OT restores the child’s internal balance — teaching them how to process the world without a glowing crutch."
+          ]
+        },
+        {
+          heading: "5. So, Should You Panic? Absolutely Not.",
+          body: [
+            "Screens aren’t evil; they’re tools. The key, as Uhls & Lasser (2019) emphasize, is balance and mindful modeling.",
+            "Children mirror what they see — so if we scroll less and talk more, they follow.",
+            "Use screens with your child — talk about what they see, pause, ask questions. Make sure screen time doesn’t replace playtime, mealtime conversations, or cuddle time.",
+            "Because ultimately, children learn language not from what’s on the screen — but from who’s on the other side of it."
+          ]
+        }
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "Screen time becomes a problem only when it replaces real-world interaction, sensory play, or communication.",
+            "With the right balance — and support from occupational and speech therapy when needed — children can build stronger language, attention, and regulation skills.",
+            "The goal isn’t to eliminate screens, but to ensure they don’t replace the rich human experiences children need to grow."
+          ]
+        }
+      ],
+      references: [
+        "Uhls, Y., & Lasser, J. (2019). Tech Generation: Raising Balanced Kids in a Hyper-Connected World. Oxford University Press.",
+        "Kers, M. (2017). Speech and Language Therapy. Routledge."
+      ]
+    }
+  },
+
+  {
+    id: "B91225",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
+    heading: "What Is Snoezelen Therapy and Why Does My Child Love It?",
+    cardImg: B91225,
+    cardContent:
+      "Soft lights, calming music, and sensory magic — discover why Snoezelen therapy feels like play but works like powerful occupational therapy.",
+    dateOfPost: "December 13, 2025",
+    content: {
+      headerImage: B9122501,
+      heading: "What Is Snoezelen Therapy and Why Does My Child Love It?",
+      body: [
+        "If you’ve ever stepped into a Snoezelen room, you know — it feels like magic. Soft lights swirl, calming music hums, gentle aromas fill the air, and suddenly your child shifts from restless explorer to peaceful participant.",
+        "But what exactly is happening in this enchanting space?",
+        "Welcome to the world of <strong>Snoezelen therapy</strong> — a cornerstone of <strong>occupational therapy</strong> for children with sensory, developmental, and behavioral challenges."
+      ],
+      sections: [
+        {
+          heading: "What Is Snoezelen Therapy?",
+          body: [
+            "Originating in the Netherlands in the 1970s, Snoezelen combines two Dutch words — <strong>“snuffelen”</strong> (to explore) and <strong>“doezelen”</strong> (to relax). Also known as <strong>Multi-Sensory Stimulation Therapy</strong>, it engages the senses in a safe, soothing, and controlled environment.",
+            "A Snoezelen room typically includes calming lights, fiber optics, bubble tubes, aromatherapy, textured materials, and music — all thoughtfully curated by trained occupational therapists.",
+            "As described in the Snoezelen Toolkit (St. Joseph’s Care Group, 2015), this approach offers a “failure-free experience,” allowing children to explore and relax without pressure or expectations.",
+            "Simply put — it’s therapy disguised as wonder."
+          ]
+        },
+        {
+          heading: "Why Does Snoezelen Therapy Work?",
+          body: [
+            "Children with autism, ADHD, sensory processing difficulties, or developmental delays often experience the world more intensely than others.",
+            "The Snoezelen environment provides <strong>structured sensory</strong> input that helps calm overstimulated nervous systems or gently awaken under-responsive ones.",
+            "According to Snoezelen in Action (2018), the combined tactile, visual, and auditory stimulation supports <strong>sensory integration</strong>, improving focus, calmness, and self-regulation.",
+            "For a child overwhelmed by everyday sensations — itchy clothing tags, bright lights, or loud sounds — the Snoezelen room offers guided, gentle exposure under professional supervision.",
+            "It’s like pressing a reset button for the nervous system."
+          ]
+        },
+        {
+          heading: "Key Benefits of Snoezelen Therapy",
+          body: [
+            "● <strong>Sensory Regulation</strong> — Balances over- or under-responsiveness to sensory input.",
+            "● <strong>Improved Focus and Attention</strong> — Enhances cognitive engagement through graded stimulation.",
+            "● <strong>Reduced Anxiety and Agitation</strong> — Promotes emotional safety and relaxation.",
+            "● <strong>Enhanced Communication</strong> — Encourages nonverbal interaction using light, sound, and touch.",
+            "● <strong>Better Sleep and Behavior</strong> — Supports calmer routines and self-regulation.",
+            "● <strong>Social Connection</strong> — Builds trust between child, therapist, and parent.",
+            "● <strong>Creativity and Exploration</strong> — Allows free exploration without fear of failure.",
+            "● <strong>Therapeutic Engagement</strong> — Prepares children for more structured therapy sessions."
+
+          ]
+        },
+        {
+          heading: "Snoezelen Therapy at Rehab Rituals",
+          body: [
+            "At <strong>Rehab Rituals, Chennai</strong>, our Snoezelen room is thoughtfully designed as an oasis of calm and discovery.",
+            "Under the guidance of experienced <strong>occupational therapists</strong>, children embark on sensory journeys that support <strong>early intervention</strong> and long-term <strong>developmental growth</strong>.",
+            "Whether it’s watching bubbles rise, tracing glowing fiber optic strands, or simply resting under soothing lights — every moment is designed to support healing, learning, and regulation."
+          ]
+        },
+        {
+          heading: "The Takeaway",
+          body: [
+            "Snoezelen therapy reminds us that therapy doesn’t have to feel clinical or stressful.",
+            "When therapy feels joyful, calming, and safe, children engage naturally — and meaningful progress follows.",
+            "So the next time your child asks, “Can we go to the light room again?”, smile.",
+            "You’re witnessing the power of sensory wonder at work."
+          ]
+        }
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "Snoezelen therapy offers a calming, failure-free sensory experience for children with sensory and developmental challenges.",
+            "Through structured multi-sensory input, children develop better regulation, attention, communication, and emotional safety.",
+            "When therapy feels magical, engagement becomes effortless — and growth becomes natural."
+          ]
+        }
+      ],
+      references: [
+        "Snoezelen Toolkit, St. Joseph’s Care Group, 2015",
+        "Snoezelen_Toolkit-Jan25",
+        "Snoezelen in Action, 2018",
+        "Presentación Manual Salas Snoezelen (Ortotecsa), 2019"
+      ]
+    }
+  },
+
+  {
+    id: "B91026",
+    posted: {
+      name: "Vinodhini C",
+      profileImg: VINODHINI,
+    },
+    author: {
+      name: "Vinodhini C",
+      designation: "Lead Occupational Therapist",
+      workplace: "Rehab Rituals, Ekkatuthangal",
+      profileImg: VINODHINI,
+    },
+    heading: "The Power of Early Intervention: Why Starting Therapy Young Changes Everything",
+    cardImg: B101225,
+    cardContent:
+      "A child’s earliest years shape everything that follows. Discover why starting therapy early can transform development, independence, and lifelong outcomes.",
+    dateOfPost: "December 27, 2026",
+    content: {
+      headerImage: B10122501,
+      heading: "The Power of Early Intervention: Why Starting Therapy Young Changes Everything",
+      body: [
+        "A child’s first few years are like the opening act of a lifelong play. Every scene — rolling over, babbling, reaching, playing — lays the foundation for what’s to come.When developmental milestones don’t appear on schedule, <strong>early intervention</strong> becomes the hero that steps in before the story drifts off course.",
+        "Early intervention isn’t just about therapy — it’s about giving children with developmental delays the right start at the right time.Research from the <strong>Royal Australasian College of Physicians (2013)</strong> and <strong>Sass-Lehrer (2015)</strong> shows that timely support can significantly alter a child’s developmental trajectory and reduce future learning and behavioral challenges.",
+        "So, why does starting early make such a difference? Here are <strong>8 powerful reasons</strong> why early ntervention changes everything—especially when guided by expert <strong>occupational therapy for children. </strong>"
+      ],
+      sections: [
+        {
+          heading: "1. The Brain Loves Timing",
+          body: [
+            "The first few years of life are a period of rapid brain growth, when neural connections form faster than at any other stage.Early intervention taps into this powerful window of neuroplasticity, helping children learn skills more efficiently and retain them long-term."
+          ]
+        },
+        {
+          heading: "2. It Builds Everyday Independence",
+          body: [
+            "rom holding a spoon to zipping a jacket,<strong>Occupational therapy</strong> focuses on practical daily skills — from holding a spoon to zipping a jacket.When therapy starts early, these motor and self-help abilities become second nature, building independence and confidence."
+          ]
+        },
+        {
+          heading: "3. It Prevents Secondary Problems",
+          body: [
+            "Developmental delays can lead to frustration, anxiety, and behavioral challenges if left unaddressed.Early support prevents these secondary issues by addressing root difficulties in communication, movement, and engagement before they escalate."
+          ]
+        },
+        {
+          heading: "4. Families Become Empowered",
+          body: [
+            "Parents are a child’s first and most important therapists.As highlighted by <strong>Sass-Lehrer (2015)</strong>, early intervention is family-centered — equipping caregivers to embed therapy strategies into play, routines, and everyday interactions.",
+            "This ensures therapy continues well beyond the clinic session."
+          ]
+        },
+        {
+          heading: "5. It’s Cost-Effective (Really!)",
+          body: [
+            "Research consistently shows that early investment reduces long-term costs in education and healthcare.Supporting a child at age two can prevent the need for intensive services later in childhood — true developmental preventive care."
+          ]
+        },
+        {
+          heading: "6. It Encourages Inclusion",
+          body: [
+            "Children who receive early therapy are better prepared to participate in preschool, playgroups, and community settings.Inclusion strengthens social skills, confidence, and a sense of belonging — all vital for emotional well-being."
+          ]
+        },
+        {
+          heading: "7. It Strengthens Communication",
+          body: [
+            "Whether through words, gestures, or assistive communication, early therapy helps children find their voice.Occupational and speech therapists often collaborate to support language, sensory processing, and attention together."
+          ]
+        },
+        {
+          heading: "8. It Shapes Lifelong Outcomes",
+          body: [
+            "Early intervention isn’t about fixing a delay — it’s about shaping a life.When children learn to explore, problem-solve, and self-regulate early, those skills carry forward into school and adulthood."
+          ]
+        },
+        {
+          heading: "The OT Perspective: Learning Through Play",
+          body: [
+            "Occupational therapy blends science with play.Using activity-based approaches (Johnson, Rahn & Bricker, 2015), therapists embed developmental goals into everyday routines — painting, stacking blocks, or snack time.These natural, playful experiences make therapy both engaging and highly effective."
+          ]
+        },
+        {
+          heading: "The Takeaway",
+          body: [
+            "Early intervention is hope in action — bridging potential with possibility.Whether a child has a mild delay or a diagnosed condition, starting therapy early builds stronger foundations for life.",
+            "If you’re wondering whether to “wait and see,” remember: the earlier we start, the stronger the future we build."
+          ]
+        }
+      ],
+      summary: [
+        {
+          type: "para",
+          item: [
+            "Early intervention leverages the brain’s natural plasticity to support faster and more lasting development.Family-centered, play-based therapy empowers both children and caregivers.",
+            "Starting early doesn’t just change outcomes — it changes lives."
+          ]
+        }
+      ],
+      references: [
+        "Royal Australasian College of Physicians. (2013). Early Intervention for Children with Developmental Disabilities.",
+        "Sass-Lehrer, M. (2015). Early Intervention for Children Birth to 3: Families, Communities & Communication.",
+        "Johnson, J.J., Rahn, N.L., & Bricker, D. (2015). An Activity-Based Approach to Early Intervention (4th Ed.). Paul H. Brookes Publishing."
+      ]
+    }
+  },
+
 ];
