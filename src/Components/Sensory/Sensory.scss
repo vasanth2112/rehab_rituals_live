@@ -1,0 +1,1762 @@
+.sensory-page-wrapper {
+  background-color: #f7f9fc;
+  font-family: "Josefin Sans", sans-serif;
+  color: #333;
+  overflow: hidden;
+
+  // Global utilities
+  .text-center {
+    text-align: center;
+  }
+
+  .max-w-700 {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .max-w-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Hero section
+  .sensory-hero {
+    background: linear-gradient(135deg, rgba(0, 40, 100, 0.85), rgba(0, 80, 120, 0.75)),
+      url("/header/therapy-child.jpg") center/cover no-repeat;
+    padding: 140px 0 80px 0;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+
+    .back-btn {
+      position: fixed;
+      top: 25px;
+      left: 30px;
+      margin: 0;
+      color: #004aad;
+      font-family: "Lexend", sans-serif;
+      text-transform: none;
+      border: 1px solid rgba(0, 74, 173, 0.2);
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 9999;
+      font-weight: 700;
+      border-radius: 30px;
+      padding: 8px 20px;
+      box-shadow: 0 4px 15px rgba(0, 74, 173, 0.15);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        background-color: #004aad;
+        color: #fff;
+        border-color: #004aad;
+        box-shadow: 0 8px 25px rgba(0, 74, 173, 0.3);
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 600px) {
+        top: 15px;
+        left: 15px;
+        font-size: 0.8rem;
+        padding: 5px 12px;
+      }
+    }
+
+    .hero-content {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: rgba(10, 25, 47, 0.55);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 45px 35px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(93, 225, 233, 0.4);
+        box-shadow: 0 25px 60px rgba(93, 225, 233, 0.15);
+      }
+
+      @media (max-width: 600px) {
+        padding: 30px 20px;
+        border-radius: 16px;
+      }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, rgba(93, 225, 233, 0.25), rgba(0, 150, 160, 0.35));
+      border: 1.5px solid rgba(93, 225, 233, 0.55);
+      color: #5de1e9;
+      font-family: "Lexend", sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      box-shadow: 0 0 15px rgba(93, 225, 233, 0.25);
+      animation: pulse-glow 2.5s infinite alternate;
+    }
+
+    @keyframes pulse-glow {
+      from {
+        box-shadow: 0 0 10px rgba(93, 225, 233, 0.2);
+        border-color: rgba(93, 225, 233, 0.4);
+      }
+
+      to {
+        box-shadow: 0 0 20px rgba(93, 225, 233, 0.5);
+        border-color: rgba(93, 225, 233, 0.8);
+      }
+    }
+
+    .sensory-title {
+      font-family: "Cinzel", serif;
+      font-weight: 800;
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+
+      span {
+        background: linear-gradient(135deg, #5de1e9 20%, #00f5ff 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        text-shadow: none;
+        display: inline-block;
+      }
+    }
+
+    .hero-headline {
+      font-family: "Lilita One", sans-serif;
+      font-size: clamp(1.4rem, 4vw, 2.5rem);
+      color: #ffb300;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-tagline {
+      font-family: "Josefin Sans", sans-serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 2.8vw, 1.7rem);
+      font-weight: 400;
+      max-width: 820px;
+      margin-bottom: 25px;
+      color: #e0f7fa;
+      line-height: 1.45;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-intro {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: clamp(0.95rem, 2vw, 1.25rem);
+      font-weight: 400;
+      max-width: 780px;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.65;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  // Common Section Titles
+  .section-title {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    color: #004aad;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .section-subtitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  // Concepts section
+  .sensory-concepts {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 74, 173, 0.05);
+
+    .concepts-grid {
+      margin-top: -30px;
+    }
+
+    .concept-card {
+      height: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(0, 74, 173, 0.04);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 74, 173, 0.08);
+      }
+
+      .concept-icon-wrap {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        color: #fff;
+
+        svg {
+          font-size: 24px;
+        }
+
+        &.bg-blue {
+          background-color: #004aad;
+        }
+
+        &.bg-teal {
+          background-color: #00a0a0;
+        }
+
+        &.bg-orange {
+          background-color: #ff7c3b;
+        }
+
+        &.bg-pink {
+          background-color: #e84855;
+        }
+      }
+
+      .concept-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .concept-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #666;
+
+        strong {
+          color: #004aad;
+        }
+      }
+    }
+  }
+
+  // Multidimensional Model Section
+  .sensory-multidimensional-model {
+    padding: 80px 0;
+    background-color: #f8fafc;
+
+    .model-container {
+      margin-top: 20px;
+    }
+
+    .interactive-diagram-wrapper {
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto;
+
+      .concentric-svg {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+
+        // Rings
+        .ring-line {
+          fill: none;
+          stroke-dasharray: 6 6;
+          transition: stroke 0.3s;
+        }
+
+        .supporting-ring {
+          stroke: #5de1e9;
+          stroke-width: 2.5;
+          opacity: 0.5;
+        }
+
+        .core-ring {
+          stroke: #90a4ae;
+          stroke-width: 2.5;
+          opacity: 0.6;
+        }
+
+        // Headers
+        .ring-label-header {
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 10px;
+          letter-spacing: 2px;
+          opacity: 0.7;
+        }
+
+        .supporting-header {
+          fill: #00a0a0;
+        }
+
+        .core-header {
+          fill: #546e7a;
+        }
+
+        // Node groups
+        .node-group {
+          cursor: pointer;
+
+          .node-circle {
+            transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), fill 0.3s, stroke 0.3s, filter 0.3s;
+            stroke-width: 2;
+          }
+
+          &.active {
+            .node-circle {
+              transform: scale(1.1);
+            }
+          }
+
+          &:hover {
+            .node-circle {
+              transform: scale(1.15);
+            }
+          }
+
+          .node-text {
+            font-family: "Lexend", sans-serif;
+            font-size: 8px;
+            font-weight: 700;
+            fill: #333;
+            pointer-events: none;
+            line-height: 1;
+          }
+        }
+
+        // Center Child
+        .center-child {
+          cursor: default;
+
+          &:hover {
+            transform: none;
+          }
+
+          .center-node {
+            fill: #004aad;
+            stroke: #fff;
+            stroke-width: 3;
+            filter: drop-shadow(0 0 12px rgba(0, 74, 173, 0.4));
+          }
+
+          .center-text {
+            font-family: "Lilita One", sans-serif;
+            font-size: 14px;
+            fill: #fff;
+            letter-spacing: 0.5px;
+          }
+        }
+
+        // Core Nodes
+        .core-node-group {
+          .core-circle {
+            fill: #eceff1;
+            stroke: #90a4ae;
+          }
+
+          .core-text {
+            fill: #37474f;
+          }
+
+          &.active {
+            .core-circle {
+              fill: #90a4ae;
+              stroke: #004aad;
+              filter: drop-shadow(0 0 8px rgba(0, 74, 173, 0.3));
+            }
+
+            .core-text {
+              fill: #fff;
+            }
+          }
+        }
+
+        // Supporting Nodes
+        .supporting-node-group {
+          .supporting-circle {
+            fill: #fff3f8;
+            stroke: #ffb7d2;
+          }
+
+          .supporting-text {
+            fill: #880e4f;
+          }
+
+          &.active {
+            .supporting-circle {
+              fill: #ffb7d2;
+              stroke: #00a0a0;
+              filter: drop-shadow(0 0 8px rgba(0, 160, 160, 0.3));
+            }
+
+            .supporting-text {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .tap-hint {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #777;
+      margin-top: 15px;
+    }
+
+    // Info panel
+    .model-info-panel {
+      background-color: #fff;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 74, 173, 0.06);
+      border: 1px solid rgba(0, 74, 173, 0.06);
+
+      .panel-badge {
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        &.core-perspective {
+          background-color: rgba(144, 164, 174, 0.15);
+          color: #37474f;
+        }
+
+        &.supporting-perspective {
+          background-color: rgba(255, 183, 210, 0.15);
+          color: #c2185b;
+        }
+      }
+
+      .panel-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.6rem;
+        color: #004aad;
+        margin-bottom: 15px;
+        font-weight: 400;
+        line-height: 1.3;
+      }
+
+      .panel-desc {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 25px;
+      }
+
+      .panel-quick-nav {
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+
+        p {
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          font-size: 0.85rem;
+          color: #777;
+          margin-bottom: 10px;
+        }
+
+        .quick-nav-btns {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+
+          .quick-btn {
+            background-color: #f1f3f5;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+              background-color: #e9ecef;
+            }
+
+            &.active {
+              background-color: #004aad;
+              color: #fff;
+              border-color: #004aad;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // The 4 Phases Section
+  .sensory-phases {
+    padding: 80px 0;
+    background-color: #fff;
+
+    .phases-header {
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      color: #ff7c3b;
+      font-size: 1.6rem;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      letter-spacing: 0.5px;
+    }
+
+    .phases-grid {
+      margin-top: 10px;
+    }
+
+    .phase-card {
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      // Color coding borders
+      &.border-phase-1 {
+        border: 2px solid #ffab91;
+      }
+
+      &.border-phase-2 {
+        border: 2px solid #ffe082;
+      }
+
+      &.border-phase-3 {
+        border: 2px solid #a5d6a7;
+      }
+
+      &.border-phase-4 {
+        border: 2px solid #9fa8da;
+      }
+
+      .phase-number {
+        display: inline-block;
+        padding: 4px 14px;
+        border-radius: 20px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        font-size: 0.75rem;
+        color: #fff;
+        margin-bottom: 15px;
+
+        &.bg-phase-1 {
+          background-color: #ff5722;
+        }
+
+        &.bg-phase-2 {
+          background-color: #ffb300;
+        }
+
+        &.bg-phase-3 {
+          background-color: #4caf50;
+        }
+
+        &.bg-phase-4 {
+          background-color: #3f51b5;
+        }
+      }
+
+      .phase-card-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .phase-focus {
+        font-size: 0.95rem;
+        line-height: 1.45;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .phase-notice-box {
+        background-color: #fafbfc;
+        padding: 15px;
+        border-radius: 12px;
+        border: 1px solid #f1f3f5;
+
+        .notice-label {
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 0.8rem;
+          color: #004aad;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .notice-list {
+          padding-left: 20px;
+          margin: 0;
+
+          li {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 8px;
+            line-height: 1.4;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .phase-footer-cta {
+      margin-top: 50px;
+      padding: 30px;
+      background-color: #f7f9fc;
+      border-radius: 20px;
+      border: 1px dashed rgba(0, 74, 173, 0.15);
+
+      .phase-footer-quote {
+        font-size: 1.15rem;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .phase-quiz-trigger-btn {
+        background: linear-gradient(135deg, #ff7c3b, #ff5722);
+        color: #fff;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        text-transform: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 1rem;
+        box-shadow: 0 4px 15px rgba(255, 124, 59, 0.2);
+
+        &:hover {
+          background: linear-gradient(135deg, #ff5722, #e64a19);
+        }
+      }
+    }
+  }
+
+  // Roadmap Section
+  .sensory-roadmap {
+    padding: 80px 0;
+    background-color: rgba(93, 225, 233, 0.08);
+
+    .roadmap-stepper-container {
+      position: relative;
+      margin-top: 40px;
+      padding: 20px 0;
+
+      .roadmap-line {
+        position: absolute;
+        top: 40px;
+        left: 10%;
+        right: 10%;
+        height: 4px;
+        background-color: #ffab91;
+        z-index: 1;
+
+        @media (max-width: 600px) {
+          display: none; // Disable line on mobile stack
+        }
+      }
+
+      .roadmap-grid {
+        position: relative;
+        z-index: 2;
+      }
+
+      .roadmap-node-col {
+        @media (max-width: 600px) {
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .roadmap-node {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+
+        .node-num {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background-color: #ff5722;
+          color: #fff;
+          font-family: "Lilita One", sans-serif;
+          font-size: 1.4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+          border: 4px solid #fff;
+          margin-bottom: 15px;
+        }
+
+        .node-name {
+          font-family: "Lilita One", sans-serif;
+          font-size: 1.15rem;
+          color: #004aad;
+          margin-bottom: 8px;
+          font-weight: 400;
+          line-height: 1.2;
+        }
+
+        .node-desc {
+          font-size: 0.85rem;
+          line-height: 1.4;
+          color: #666;
+        }
+      }
+    }
+
+    .roadmap-ctas {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .roadmap-btn-download {
+        background-color: #004aad;
+        color: #fff;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        text-transform: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+
+        &:hover {
+          background-color: #003680;
+        }
+      }
+
+      .roadmap-btn-book {
+        background-color: #64B161;
+        color: #fff;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        text-transform: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+
+        &:hover {
+          background-color: #4caf50;
+        }
+      }
+    }
+  }
+
+  // Integrated Goal System
+  .sensory-integrated-goals {
+    padding: 80px 0;
+    background-color: #fff;
+
+    .comparison-grid {
+      margin-top: 30px;
+    }
+
+    .comparison-card {
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.03);
+
+      &.traditional-border {
+        border: 2px solid #ef9a9a;
+      }
+
+      &.integrated-border {
+        border: 2px solid #a5d6a7;
+      }
+
+      .comparison-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        font-weight: 400;
+
+        &.traditional-color {
+          color: #c62828;
+        }
+
+        &.integrated-color {
+          color: #2e7d32;
+        }
+      }
+
+      .comparison-lead {
+        font-family: "Lexend", sans-serif;
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .comparison-list {
+        padding-left: 20px;
+        margin-bottom: 25px;
+
+        li {
+          font-size: 0.95rem;
+          color: #666;
+          margin-bottom: 8px;
+          line-height: 1.5;
+        }
+
+        &.traditional-list li::marker {
+          color: #c62828;
+        }
+
+        &.integrated-list li::marker {
+          color: #2e7d32;
+        }
+      }
+
+      .comparison-result {
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+
+        p {
+          margin: 0;
+        }
+
+        &.bg-traditional-light {
+          background-color: #ffebee;
+          color: #c62828;
+        }
+
+        &.bg-integrated-light {
+          background-color: #e8f5e9;
+          color: #2e7d32;
+        }
+      }
+    }
+
+    // Five Pink Areas Grid
+    .development-areas-block {
+      margin-top: 60px;
+      background-color: #fff5f8;
+      border: 1px solid #ffd1e1;
+      padding: 35px 20px;
+      border-radius: 20px;
+
+      .areas-block-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.4rem;
+        color: #c2185b;
+        margin-bottom: 25px;
+        font-weight: 400;
+      }
+
+      .areas-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+        .area-pill {
+          background-color: #ffccd9;
+          border: 1.5px solid #ffb3c6;
+          color: #c2185b;
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 0.9rem;
+          padding: 10px 24px;
+          border-radius: 30px;
+          box-shadow: 0 2px 8px rgba(194, 24, 91, 0.15);
+          text-align: center;
+          transition: transform 0.2s;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    // Same Goal Diagram
+    .same-goal-diagram-container {
+      margin-top: 70px;
+
+      .diagram-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.8rem;
+        color: #004aad;
+        margin-bottom: 5px;
+        font-weight: 400;
+      }
+
+      .diagram-subtitle {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 40px;
+      }
+
+      .interactive-diagram-box {
+        background: linear-gradient(135deg, #e0f7fa, #e0f2f1);
+        border: 2px solid #5de1e9;
+        padding: 50px 30px;
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0, 160, 160, 0.08);
+
+        .central-goal-circle {
+          background-color: #80deea;
+          border: 4px solid #00acc1;
+          color: #006064;
+          width: 220px;
+          height: 220px;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+          box-shadow: 0 8px 25px rgba(0, 172, 193, 0.25);
+          box-sizing: border-box;
+
+          .goal-tag {
+            font-family: "Lexend", sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: #006064;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+          }
+
+          .goal-main-text {
+            font-family: "Lilita One", sans-serif;
+            font-size: 1.35rem;
+            font-weight: 400;
+            line-height: 1.3;
+          }
+
+          @media (max-width: 960px) {
+            margin-bottom: 30px;
+          }
+        }
+
+        .branches-col {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .branch-card {
+          background-color: #fff;
+          border-radius: 16px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+          overflow: hidden;
+          border: 1px solid rgba(0, 172, 193, 0.15);
+
+          .branch-header {
+            font-family: "Lilita One", sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            padding: 8px 20px;
+            color: #fff;
+
+            &.ot-color-header {
+              background-color: #00a0a0;
+            }
+
+            &.speech-color-header {
+              background-color: #00acc1;
+            }
+
+            &.behavior-color-header {
+              background-color: #0097a7;
+            }
+          }
+
+          .branch-body {
+            padding: 15px 20px;
+
+            ul {
+              margin: 0;
+              padding-left: 20px;
+
+              li {
+                font-size: 0.9rem;
+                color: #555;
+                margin-bottom: 6px;
+                line-height: 1.4;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Resources Section
+  .sensory-resources-hub {
+    padding: 80px 0;
+    background-color: #f7f9fc;
+    border-top: 1px solid rgba(0, 74, 173, 0.05);
+
+    .tabs-wrapper {
+      margin-top: 25px;
+      margin-bottom: 40px;
+
+      .resources-tabs {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 5px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        border: 1px solid #eee;
+        display: inline-flex;
+        max-width: 100%;
+
+        .MuiTabs-indicator {
+          background-color: #004aad;
+          height: 100%;
+          border-radius: 30px;
+          opacity: 0.08;
+        }
+
+        .resource-tab-btn {
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 0.95rem;
+          color: #666;
+          text-transform: none;
+          min-height: 48px;
+          padding: 6px 24px;
+          border-radius: 30px;
+          z-index: 2;
+
+          &.Mui-selected {
+            color: #004aad;
+          }
+        }
+      }
+    }
+
+    .tab-contents-panel {
+      min-height: 300px;
+    }
+
+    .tab-content-title {
+      font-family: "Lilita One", sans-serif;
+      font-size: 1.8rem;
+      color: #004aad;
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .tab-content-subtitle {
+      font-size: 1.05rem;
+      color: #666;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+
+    // Diagnostic Quiz
+    .quiz-card {
+      border-radius: 20px;
+      border: 1.5px solid #dee2e6;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.02);
+
+      .quiz-question-box {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+
+        &:last-child {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+
+        .question-text {
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: #333;
+          margin-bottom: 15px;
+          line-height: 1.4;
+        }
+
+        .quiz-options {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .option-btn {
+            background-color: #fafbfc;
+            border: 1.5px solid #dee2e6;
+            border-radius: 10px;
+            padding: 14px 20px;
+            text-align: left;
+            font-size: 0.95rem;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: "Josefin Sans", sans-serif;
+
+            &:hover {
+              background-color: #f1f3f5;
+              border-color: #ced4da;
+            }
+
+            &.selected {
+              background-color: rgba(0, 74, 173, 0.06);
+              border-color: #004aad;
+              color: #004aad;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .quiz-submit-box {
+        margin-top: 30px;
+
+        .quiz-submit-btn {
+          background: linear-gradient(135deg, #004aad, #003680);
+          color: #fff;
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          text-transform: none;
+          padding: 14px 40px;
+          border-radius: 30px;
+          font-size: 1rem;
+          box-shadow: 0 4px 15px rgba(0, 74, 173, 0.2);
+
+          &:hover {
+            background: linear-gradient(135deg, #003680, #002252);
+          }
+        }
+      }
+    }
+
+    // Quiz Result
+    .quiz-result-card {
+      border-radius: 20px;
+      border: 2px solid #a5d6a7;
+      background-color: #fff;
+
+      .result-check {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #4caf50;
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto 20px auto;
+        box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+      }
+
+      .result-phase-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 2rem;
+        color: #2e7d32;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .result-focus {
+        font-size: 1.15rem;
+        color: #555;
+        margin-bottom: 30px;
+
+        strong {
+          color: #004aad;
+        }
+      }
+
+      .result-box {
+        padding: 25px;
+        border-radius: 16px;
+        text-align: left;
+        margin-bottom: 20px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+
+        .result-box-subtitle {
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 0.95rem;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .result-box-desc {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #555;
+        }
+
+        &.bg-integrated-light {
+          background-color: #e8f5e9;
+          border-left: 5px solid #4caf50;
+
+          .result-box-subtitle {
+            color: #2e7d32;
+          }
+        }
+
+        &.bg-blue-light {
+          background-color: rgba(93, 225, 233, 0.08);
+          border-left: 5px solid #00a0a0;
+
+          .result-box-subtitle {
+            color: #004aad;
+          }
+        }
+      }
+
+      .quiz-score-breakdown {
+        margin: 30px auto;
+        max-width: 700px;
+        text-align: left;
+        background-color: #fafbfc;
+        border: 1px solid #e9ecef;
+        border-radius: 16px;
+        padding: 25px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+
+        .breakdown-title {
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: #333;
+          margin-bottom: 20px;
+          border-bottom: 2px solid #e9ecef;
+          padding-bottom: 10px;
+        }
+
+        .breakdown-bars {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+        }
+
+        .breakdown-row {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .breakdown-label {
+          display: flex;
+          justify-content: space-between;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: #495057;
+
+          span:last-child {
+            color: #004aad;
+            font-weight: 700;
+          }
+        }
+
+        .breakdown-bar-bg {
+          width: 100%;
+          height: 10px;
+          background-color: #e9ecef;
+          border-radius: 5px;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .breakdown-bar-fill {
+          height: 100%;
+          border-radius: 5px;
+          transition: width 0.8s cubic-bezier(0.1, 0.8, 0.25, 1);
+
+          &.bg-phase-1 {
+            background: linear-gradient(90deg, #ff8a65, #ff5722);
+          }
+
+          &.bg-phase-2 {
+            background: linear-gradient(90deg, #ffd54f, #ffb300);
+          }
+
+          &.bg-phase-3 {
+            background: linear-gradient(90deg, #81c784, #4caf50);
+          }
+
+          &.bg-phase-4 {
+            background: linear-gradient(90deg, #7986cb, #3f51b5);
+          }
+        }
+      }
+
+      .result-actions {
+        margin-top: 40px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .result-wa-btn {
+          background-color: #64B161;
+          color: #fff;
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          text-transform: none;
+          padding: 12px 30px;
+          border-radius: 30px;
+
+          &:hover {
+            background-color: #4caf50;
+          }
+        }
+
+        .result-retry-btn {
+          color: #777;
+          border-color: #ccc;
+          font-family: "Lexend", sans-serif;
+          font-weight: 700;
+          text-transform: none;
+          padding: 12px 30px;
+          border-radius: 30px;
+
+          &:hover {
+            background-color: #f1f3f5;
+            border-color: #999;
+          }
+        }
+      }
+    }
+
+    // Videos Tab
+    .videos-grid {
+      margin-top: 10px;
+    }
+
+    .video-card {
+      height: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      border: 1px solid #eee;
+
+      .video-thumbnail-placeholder {
+        height: 180px;
+        background: linear-gradient(135deg, #37474f, #263238),
+          url("/header/therapy-child.jpg") center/cover no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .play-icon {
+          font-size: 54px;
+          color: #fff;
+          z-index: 3;
+          opacity: 0.9;
+          transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .play-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 74, 173, 0.2);
+          z-index: 2;
+          transition: background-color 0.2s;
+        }
+
+        .video-length {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          font-family: "Lexend", sans-serif;
+          font-size: 0.75rem;
+          padding: 2px 6px;
+          border-radius: 4px;
+          font-weight: 700;
+          z-index: 3;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          .play-icon {
+            transform: scale(1.1);
+            opacity: 1;
+            color: #5de1e9;
+          }
+
+          .play-overlay {
+            background-color: rgba(0, 74, 173, 0.4);
+          }
+        }
+      }
+
+      .video-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.15rem;
+        color: #004aad;
+        margin-bottom: 8px;
+        font-weight: 400;
+        line-height: 1.3;
+      }
+
+      .video-desc {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        color: #666;
+      }
+    }
+
+    // Downloads Tab
+    .downloads-grid {
+      margin-top: 10px;
+    }
+
+    .download-card {
+      height: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      border: 1.5px dashed rgba(0, 74, 173, 0.15);
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+
+      .download-title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.3rem;
+        color: #004aad;
+        margin-bottom: 12px;
+        font-weight: 400;
+      }
+
+      .download-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #555;
+        margin-bottom: 25px;
+        flex-grow: 1;
+      }
+
+      .download-btn {
+        background-color: #004aad;
+        color: #fff;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        text-transform: none;
+        border-radius: 30px;
+        padding: 10px 24px;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 74, 173, 0.1);
+
+        &:hover {
+          background-color: #003680;
+        }
+      }
+    }
+  }
+
+  // Call To Action Section (Footer CTA)
+  .sensory-cta {
+    padding: 85px 0;
+    background: linear-gradient(135deg, #004aad, #002e6e);
+    color: #fff;
+    text-align: center;
+
+    .cta-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cta-title {
+      font-family: "Lilita One", sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+
+    .cta-desc {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 500px;
+
+      .cta-wa-btn {
+        background-color: #64B161;
+        color: #fff;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 1rem;
+        text-transform: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        border: 2px solid #64B161;
+
+        &:hover {
+          background-color: #fff;
+          color: #64B161;
+          border-color: #fff;
+        }
+      }
+
+      .cta-home-btn {
+        color: #fff;
+        border-color: #fff;
+        font-family: "Lexend", sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 1rem;
+        text-transform: none;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          border-color: #5de1e9;
+          color: #5de1e9;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries for overall responsiveness
+@media (max-width: 960px) {
+  .sensory-page-wrapper {
+    .sensory-hero {
+      padding: 110px 0 60px 0;
+    }
+
+    .sensory-multidimensional-model {
+      padding: 60px 0;
+
+      .interactive-diagram-wrapper {
+        max-width: 480px;
+      }
+    }
+
+    .sensory-phases {
+      padding: 60px 0;
+    }
+
+    .sensory-roadmap {
+      padding: 60px 0;
+    }
+
+    .sensory-integrated-goals {
+      padding: 60px 0;
+
+      .interactive-diagram-box {
+        padding: 35px 20px;
+
+        .central-goal-circle {
+          width: 180px;
+          height: 180px;
+          padding: 15px;
+          margin-bottom: 25px;
+
+          .goal-main-text {
+            font-size: 1.15rem;
+          }
+        }
+      }
+    }
+
+    .sensory-resources-hub {
+      padding: 60px 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .sensory-page-wrapper {
+    .sensory-hero {
+      padding: 95px 0 45px 0;
+    }
+
+    .sensory-multidimensional-model {
+      .interactive-diagram-wrapper {
+        max-width: 100%;
+
+        // Slightly scale down texts for extra small viewports
+        .concentric-svg {
+          .node-text {
+            font-size: 9px; // Keep readable
+          }
+        }
+      }
+
+      .model-info-panel {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .panel-title {
+          font-size: 1.3rem;
+        }
+
+        .panel-desc {
+          font-size: 0.95rem;
+        }
+
+        .panel-quick-nav {
+          .quick-nav-btns {
+            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+
+    .sensory-integrated-goals {
+      .development-areas-block {
+        padding: 20px 10px;
+
+        .areas-grid {
+          flex-direction: column;
+
+          .area-pill {
+            width: 100%;
+          }
+        }
+      }
+
+      .same-goal-diagram-container {
+        .interactive-diagram-box {
+          .central-goal-circle {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+
+    .sensory-resources-hub {
+      .tabs-wrapper {
+        .resources-tabs {
+          width: 100%;
+          border-radius: 10px;
+
+          .resource-tab-btn {
+            padding: 6px 12px;
+            font-size: 0.85rem;
+          }
+        }
+      }
+
+      .quiz-card {
+        .quiz-question-box {
+          .question-text {
+            font-size: 1rem;
+          }
+
+          .quiz-options {
+            .option-btn {
+              padding: 10px 15px;
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+    }
+
+    .sensory-cta {
+      padding: 60px 20px;
+
+      .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+
+        .cta-wa-btn,
+        .cta-home-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

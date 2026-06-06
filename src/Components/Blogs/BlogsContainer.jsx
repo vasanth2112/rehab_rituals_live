@@ -63,7 +63,7 @@ export default function BlogsContainer() {
                   endIcon={<NavigateNext />}
                   sx={{ textTransform: "none" }}
                   onClick={() =>
-                    navigate(`/blog/allBlogs`, { state: { blog } })
+                    navigate(`/blog/allblogs?id=${blog.id}`, { state: { blog } })
                   }
                 >
                   Read More
@@ -79,7 +79,7 @@ export default function BlogsContainer() {
           variant="contained"
           endIcon={<ReadMoreIcon />}
           onClick={() => {
-            navigate(`/blog/allBlogs`, { state: { blog: BLOGS_CONTENT[0] } });
+            navigate(`/blog/allblogs?id=${BLOGS_CONTENT[0].id}`, { state: { blog: BLOGS_CONTENT[0] } });
           }}
         >
           View All Blogs

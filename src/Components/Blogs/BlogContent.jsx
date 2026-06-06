@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { BLOGS_CONTENT } from "../Blogs/BlogsListConstant.jsx";
 import "../Blogs/BlogContent.scss";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
 import "../Blogs/Blogs.scss";
-import { Chip, Button } from "@mui/material";
+import { Chip, Button, Snackbar, Alert } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -18,16 +19,53 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import ShareIcon from "@mui/icons-material/Share";
 
 export default function BlogContent() {
-  const shareUrl = encodeURIComponent("https://rehabrituals.com");
-  const shareText = encodeURIComponent("Check out Rehab Rituals Blogs!");
   const location = useLocation();
-  const blog = location.state?.blog;
-
   const navigate = useNavigate();
-  //const { id } = useParams();
-  //const blog = BLOGS_CONTENT.find((b) => b.id === id);
 
-  if (!blog) return <div>Blog not found.</div>;
+  // Extract blog ID from query parameters
+  const queryParams = new URLSearchParams(location.search);
+  const blogId = queryParams.get("id");
+
+  // Lookup blog by state or URL ID, fallback to first blog
+  let blog = location.state?.blog;
+  if (!blog && blogId) {
+    blog = BLOGS_CONTENT.find((b) => b.id === blogId);
+  }
+  if (!blog) {
+    blog = BLOGS_CONTENT[0];
+  }
+
+  const currentBlogUrl = `${window.location.origin}/blog/allblogs?id=${blog.id}`;
+  const shareUrl = encodeURIComponent(currentBlogUrl);
+  const shareText = encodeURIComponent(`Check out this blog: ${blog.heading}`);
+
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+
+  const handleShareClick = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: blog.heading,
+          text: `Check out this blog: ${blog.heading}`,
+          url: currentBlogUrl,
+        });
+      } catch (err) {
+        console.error("Error sharing:", err);
+      }
+    } else {
+      // Fallback: Copy to clipboard
+      try {
+        await navigator.clipboard.writeText(currentBlogUrl);
+        setSnackbarMessage("Blog link copied to clipboard!");
+        setSnackbarOpen(true);
+      } catch (err) {
+        console.error("Could not copy text: ", err);
+        setSnackbarMessage("Failed to copy link to clipboard.");
+        setSnackbarOpen(true);
+      }
+    }
+  };
 
   // Helper to render content bodies with paragraphs and lists
   const renderBody = (body) => {
@@ -206,7 +244,20 @@ export default function BlogContent() {
                     <p>Share</p>
                   </div> */}
                   <div className="socia_icons">
-                    <ShareIcon style={{ fontSize: "25px", color: "#000" }} />
+                    <button
+                      onClick={handleShareClick}
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                        display: "flex",
+                        alignItems: "center"
+                      }}
+                      title="Share / Copy Link"
+                    >
+                      <ShareIcon style={{ fontSize: "25px", color: "#000" }} />
+                    </button>
                     <a
                       href="https://www.instagram.com/rehabrituals"
                       target="_blank"
@@ -285,7 +336,7 @@ export default function BlogContent() {
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setTimeout(() => {
-                  navigate(`/blog/allblogs`, { state: { blog } });
+                  navigate(`/blog/allblogs?id=${blog.id}`, { state: { blog } });
                 }, 300);
               }}
             >
@@ -355,7 +406,7 @@ export default function BlogContent() {
                     onClick={() => {
                       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                       setTimeout(() => {
-                        navigate(`/blog/allblogs`, { state: { blog } });
+                        navigate(`/blog/allblogs?id=${blog.id}`, { state: { blog } });
                       }, 300); // wait 300ms (adjust as needed)
                     }}
                   >
@@ -367,6 +418,17 @@ export default function BlogContent() {
           ))}
         </div>
       </div>
+
+      <Snackbar
+        open={snackbarOpen}
+        autoHideDuration={3000}
+        onClose={() => setSnackbarOpen(false)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert onClose={() => setSnackbarOpen(false)} severity="success" sx={{ width: "100%" }}>
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </>
   );
 }

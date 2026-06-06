@@ -11,6 +11,7 @@ import GalleryContainer from "./Components/Gallery/GalleryContainer.jsx";
 import BlogsContainer from "./Components/Blogs/BlogsContainer.jsx";
 import BlogContent from "./Components/Blogs/BlogContent.jsx";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
+import SensoryContainer from "./Components/Sensory/SensoryContainer.jsx";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -72,9 +73,9 @@ function App() {
                 <div ref={headerRef}>
                   <HeaderContainer />
                 </div>
-                <AboutUsContainer />
-                <OurServiceContainer />
-                <OurTeamContainer />
+                {/* <AboutUsContainer /> */}
+                {/* <OurServiceContainer /> */}
+                {/* <OurTeamContainer /> */}
                 <BlogsContainer />
                 <GalleryContainer />
                 <FooterContainer />
@@ -94,6 +95,17 @@ function App() {
 
           {/* Blog Detail Route */}
           <Route path="/blog/allblogs" element={<BlogContent />} />
+
+          {/* Sensory Page Route */}
+          <Route
+            path="/sensory"
+            element={
+              <>
+                <SensoryContainer />
+                <FooterContainer />
+              </>
+            }
+          />
         </Routes>
       </Router>
       {/* Add ref to HeaderContainer */}

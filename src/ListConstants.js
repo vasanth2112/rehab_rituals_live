@@ -48,6 +48,10 @@ import BEACH_CLAP from "../public/gallery/image15.jpg";
 import VINO_CHILD from "../public/gallery/image16.jpg";
 import LIGHT from "../public/gallery/image17.jpg";
 import HAND_POWDER from "../public/gallery/image18.jpg";
+import iconBrain from "../public/header/icon/brain-1.png";
+import iconApple from "../public/header/icon/apple.png";
+import iconMoon from "../public/header/icon/moon.png";
+import iconHome from "../public/header/icon/home.png";
 
 
 export const SERVICE_CATEGORIES = [
@@ -263,8 +267,8 @@ export const GALLERY_IMAGES = [
     {
         img: DRAWING,
         title: 'Image 1',
-        rows:1,
-        cols:4,
+        rows: 1,
+        cols: 4,
     },
     {
         img: BODY_PARTS,
@@ -277,34 +281,34 @@ export const GALLERY_IMAGES = [
     {
         img: HAND_POWDER,
         title: 'Image 4',
-        cols:2,
+        cols: 2,
     },
     {
         img: BEACH_PLAY,
         title: 'Image 5',
-        rows:1,
-        cols:4,
+        rows: 1,
+        cols: 4,
     },
     {
         img: VINO_CHILD,
         title: 'Image 6',
         rows: 2,
-        cols:2,
+        cols: 2,
     },
     {
         img: COOK_NUTS,
         title: 'Image 7',
-        cols:2,
+        cols: 2,
     },
     {
         img: DIWALI,
         title: 'Image 8',
-        cols:2,
+        cols: 2,
     },
     {
         img: BEACH_CLAP,
         title: 'Image 9',
-        cols:2,
+        cols: 2,
     },
     {
         img: WATER_GIRL,
@@ -317,36 +321,44 @@ export const GALLERY_IMAGES = [
     {
         img: PARK,
         title: 'Image 11',
-        cols:2,
+        cols: 2,
     },
     {
         img: PAINT_HAND,
         title: 'Image 12',
-        cols:2,
+        cols: 2,
     },
     {
         img: CRAFT,
         title: 'Image 18',
-        cols:4,
+        cols: 4,
     },
     {
         img: PAINT_TWO,
         title: 'Image 13',
-        cols:2,
+        cols: 2,
     },
     {
         img: TWO_BOYS,
         title: 'Image 14',
-        cols:2,
+        cols: 2,
     },
     {
         img: PAINT_RED,
         title: 'Image 16',
-        cols:2,
+        cols: 2,
     },
     {
         img: POT,
         title: 'Image 17',
-        cols:2,
+        cols: 2,
     },
+
+
+];
+export const CARDS_BRAIN = [
+    { icon: iconBrain, title: "Regulated Sensations" },
+    { icon: iconApple, title: "Nourishing Diet" },
+    { icon: iconMoon, title: "Sound Sleep" },
+    { icon: iconHome, title: "Right Home Environment" },
 ];
