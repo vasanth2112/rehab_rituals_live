@@ -340,7 +340,7 @@ export default function HeaderContainer() {
                           },
                         }}
                       >
-                        Learn More
+                        Sensory Weave
                       </Button>
                     </div>
                   </div>
