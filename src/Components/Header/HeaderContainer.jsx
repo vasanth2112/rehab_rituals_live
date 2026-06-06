@@ -71,16 +71,17 @@ export default function HeaderContainer() {
                     <a href="/#blogs">Blogs</a>
                     <a href="/#gallery">Gallery</a>
                     <a href="/#contact">Contact</a>
-                    <Button
+                  <a href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
+                      > <Button
                       variant="contained"
                       endIcon={<BookIcon />}
-                      component="a"
-                      href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
+                     // component="a"
+                    //  href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
                       target="_blank"
                       rel="noopener noreferrer"
                       sx={{
                         fontFamily: '"Josefin Sans", sans-serif',
-                       // backgroundColor: "#61dafbea",
+                        // backgroundColor: "#61dafbea",
                         backgroundColor: "#fff",
                         color: "#004aad",
                         textTransform: "none",
@@ -91,7 +92,7 @@ export default function HeaderContainer() {
                       }}
                     >
                       Book Appointment
-                    </Button>
+                    </Button></a> 
                   </div>
                 </div>
 
@@ -189,11 +190,15 @@ export default function HeaderContainer() {
                             sx={{
                               fontFamily: '"Josefin Sans", sans-serif',
                               backgroundColor: "#004aad",
-                              color: "#fff",
+                              color: "#fff !important",
                               textTransform: "none",
                               fontSize: "0.85rem",
+                              "& *": {
+                                color: "#fff !important",
+                              },
                               "&:hover": {
                                 backgroundColor: "#61dafb",
+                                color: "#fff !important",
                               },
                             }}
                           >
