@@ -329,7 +329,7 @@ export default function BlogContent() {
                 }
               }}
             >
-              View All Blogs
+              View More Blogs
             </Button>
             <Button
               className="backToHome"
@@ -357,10 +357,10 @@ export default function BlogContent() {
         }}
       >
         <div>
-          <h1 className="reveal">All Blogs</h1>
+          <h1 className="reveal">More Blogs</h1>
         </div>
-        <div className="blogContainer_content">
-          {BLOGS_CONTENT.map((blog, index) => (
+        <div className="blogContainer_content scrollable">
+          {BLOGS_CONTENT.filter((b) => b.id !== blog.id).map((blog, index) => (
             <div className={`blogcontent reveal reveal-scale reveal-delay-${(index % 3) + 1}`} key={blog.id}>
               <div className="blog_img">
                 <img src={blog.cardImg}></img>
