@@ -2,8 +2,10 @@ import { TextField, Button } from "@mui/material";
 import { useState } from "react";
 import "../ContactUs/Footer.scss"
 import emailjs from 'emailjs-com';
+import useScrollReveal from "../../useScrollReveal.js";
 
 export default function FooterContainer() {
+    useScrollReveal();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -44,10 +46,10 @@ export default function FooterContainer() {
                 }
             );
     };
-    return (<div id='contact' className="footer">
+    return (<div id='contact' className="footer reveal">
         <div className="footer_flex">
             <div className="footer_div">
-                <div className="header_test">
+                <div className="header_test reveal-left">
                     <div>
                         <h5>Need Help ?</h5>
                     </div>
@@ -83,7 +85,7 @@ export default function FooterContainer() {
                 </div>
 
                 <div className="footer_aboutus_container">
-                    <div className="footer_aboutus">
+                    <div className="footer_aboutus reveal reveal-delay-1">
                         <div>
                             <img src="./footer/logo/day-care-logo.jpg"></img>
                         </div>
@@ -108,14 +110,14 @@ export default function FooterContainer() {
                             </a>
                         </div>
                     </div>
-                    <div className="working_hours">
+                    <div className="working_hours reveal reveal-delay-2">
                         <h4>Working Hours</h4>
                         <div>
                             <p>Monday to Saturday</p>
                             <p>09:30 AM - 08:00 PM</p>
                         </div>
                     </div>
-                    <div className="address">
+                    <div className="address reveal reveal-delay-3">
                         <div className="address_flex">
                             <div>
                                 <h4>Address </h4>
@@ -141,7 +143,7 @@ export default function FooterContainer() {
                         </div>
                     </div>
                 </div>
-                <div className="footer_container_right">
+                <div className="footer_container_right reveal-right">
                     <div className="message_header">
                         <p>Your Feedback</p>
                     </div>
@@ -192,7 +194,7 @@ export default function FooterContainer() {
                     </div>
                 </div>
             </div>
-            <div className="footer_social">
+            <div className="footer_social reveal reveal-delay-4">
                 <p>Copyright © 2024 Rehab Rituals - All Rights Reserved.</p>
             </div>
         </div>
