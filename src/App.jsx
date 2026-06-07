@@ -9,6 +9,7 @@ import BlogsContainer from "./Components/Blogs/BlogsContainer.jsx";
 import BlogContent from "./Components/Blogs/BlogContent.jsx";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
 import SensoryContainer from "./Components/Sensory/SensoryContainer.jsx";
+import SensoryHighlight from "./Components/Sensory/SensoryHighlight.jsx";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -70,6 +71,7 @@ function App() {
                 <div ref={headerRef}>
                   <HeaderContainer />
                 </div>
+                <SensoryHighlight />
                 <BlogsContainer />
                 <GalleryContainer />
                 <FooterContainer />

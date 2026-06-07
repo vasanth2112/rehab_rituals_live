@@ -1,35 +1,3 @@
-import Valli from "../public/team/Valli.jpg";
-import Hiranmayi from "../public/team/Hiranmayi.jpg";
-import Lakshmi from "../public/team/Lakshmi.jpg";
-import Vimala from "../public/team/Vimala.jpg";
-import AT_ASSESMENT from "../public/services/AT/AT_ASSESMENT.jpg";
-import AT_ADV_ASSESMENT from "../public/services/AT/AT_ADV_ASSESMENT.jpg";
-import AT_REVIEW from "../public/services/AT/AT_REVIEW.jpg";
-import AT_SESSION from "../public/services/AT/AT_SESSION.jpg";
-import ST_ASSESMENT from "../public/services/ST/ST_ASSESMENT.jpg";
-import ST_REVIEW from "../public/services/ST/ST_REVIEW.jpg";
-import ST_SESSION from "../public/services/ST/ST_SESSION.jpg";
-import PH_REVIEW from "../public/services/PH/PH_REVIEW.jpg";
-import PH_SESSION1 from "../public/services/PH/PH_SESSION1.jpg";
-import PH_SESSION2 from "../public/services/PH/PH_SESSION2.jpg";
-import SE_SESSION from "../public/services/SE/SE_SESSION.jpg";
-import SE_REVIEW from "../public/services/SE/SE_REVIEW.jpg";
-import SE_ASSESMENT from "../public/services/SE/SE_ASSESMENT.jpg";
-import FOLLOW_UP from "../public/services/NUTRITION/FOLLOW_UP.jpg";
-import CONSULTATION from "../public/services/NUTRITION/CONSULTATION.jpg";
-import YOGA from "../public/services/SPECIAL/YOGA.jpg";
-import IEP from "../public/services/SPECIAL/IEP.jpg";
-import DSE from "../public/services/SPECIAL/DSE.jpg";
-import PEC from "../public/services/SPECIAL/PEC.jpg";
-import SRP from "../public/services/SPECIAL/SRP.jpg";
-import FEI from "../public/services/SPECIAL/FEI.jpg";
-import SDP from "../public/services/SPECIAL/SDP.jpg";
-import TLP from "../public/services/SPECIAL/TLP.jpg";
-import GPT from "../public/services/SPECIAL/GPT.jpg";
-import HRP from "../public/services/SPECIAL/HRP.jpg";
-import HAP from "../public/services/SPECIAL/HAP.jpg";
-import SOONZE_THERAPY from "../public/services/SPECIAL/SOONZE_THERAPY.jpg";
-import VR from "../public/services/SPECIAL/VR.jpg";
 import BODY_PARTS from "../public/gallery/image1.jpg";
 import TWO_BOYS from "../public/gallery/image2.jpg";
 import LEAF_GIRL from "../public/gallery/image3.jpg";
@@ -54,208 +22,6 @@ import iconMoon from "../public/header/icon/moon.png";
 import iconHome from "../public/header/icon/home.png";
 
 
-export const SERVICE_CATEGORIES = [
-    { id: "OT", label: "OCCUPATIONAL THERAPY" },
-    { id: "ST", label: "SPEECH THERAPY" },
-    { id: "PT", label: "PHYSIOTHERAPY" },
-    { id: "SE", label: "SPECIAL EDUCATION" },
-    { id: "NUTRITIONS", label: "NUTRITIONS" },
-    { id: "SS", label: "SPECIALIZED SERVICES" }
-];
-
-export const SERVICES = {
-    OT: {
-        OTAssesment: {
-            title: "Assessment",
-            image: AT_ASSESMENT,
-            description: "A basic occupational therapy assessment outlines the child's development components such as gross motor skills, fine motor skills, coordination and balance, praxis, cognition, social skills, and ADL skills, along with specialized assessments such as sensory profile and WEE Fim. Assessments are problem-oriented in nature and usually diagnostic. It helps conclude the child's condition and current level of functional performance."
-        },
-        OTAdvanceAssesment: {
-            title: "Advanced Assessment",
-            image: AT_ADV_ASSESMENT,
-            description: "Advanced occupational therapy evaluation is done as a part of the re-evaluation process or for children with a specific diagnosis, or when children attain basic occupational therapy skills. Advanced assessment evaluates children's advanced gross motor skills and praxis skills, dynamic balance and coordination, higher cognitive functions, executive functions, and any other specialized instruments the problem might suggest."
-        },
-        OTReview: {
-            title: "Review",
-            image: AT_REVIEW,
-            description: "Occupational therapy reviews are conducted weekly or monthly based on session frequency. The therapist provides highlights on the child's development, a review of previous interventions and strategies, the efficacy of these interventions, new problem evaluations, and revision of strategies. OT reviews promote functional independence and track sensory integration progress."
-        },
-        OTSessions: {
-            title: "Sessions",
-            image: AT_SESSION,
-            description: "Occupational therapy sessions vary based on the child's diagnosis. They include sensory integration (SI) sessions, ADL and skill development sessions, neurodevelopment sessions, and a mix of any form of OT therapy. Sessions typically last 45 minutes in a structured environment, ending with a home program that follows the session."
-        }
-    },
-
-    ST: {
-        SpeechTherapyAssessment: {
-            title: "Assessment",
-            image: ST_ASSESMENT,
-            description: "Speech therapists conduct basic speech development evaluations through observation and interaction. Speech therapy assessment includes speech milestones, language development, vocabulary, voice, intonation, and communication skills. The assessment provides a diagnosis and defines the goals and interventions required for the child."
-        },
-        SpeechTherapyReview: {
-            title: "Review",
-            image: ST_REVIEW,
-            description: "Speech therapy reviews are designed for children with minimal speech delays or attentional difficulties. Reviews focus on evaluating strategies, briefing the child's performance, and suggesting new approaches. Reviews help maintain communication skills and ensure therapy progress, even when home programs are followed."
-        },
-        SpeechTherapySessions: {
-            title: "Sessions",
-            image: ST_SESSION,
-            description: "Speech therapy sessions use a play-based method to develop verbal and non-verbal communication. Sessions last 45 minutes in structured or unstructured environments, followed by a home program to reinforce learning."
-        }
-    },
-
-    SE: {
-        SpecialEducationAssessment: {
-            title: "Assessment",
-            image: SE_ASSESMENT,
-            description: "Special education assessments focus on academic skills such as reading, writing, mathematics, and language. They also address various supplementary skills to determine the child's learning process. A diagnosis and personalized educational plan are often outcomes of these assessments."
-        },
-        SpecialEducationReview: {
-            title: "Review",
-            image: SE_REVIEW,
-            description: "Special education reviews focus on identifying learning barriers and facilitators to create personalized strategies and interventions. The review assesses previous methods, evaluates current outcomes, and recommends new interventions to improve learning and performance."
-        },
-        SpecialEducationSessions: {
-            title: "Sessions",
-            image: SE_SESSION,
-            description: "Special education sessions focus on practical academic outcomes. They involve repetition and practice to reinforce learning, with home programs designed to generalize skills. Sessions may also include recommendations for school modifications and teaching methods."
-        }
-    },
-
-    NUTRITIONS: {
-        NutritionEvaluation: {
-            title: "Consultation/Evaluation",
-            image: CONSULTATION,
-            description: "Nutritional evaluation identifies the child's age, height, and weight relative to normative growth charts. The nutritionist assesses feeding habits and provides a personalized nutrition plan, complete with a diet chart to ensure sustainable growth and performance."
-        },
-        NutritionFollowUp: {
-            title: "Follow-Up",
-            image: FOLLOW_UP,
-            description: "A nutrition follow-up recalibrates a child's nutritional plan by re-evaluating their age, height, and weight to monitor growth. The nutritionist adjusts the diet plan to meet the child's changing needs."
-        }
-    },
-
-    PT: {
-        PTAssessment: {
-            title: "Assessment",
-            image: PH_REVIEW,
-            description: "Physiotherapy assessment and evaluation consist of assessing the physical components such as motor, balance, coordination, and associated factors that promote the above components. Evaluation is done for all physical conditions and neurodevelopmental conditions across all age groups. Standardized assessments provide a comprehensive view of the problem, with a physiotherapy report and diagnosis if applicable."
-        },
-        PTSessionsOrthoNeuro: {
-            title: "Sessions (Ortho/Neuro)",
-            image: PH_SESSION1,
-            description: "Orthopedic physiotherapy sessions focus on the client's physical skills, such as range of motion (ROM), muscle strengthening, and pain management techniques using physical modalities. Neurologic physiotherapy sessions focus on impairments related to neurological deficits from stroke or pediatric/adult neurologic conditions. Vestibular rehabilitation may also be a part of the rehabilitation program."
-        },
-        PTSessionsPrePostNatal: {
-            title: "Sessions (Prenatal/Postnatal)",
-            image: PH_SESSION2,
-            description: "Prenatal physiotherapy focuses on pelvic training and overall physical wellness of the mother. Postnatal physiotherapy helps in recovering core muscles and pelvic floor training, which promotes post-delivery pelvic recovery. A postnatal weight loss program helps mothers regain a positive body image, resume physical activity, and promote healthy weight loss."
-        }
-    },
-
-    SS: {
-        SensoryYogaOverview: {
-            title: "Sensory Yoga",
-            image: YOGA,
-            description: "Sensory Yoga is designed for children with sensory challenges. It combines traditional yoga practices with sensory integration strategies to enhance physical fitness and brain development."
-        },
-        IEPOverview: {
-            title: "Individualized Educational Plan",
-            image: IEP,
-            description: "Individualized Educational Plans are highly personalized sessions that integrate input from speech therapists, occupational therapists, and special educators. IEP sessions are designed to meet specific functional goals."
-        },
-        DevelopmentalScreening: {
-            title: "Developmental Screening and Evaluation",
-            image: DSE,
-            description: "Children can be screened for developmental milestones to identify delays or gain insight into their developmental curve. This screening evaluates motor, cognitive, emotional, social, and communication skills, followed by a developmental report."
-        },
-        ParentalEducation: {
-            title: "Parental Education and Counseling",
-            image: PEC,
-            description: "Aimed at promoting healthy child development, this program educates parents post-diagnosis or before therapy to understand and accept their child's diagnosis. It offers an overview of therapy interventions and helps parents acknowledge their child's progress."
-        },
-        SchoolReadiness: {
-            title: "School Readiness Program",
-            image: SRP,
-            description: "Our school readiness program smooths the home-to-school transition for children, especially those born during the Covid pandemic. It focuses on school modeling and pre-academic skills for children aged 2-4 years."
-        },
-        FeedingEvaluation: {
-            title: "Feeding Evaluation and Intervention",
-            image: FEI,
-            description: "Feeding evaluation identifies issues like picky eating or oral sensory challenges. Feeding interventions are tailored through sensory, behavioral, and motor approaches, with assistive devices introduced when necessary."
-        },
-        GroupPlayTherapy: {
-            title: "Group Play Therapy",
-            image: GPT,
-            description: "Play therapy is a versatile form of therapy designed to promote social, emotional, and communication skills through peer-based activities. Programs are customized to children's cognitive and social levels."
-        },
-        ScreenDetox: {
-            title: "Screen Detox Program",
-            image: SDP,
-            description: "Our screen detox program provides a personalized approach to reducing screen time"
-        },
-
-
-        TherapeuticListening: {
-            title: "Therapeutic Listening Program",
-            image: TLP,
-            description:
-                "The Therapeutic Listening program uses modulated sound/music to stimulate the brain. This auditory integration training is effective for children with autism, ADHD, and other developmental delays."
-        },
-
-        HandwritingRemediation: {
-            title: "Handwriting Remediation Program",
-            image: HRP,
-            description:
-                "This program is designed to correct specific handwriting challenges in children, focusing on pencil grip and sensory/motor training. It is effective for children with autism, ADHD, and other developmental challenges."
-        },
-
-        HandwritingAcceleration: {
-            title: "Handwriting Acceleration Program",
-            image: HAP,
-            description:
-                "This program is aimed at children and adults with basic handwriting skills, with the goal of improving speed and legibility. It integrates strength training and cognitive techniques to enhance writing efficiency."
-        },
-
-        SnoezelenTherapy: {
-            title: "Snoezelen Therapy",
-            image: SOONZE_THERAPY,
-            description:
-                "Snoezelen therapy uses a multisensory environment to stimulate and regulate sensory systems. This therapy is helpful for individuals with autism, ADHD, and other developmental delays, as well as for managing stress and anxiety."
-        },
-
-        VirtualReality: {
-            title: "Virtual Reality",
-            image: VR,
-            description:
-                "Our clinic uses Meta Quest virtual reality systems to enhance learning and speed up skill acquisition. VR is particularly effective for children with ASD, ADHD, and various learning challenges."
-        }
-    }
-};
-
-export const OUR_TEAM = [
-    {
-        image: Vimala,
-        name: "Vimala S",
-        role: "Special Educator"
-    },
-    {
-        image: Valli,
-        name: "Valli R",
-        role: "IEP specialist"
-    },
-    {
-        image: Hiranmayi,
-        name: "Hiranmayi",
-        role: "Speech Therapist"
-    },
-    {
-        image: Lakshmi,
-        name: "Lakshmi S",
-        role: "Admin/Accounts"
-    },
-];
 
 
 export const GALLERY_IMAGES = [
@@ -357,3 +123,150 @@ export const CARDS_BRAIN = [
     { icon: iconMoon, title: "Sound Sleep" },
     { icon: iconHome, title: "Right Home Environment" },
 ];
+
+// Description data for Concentric Model Nodes
+export const PERSPECTIVE_DETAILS = {
+  // Core Perspectives
+  SI: {
+    title: "Sensory Integration (Occupational Therapy)",
+    type: "Core Perspective",
+    desc: "Focuses on organizing and processing inputs from all sensory channels (vestibular, proprioceptive, tactile, auditory, visual, interoception). This establishes the physiological foundation for self-regulation, attention, motor control, and cognitive learning."
+  },
+  DLA: {
+    title: "Developmental Language Approach (Speech Therapy)",
+    type: "Core Perspective",
+    desc: "Nurtures expressive and receptive communication in natural, interactive settings. Instead of rote vocabulary drill, it emphasizes child-led interaction, pragmatic social skills, and structural language development."
+  },
+  RI: {
+    title: "Reflex Integration (Occupational Therapy)",
+    type: "Core Perspective",
+    desc: "Identifies and integrates retained primitive baby reflexes (such as the Moro or Fear Paralysis reflex). Unintegrated reflexes place the nervous system in a constant state of threat, affecting posture, coordination, and focus."
+  },
+  TA: {
+    title: "Trauma-Informed Approaches (Behavior Therapy)",
+    type: "Core Perspective",
+    desc: "Provides therapeutic safety and emotional validation. By understanding how past stresses affect behaviors, we help children feel emotionally secure, calm their nervous system, and build behavioral control."
+  },
+  PT: {
+    title: "Play Therapy (Combined Therapy)",
+    type: "Core Perspective",
+    desc: "Utilizes child-guided play to foster emotional expression, social exploration, problem-solving, and vocabulary development. Play is the natural language of childhood, and it is a key tool for learning and development."
+  },
+  BM: {
+    title: "Behavior Modification (Behavior Therapy)",
+    type: "Core Perspective",
+    desc: "Uses positive reinforcement, structural predictability, and gentle behavioral guidelines to help children develop positive habits, self-regulation, and adaptive coping mechanisms for transitions."
+  },
+  // Supporting Perspectives
+  BBN: {
+    title: "Brain-Based Nutrition",
+    type: "Supporting Perspective",
+    desc: "Supports the gut-brain axis. We help resolve oral-sensory food aversion (picky eating), improve digestion, and design dietary plans that reduce neural inflammation, stabilize mood, and fuel brain development."
+  },
+  SY: {
+    title: "Sensory Yoga",
+    type: "Supporting Perspective",
+    desc: "Combines deep breathing techniques, mindfulness, and slow physical movements. This regulates inner state, improves core body strength, builds balance, and helps children transition into a calm, alert state."
+  },
+  SR: {
+    title: "Sleep Retraining",
+    type: "Supporting Perspective",
+    desc: "Bedtime and restorative sleep are vital for memory consolidation and emotional recovery. We guide families on creating calming sensory bedrooms, adjusting biological rhythms, and stabilizing sleep cycles."
+  },
+  BG: {
+    title: "Brain Gym",
+    type: "Supporting Perspective",
+    desc: "Targeted cross-lateral physical coordination patterns that stimulate left and right brain hemispheres. This supports bilateral integration, writing posture, hand-eye coordination, and overall learning readiness."
+  },
+  IHP: {
+    title: "Individual Home Plan",
+    type: "Supporting Perspective",
+    desc: "Translates clinical progress to the living room. We create practical, customized sensory strategies and predictable daily structures that parents can easily execute at home."
+  },
+  PGS: {
+    title: "Parental Guidance & Support",
+    type: "Supporting Perspective",
+    desc: "Equips families with active coaching, sensory insights, and stress management tools. Empowered and calm parents are the absolute foundation of a child's developmental success."
+  },
+  ED: {
+    title: "Environmental Detox",
+    type: "Supporting Perspective",
+    desc: "Identifies and reduces sensory overstimulation in the child's daily environments, including decluttering visual space, regulating artificial light/noise levels, and structuring digital screen exposure."
+  },
+  TL: {
+    title: "Therapeutic Listening",
+    type: "Supporting Perspective",
+    desc: "An advanced auditory protocol using modulated music and sound profiles. It trains the nervous system to process sound waves, improving spatial awareness, balance, attention, and sensory regulation."
+  }
+};
+
+// Quiz questions structure
+export const QUIZ_QUESTIONS = [
+  {
+    id: 1,
+    question: "How does your child generally react to sensory stimuli, transitions, or daily routines?",
+    options: [
+      { text: "Frequent intense meltdowns, hyperactivity, poor sleep, or easily overwhelmed by sounds/textures.", phase: 1 },
+      { text: "Mostly calm physically, but withdrawn, showing low responsiveness or avoids interacting with others.", phase: 2 },
+      { text: "Follows basic daily routines, but struggles with multi-step instructions, functional play, or speaking.", phase: 3 },
+      { text: "Adapts well to home and school, but occasionally needs guidance on advanced behaviors and self-care.", phase: 4 }
+    ]
+  },
+  {
+    id: 2,
+    question: "How would you describe your child's eye contact and connection with family members?",
+    options: [
+      { text: "Avoids eye contact consistently, rarely responds when called, and struggles to orient toward your face.", phase: 1 },
+      { text: "Eye contact is starting to build, occasionally responds to name, and shows emerging interest in playing.", phase: 2 },
+      { text: "Maintains eye contact during tasks, understands basic language, but struggles with verbal conversations.", phase: 3 },
+      { text: "Good eye contact and conversation, but needs coaching on complex peer interactions and team play.", phase: 4 }
+    ]
+  },
+  {
+    id: 3,
+    question: "What is the primary barrier when you try to guide your child through a task or game?",
+    options: [
+      { text: "Cannot sit still, runs away, gets hyperactive, or becomes distressed by the setup.", phase: 1 },
+      { text: "Willing to sit for short intervals, but prefers solo play and doesn't attempt to copy your actions.", phase: 2 },
+      { text: "Imitates gestures and attempts skills, but requires constant verbal or physical prompt assistance.", phase: 3 },
+      { text: "Performs skills independently in clinical therapy, but struggles to use them naturally at home or school.", phase: 4 }
+    ]
+  },
+  {
+    id: 4,
+    question: "What is your child's behavior pattern when facing a new environment or schedule change?",
+    options: [
+      { text: "Experiences severe anxiety, sensory overload tantrums, or runs away (flight response).", phase: 1 },
+      { text: "Shuts down, clings to parents, or remains extremely passive without interacting with the room.", phase: 2 },
+      { text: "Cooperates with guidance, but requires significant time and visual cues to adapt to new steps.", phase: 3 },
+      { text: "Maintains behavioral regulation and adjusts, though minor stubbornness or hesitation can occur.", phase: 4 }
+    ]
+  }
+];
+
+export const PHASE_DETAILS = {
+  1: {
+    title: "Phase 1: Regulation",
+    focus: "Building nervous system safety, calm states, and sensory organization.",
+    description: "Your child's nervous system is currently in a reactive state, making focus and learning difficult. The primary focus of therapy is to help them feel safe, calm, and physically organized.",
+    tips: "Ensure predictable routines, reduce sensory overstimulation (noise/lights), schedule active movement/vestibular breaks, and work on sleep routines."
+  },
+  2: {
+    title: "Phase 2: Engagement",
+    focus: "Connecting with surroundings, communication, and shared attention.",
+    description: "Your child is beginning to achieve calmer states and is ready to build connection. The therapy focus shifts to expanding shared attention, mutual engagement, and building back-and-forth social loops.",
+    tips: "Follow your child's lead during play, practice eye-level interactions, reward name-response, and use physical imitation games."
+  },
+  3: {
+    title: "Phase 3: Skill Acquisition",
+    focus: "Developing functional speech, language, play, and motor skills.",
+    description: "With regulation and social connection in place, your child's brain is highly receptive. The therapy focus moves to language structure, physical coordination, motor planning, and functional play skills.",
+    tips: "Break tasks down into small visual steps, model simple descriptive sentences, encourage peer play, and support fine-motor activities."
+  },
+  4: {
+    title: "Phase 4: Functional Integration",
+    focus: "Generalizing skills into daily life, classroom learning, and independence.",
+    description: "Your child is acquiring excellent skills. The final focus is ensuring these skills translate automatically into school learning, social adaptation, and self-care without prompts.",
+    tips: "Create structured playdates, practice self-care routines with visual checklists, support emotional adaptation strategies, and minimize direct prompts."
+  }
+};

@@ -15,8 +15,9 @@ export default function BlogsContainer() {
   const navigate = useNavigate();
   return (
     <div className="blogContainer" id="blogs">
-      <div>
-        <h1 className="reveal">Latest Blogs</h1>
+      <div className="blogContainer_header reveal">
+        <h1>Latest <span>Blogs</span></h1>
+        <p className="section-subtitle">Insights, guides, and practical updates on child developmental health, sensory integration, and speech milestones.</p>
       </div>
       <div className="blogContainer_content">
         {BLOGS_CONTENT.slice(-2).map((blog, index) => (

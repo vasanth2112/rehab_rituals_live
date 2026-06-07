@@ -351,7 +351,7 @@ export default function BlogContent() {
         className="blogContainer"
         id="blogs"
         style={{
-          backgroundColor: "#efeeee",
+          backgroundColor: "#f4f7fd",
           margin: "0px",
           padding: "0px 0px 50px 0px",
         }}
