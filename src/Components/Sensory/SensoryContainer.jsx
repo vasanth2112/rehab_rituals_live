@@ -7,6 +7,7 @@ import GetAppIcon from '@mui/icons-material/GetApp';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { useNavigate } from "react-router-dom";
 import "./Sensory.scss";
+import useScrollReveal from "../../useScrollReveal.js";
 
 // Description data for Concentric Model Nodes
 const PERSPECTIVE_DETAILS = {
@@ -156,6 +157,7 @@ const PHASE_DETAILS = {
 };
 
 export default function SensoryContainer() {
+  useScrollReveal();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(0);
 
@@ -240,7 +242,7 @@ export default function SensoryContainer() {
           >
             Back to Home
           </Button>
-          <Box className="hero-content">
+          <Box className="hero-content reveal reveal-scale">
             <span className="hero-badge">Sensory Weave Methodology</span>
             <Typography variant="h1" className="sensory-title">
               Sensory Weave <span>Framework</span>
@@ -262,7 +264,7 @@ export default function SensoryContainer() {
       <section className="sensory-concepts">
         <Container maxWidth="lg">
           <Grid container spacing={3} className="concepts-grid">
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-1">
               <Card className="concept-card">
                 <CardContent>
                   <div className="concept-icon-wrap bg-blue">
@@ -275,7 +277,7 @@ export default function SensoryContainer() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-2">
               <Card className="concept-card">
                 <CardContent>
                   <div className="concept-icon-wrap bg-teal">
@@ -288,7 +290,7 @@ export default function SensoryContainer() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-3">
               <Card className="concept-card">
                 <CardContent>
                   <div className="concept-icon-wrap bg-orange">
@@ -301,7 +303,7 @@ export default function SensoryContainer() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-4">
               <Card className="concept-card">
                 <CardContent>
                   <div className="concept-icon-wrap bg-pink">
@@ -321,16 +323,16 @@ export default function SensoryContainer() {
       {/* Neuroscience Concentric Model Section */}
       <section className="sensory-multidimensional-model">
         <Container maxWidth="lg">
-          <Typography variant="h2" className="section-title text-center">
+          <Typography variant="h2" className="section-title text-center reveal">
             Our Multidimensional Model
           </Typography>
-          <Typography className="section-subtitle text-center max-w-700">
+          <Typography className="section-subtitle text-center max-w-700 reveal">
             Based on recent developments in the field of Neurosciences
           </Typography>
 
           <Grid container spacing={4} className="model-container" alignItems="center">
             {/* Concentric Circle Interactive SVG (Desktop) / Structured List (Mobile) */}
-            <Grid item xs={12} md={7} className="model-visual-col">
+            <Grid item xs={12} md={7} className="model-visual-col reveal reveal-left">
               <Box className="interactive-diagram-wrapper">
                 <svg viewBox="0 0 600 600" className="concentric-svg">
                   {/* Outer Supporting Ring */}
@@ -456,7 +458,7 @@ export default function SensoryContainer() {
             </Grid>
 
             {/* Model Info Detail Display Panel */}
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} className="reveal reveal-right">
               <Box className="model-info-panel">
                 <span className={`panel-badge ${PERSPECTIVE_DETAILS[selectedNode].type.toLowerCase().replace(" ", "-")}`}>
                   {PERSPECTIVE_DETAILS[selectedNode].type}
@@ -504,7 +506,7 @@ export default function SensoryContainer() {
 
           <Grid container spacing={3} className="phases-grid">
             {/* Phase 1 */}
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-1">
               <Card className="phase-card border-phase-1">
                 <CardContent>
                   <div className="phase-number bg-phase-1">PHASE 1</div>
@@ -527,7 +529,7 @@ export default function SensoryContainer() {
             </Grid>
 
             {/* Phase 2 */}
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-2">
               <Card className="phase-card border-phase-2">
                 <CardContent>
                   <div className="phase-number bg-phase-2">PHASE 2</div>
@@ -550,7 +552,7 @@ export default function SensoryContainer() {
             </Grid>
 
             {/* Phase 3 */}
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-3">
               <Card className="phase-card border-phase-3">
                 <CardContent>
                   <div className="phase-number bg-phase-3">PHASE 3</div>
@@ -573,7 +575,7 @@ export default function SensoryContainer() {
             </Grid>
 
             {/* Phase 4 */}
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-4">
               <Card className="phase-card border-phase-4">
                 <CardContent>
                   <div className="phase-number bg-phase-4">PHASE 4</div>
@@ -640,7 +642,7 @@ export default function SensoryContainer() {
                 { step: 4, name: "Home Integration", desc: "Executing custom home plan protocols with parents." },
                 { step: 5, name: "Progress Tracking", desc: "Reviewing metrics to upgrade to the next phase." }
               ].map((stepObj) => (
-                <Grid item xs={12} sm={2.4} key={stepObj.step} className="roadmap-node-col">
+                <Grid item xs={12} sm={2.4} key={stepObj.step} className={`roadmap-node-col reveal reveal-scale reveal-delay-${stepObj.step}`}>
                   <div className="roadmap-node">
                     <div className="node-num">{stepObj.step}</div>
                     <Typography variant="h4" className="node-name">{stepObj.name}</Typography>
@@ -694,7 +696,7 @@ export default function SensoryContainer() {
 
           {/* Model Comparison Grid */}
           <Grid container spacing={4} className="comparison-grid">
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className="reveal reveal-left">
               <Card className="comparison-card traditional-border">
                 <CardContent>
                   <Typography variant="h3" className="comparison-title traditional-color">
@@ -715,7 +717,7 @@ export default function SensoryContainer() {
               </Card>
             </Grid>
 
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className="reveal reveal-right">
               <Card className="comparison-card integrated-border">
                 <CardContent>
                   <Typography variant="h3" className="comparison-title integrated-color">
@@ -1017,12 +1019,11 @@ export default function SensoryContainer() {
                         <Button
                           variant="contained"
                           startIcon={<GetAppIcon />}
-                          href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20request%20the%20Sensory%20Weave%20Developmental%20Roadmap%20PDF."
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href="/sensory/pdf/roadmap.pdf"
+                          download="roadmap.pdf"
                           className="download-btn"
                         >
-                          Request Roadmap PDF
+                          Download Roadmap PDF
                         </Button>
                       </CardContent>
                     </Card>
@@ -1039,12 +1040,11 @@ export default function SensoryContainer() {
                         <Button
                           variant="contained"
                           startIcon={<GetAppIcon />}
-                          href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20request%20the%20Sensory%20Weave%20Booklet%20PDF."
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href="/sensory/pdf/booklet.pdf"
+                          download="booklet.pdf"
                           className="download-btn"
                         >
-                          Request Booklet PDF
+                          Download Booklet PDF
                         </Button>
                       </CardContent>
                     </Card>

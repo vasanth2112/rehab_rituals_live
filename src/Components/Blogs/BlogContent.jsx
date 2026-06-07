@@ -17,8 +17,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import ShareIcon from "@mui/icons-material/Share";
+import useScrollReveal from "../../useScrollReveal.js";
 
 export default function BlogContent() {
+  useScrollReveal();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -117,7 +119,7 @@ export default function BlogContent() {
   return (
     <>
       <div className="blogContent">
-        <div className="blogDetail">
+        <div className="blogDetail reveal">
           <img className="head_img" src={blog.content.headerImage}></img>
           <h1>{blog.content.heading}</h1>
           {renderBody(blog.content.body)}
@@ -355,11 +357,11 @@ export default function BlogContent() {
         }}
       >
         <div>
-          <h1>All Blogs</h1>
+          <h1 className="reveal">All Blogs</h1>
         </div>
         <div className="blogContainer_content">
-          {BLOGS_CONTENT.map((blog) => (
-            <div className="blogcontent" key={blog.id}>
+          {BLOGS_CONTENT.map((blog, index) => (
+            <div className={`blogcontent reveal reveal-scale reveal-delay-${(index % 3) + 1}`} key={blog.id}>
               <div className="blog_img">
                 <img src={blog.cardImg}></img>
               </div>

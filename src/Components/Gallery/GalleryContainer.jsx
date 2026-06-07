@@ -9,6 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import dontworry from "../../../public/gallery/dontworry.json";
 import Lottie from "lottie-web";
+import useScrollReveal from "../../useScrollReveal.js";
 
 function srcset(image, size, rows = 1, cols = 1) {
     return {
@@ -28,6 +29,7 @@ const style = {
 };
 
 export default function GalleryContainer() {
+    useScrollReveal();
     const [open, setOpen] = React.useState(false); // State to control the modal
     const [selectedImage, setSelectedImage] = React.useState(null); // State to store the selected image
 
@@ -61,9 +63,9 @@ export default function GalleryContainer() {
 
     return (
         <div id="gallery" className="gallery-container">
-            <h1>Children’s Journey</h1>
+            <h1 className="reveal">Children’s Journey</h1>
 
-            <div className="image-container">
+            <div className="image-container reveal reveal-scale">
 
                 <ImageList
                     className="box_scroll" sx={{ width: '100%', height: 600, padding: '12px', overflowY: 'scroll' }}

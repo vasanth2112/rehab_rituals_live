@@ -235,11 +235,6 @@ export const SERVICES = {
 };
 
 export const OUR_TEAM = [
-    // {
-    //     image: men,
-    //     name: "Gnana Oli",
-    //     role: "Physiotherapist"
-    // },
     {
         image: Vimala,
         name: "Vimala S",

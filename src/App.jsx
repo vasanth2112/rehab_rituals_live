@@ -2,9 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import HeaderContainer from "./Components/Header/HeaderContainer.jsx";
-import AboutUsContainer from "./Components/AboutUs/AboutUsContainer.jsx";
-import OurServiceContainer from "./Components/OurServices/OurServiceContainer.jsx";
-import OurTeamContainer from "./Components/OurTeam/OurTeamContainer.jsx";
 import FooterContainer from "./Components/ContactUs/FooterContainer.jsx";
 import Tooltip from "@mui/material/Tooltip";
 import GalleryContainer from "./Components/Gallery/GalleryContainer.jsx";
@@ -69,13 +66,10 @@ function App() {
           <Route
             path="/"
             element={
-              <>
+              <div className="page-transition-enter">
                 <div ref={headerRef}>
                   <HeaderContainer />
                 </div>
-                {/* <AboutUsContainer /> */}
-                {/* <OurServiceContainer /> */}
-                {/* <OurTeamContainer /> */}
                 <BlogsContainer />
                 <GalleryContainer />
                 <FooterContainer />
@@ -89,46 +83,31 @@ function App() {
                     />
                   </Tooltip>
                 )}
-              </>
+              </div>
             }
           />
 
           {/* Blog Detail Route */}
-          <Route path="/blog/allblogs" element={<BlogContent />} />
+          <Route 
+            path="/blog/allblogs" 
+            element={
+              <div className="page-transition-enter">
+                <BlogContent />
+              </div>
+            } 
+          />
 
           {/* Sensory Page Route */}
           <Route
             path="/sensory"
             element={
-              <>
+              <div className="page-transition-enter">
                 <SensoryContainer />
-                <FooterContainer />
-              </>
+              </div>
             }
           />
         </Routes>
       </Router>
-      {/* Add ref to HeaderContainer */}
-      {/* <div ref={headerRef}>
-        <HeaderContainer />
-      </div>
-      <AboutUsContainer />
-      <OurServiceContainer />
-      <OurTeamContainer /> 
-      <BlogsContainer/>
-      <GalleryContainer />
-      <FooterContainer />  */}
-
-      {/* Scroll to Top Button */}
-      {/* {showButton && (
-        <Tooltip title="Back to Top" placement="top">
-          <img
-            src="./arrow.png"
-            className="scroll-to-top"
-            onClick={scrollToTop}
-          />
-        </Tooltip>
-      )} */}
     </>
   );
 }

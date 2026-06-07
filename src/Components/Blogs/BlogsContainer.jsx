@@ -8,17 +8,19 @@ import Divider from "@mui/material/Divider";
 import { BLOGS_CONTENT } from "../Blogs/BlogsListConstant.jsx";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useNavigate } from "react-router-dom";
+import useScrollReveal from "../../useScrollReveal.js";
 
 export default function BlogsContainer() {
+  useScrollReveal();
   const navigate = useNavigate();
   return (
     <div className="blogContainer" id="blogs">
       <div>
-        <h1>Latest Blogs</h1>
+        <h1 className="reveal">Latest Blogs</h1>
       </div>
       <div className="blogContainer_content">
-        {BLOGS_CONTENT.slice(-2).map((blog) => (
-          <div className="blogcontent" key={blog.id}>
+        {BLOGS_CONTENT.slice(-2).map((blog, index) => (
+          <div className={`blogcontent reveal reveal-scale reveal-delay-${index + 1}`} key={blog.id}>
             <div className="blog_img">
               <img src={blog.cardImg}></img>
             </div>
@@ -73,7 +75,7 @@ export default function BlogsContainer() {
           </div>
         ))}
       </div>
-      <div>
+      <div className="reveal">
         <Button
           className="viewAllBtn"
           variant="contained"

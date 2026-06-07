@@ -4,12 +4,13 @@ import { useLocation, Link, useNavigate } from "react-router-dom";
 import background_video from "../../assets/videos/baby.webm";
 import loader from "../../../public/loader.json";
 import Lottie from "lottie-web";
-// import { HighQuality } from "@mui/icons-material";
 import { CARDS_BRAIN } from "../../ListConstants.js";
 import BookIcon from '@mui/icons-material/Book';
 import Button from '@mui/material/Button';
+import useScrollReveal from "../../useScrollReveal.js";
 
 export default function HeaderContainer() {
+  useScrollReveal();
   const location = useLocation();
   const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
@@ -43,7 +44,7 @@ export default function HeaderContainer() {
   return (
     <div id="home" className={`header-container ${!isHomePage ? 'inner-header' : ''}`}>
       {isHomePage && !isVideoLoaded && (
-        <div ref={loaderAnimation} className="loader"></div> // Replace with your loader design
+        <div ref={loaderAnimation} className="loader"></div>
       )}
       {isHomePage && (
         <video autoPlay loop muted onCanPlayThrough={handleVideoLoad}>
@@ -64,35 +65,29 @@ export default function HeaderContainer() {
                   </div>
                   <div className="nav-bar">
                     <Link to="/">Home</Link>
-                    {/* <a href="#aboutUs">About Us</a> */}
-                    {/* <a href="#ourTeam">Our Team</a> */}
-                    {/* <a href="#service">Services</a> */}
                     <Link to="/sensory">Sensory</Link>
                     <a href="/#blogs">Blogs</a>
                     <a href="/#gallery">Gallery</a>
                     <a href="/#contact">Contact</a>
-                  <a href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
-                      > <Button
-                      variant="contained"
-                      endIcon={<BookIcon />}
-                     // component="a"
-                    //  href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      sx={{
-                        fontFamily: '"Josefin Sans", sans-serif',
-                        // backgroundColor: "#61dafbea",
-                        backgroundColor: "#fff",
-                        color: "#004aad",
-                        textTransform: "none",
-                        "&:hover": {
-                          backgroundColor: "#61dafb",
-                          color: "#fff",
-                        },
-                      }}
-                    >
-                      Book Appointment
-                    </Button></a> 
+                    <a href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals.">
+                      <Button
+                        variant="contained"
+                        endIcon={<BookIcon />}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          fontFamily: '"Josefin Sans", sans-serif',
+                          backgroundColor: "#fff",
+                          color: "#004aad",
+                          textTransform: "none",
+                          "&:hover": {
+                            backgroundColor: "#61dafb",
+                            color: "#fff",
+                          },
+                        }}
+                      >
+                        Book Appointment
+                      </Button></a>
                   </div>
                 </div>
 
@@ -124,30 +119,6 @@ export default function HeaderContainer() {
                             <Link to="/sensory">Sensory</Link>
                           </div>
                         </div>
-                        {/* <div className="menu_img">
-                          <div>
-                            <img src="./header/menu/information.png" alt="About Us" />
-                          </div>
-                          <div>
-                            <a href="#aboutUs">About Us</a>
-                          </div>
-                        </div>
-                        <div className="menu_img">
-                          <div>
-                            <img src="./header/menu/group.png" alt="Our Team" />
-                          </div>
-                          <div>
-                            <a href="#ourTeam">Our Team</a>
-                          </div>
-                        </div>
-                        <div className="menu_img">
-                          <div>
-                            <img src="./header/menu/service.png" alt="Services" />
-                          </div>
-                          <div>
-                            <a href="#service">Services</a>
-                          </div>
-                        </div> */}
                         <div className="menu_img">
                           <div>
                             <img src="./header/menu/blogging.png" alt="Blogs" />
@@ -213,59 +184,16 @@ export default function HeaderContainer() {
             </div>
           )}
 
-          {/* <header className="viewport-header">
-           <div className="transparent_div">
-              {/*  <div className="flex_header">
-                <div className="top_header">
-                  <h1>Rehab</h1>
-                </div>
-                <div>
-                  <img
-                    src="./header/back_logo.png"
-                    className="back_logo"
-                    alt="logo"
-                  />
-                </div>
-                <div className="bottom_header">
-                  <h1>Rituals</h1>
-                </div>
-              </div>
-              <div>
-                <p>Pioneering Holistic Research Driven Therapy</p>
-              </div>
-              <div><h1>Doing OT, speech, and behavior therapy… but still wondering why progress feels slow?</h1>
-              <p>Your child’s brain thrives on</p></div>
-            </div>
-             <div className="bottom_content">
-              <span>
-                SPECIALITY CLINIC FOR AUTISM ADHD & OTHER EXCEPTIONALITIES.
-              </span>
-            </div>
-          </header> */}
-
-          {/* <div className="new_header_container">
-            <div className=""><div><h1>Helping Your Child Thrive, Every Step of the way</h1></div>
-            <div><p></p></div>
-            <p></p></div>
-            <div className=""></div>
-          </div> */}
-
           {isHomePage && (
             <div className="header-2">
               <div className="header_content-2">
-                <div className="heading-para">
+                <div className="heading-para reveal reveal-left">
                   <div>
                     <h1>
                       Doing <span>OT, Speech, and Behavior</span> therapy...
                       but still wondering why progress feels slow?
                     </h1>
                   </div>
-                  {/* <div className="Doing_ot">
-                    <p>
-                      Doing OT, speech, and behavior therapy...
-                      but still wondering why progress feels slow?
-                    </p>
-                  </div> */}
 
                   <div className="brain-section">
                     <div>
@@ -275,7 +203,7 @@ export default function HeaderContainer() {
                     </div>
                     <div className="brain-grid">
                       {CARDS_BRAIN.map((card, index) => (
-                        <div className="brain-card" key={index}>
+                        <div className={`brain-card reveal reveal-scale reveal-delay-${index + 1}`} key={index}>
                           <div className="brain-card-icon">
                             <img src={card.icon} alt={card.title} />
                           </div>
@@ -283,16 +211,15 @@ export default function HeaderContainer() {
                             <p>{card.title}</p>
                           </div>
                           <div className="select-icon">
-                            <img src="./header/icon/check-mark.png" />
+                            <img src="./header/icon/check-mark.png" alt="checkmark" />
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <div className="foundation">
-                    <div className="light-buld"><img src="./header/icon/lightbulb.png" /></div>
+                  <div className="foundation reveal">
+                    <div className="light-buld"><img src="./header/icon/lightbulb.png" alt="lightbulb" /></div>
                     <div>
-                      {/* <h2>Sensory Weave Framework</h2> */}
                       <p>
                         <span>Sensory Weave Framework - </span>Our flagship program that brings together the
                         brain, body, behavior, and communication
@@ -300,17 +227,16 @@ export default function HeaderContainer() {
                       </p>
                     </div>
                   </div>
-                  <div className="content_contact">
+                  <div className="content_contact reveal">
                     <p>
                       Stop focusing only on therapy—focus on the foundations behind progress
                     </p>
                   </div>
-                  {/* GRID 5 */}
-                  <div className="book" style={{ display: "flex", flexDirection: "row", alignItems: "center", flexWrap: "nowrap", gap: "15px" }}>
+                  <div className="book reveal" style={{ display: "flex", flexDirection: "row", alignItems: "center", flexWrap: "nowrap", gap: "15px" }}>
                     <a href="https://api.whatsapp.com/send?phone=919994927394" style={{ textDecoration: 'none' }}>
                       <div className="contact_whatsapp" style={{ margin: 0 }}>
                         <div className="wa_img">
-                          <img src="./footer/social/whatsapp_direct.png"></img>
+                          <img src="./footer/social/whatsapp_direct.png" alt="whatsapp"></img>
                         </div>
                         <div>
                           <p style={{ margin: 0, whiteSpace: "nowrap" }}>WhatsApp</p>
@@ -318,7 +244,6 @@ export default function HeaderContainer() {
                       </div>
                     </a>
 
-                    {/* GRID 6 */}
                     <div>
                       <Button
                         variant="outlined"
@@ -346,8 +271,7 @@ export default function HeaderContainer() {
                   </div>
                 </div>
 
-                {/* GRID 7 */}
-                <div className="side-image">
+                <div className="side-image reveal reveal-right">
                   <div className="image_card_head">
                     <img
                       src="/header/therapy-child.jpg"
@@ -360,8 +284,7 @@ export default function HeaderContainer() {
             </div>
           )}
         </>
-      )
-      }
-    </div >
+      )}
+    </div>
   );
 }
