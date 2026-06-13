@@ -873,8 +873,8 @@ export default function SensoryContainer() {
                         <Button
                           variant="contained"
                           startIcon={<GetAppIcon />}
-                          href="/sensory/pdf/roadmap.pdf"
-                          download="roadmap.pdf"
+                          href="/sensory/pdf/Roadmap_Rehab_Rituals.pdf"
+                          download="Roadmap_Rehab_Rituals.pdf"
                           className="download-btn"
                         >
                           Download Roadmap PDF
@@ -894,8 +894,8 @@ export default function SensoryContainer() {
                         <Button
                           variant="contained"
                           startIcon={<GetAppIcon />}
-                          href="/sensory/pdf/booklet.pdf"
-                          download="booklet.pdf"
+                          href="/sensory/pdf/Therapy_info_Booklet.pdf"
+                          download="Therapy_info_Booklet.pdf"
                           className="download-btn"
                         >
                           Download Booklet PDF
