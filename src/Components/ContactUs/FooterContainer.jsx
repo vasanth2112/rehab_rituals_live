@@ -36,13 +36,13 @@ export default function FooterContainer() {
         )
             .then(
                 (result) => {
-                    //console.log(result.text);
+                    console.log(result.text);
                     setSuccessMessage('Mail sent successfully! We will reply to you soon.');
                     setFormData({ name: '', email: '', message: '' }); // Reset form after success
                 },
                 (error) => {
-                    //console.log(error.text);
-                    setSuccessMessage('Failed to send email. Please try again.');
+                    console.log(error.text);
+                    setSuccessMessage('Failed to send email. Please send it via WhatsApp.   ');
                 }
             );
     };
