@@ -8,7 +8,21 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { useNavigate } from "react-router-dom";
 import "./Sensory.scss";
 import useScrollReveal from "../../useScrollReveal.js";
-import { PERSPECTIVE_DETAILS, QUIZ_QUESTIONS, PHASE_DETAILS } from "../../ListConstants.js";
+import {
+  CORE_CONCEPTS,
+  CORE_NODES,
+  SUPPORTING_NODES,
+  PERSPECTIVE_DETAILS,
+  PHASES_LIST,
+  ROADMAP_STEPS,
+  GOAL_COMPARISON,
+  DEVELOPMENT_AREAS,
+  INTEGRATED_GOAL_EXAMPLE,
+  QUIZ_QUESTIONS,
+  PHASE_DETAILS,
+  PRACTICAL_VIDEOS,
+  DOWNLOAD_ITEMS
+} from "./SensoryListConstants.js";
 
 export default function SensoryContainer() {
   useScrollReveal();
@@ -118,58 +132,19 @@ export default function SensoryContainer() {
       <section className="sensory-concepts">
         <Container maxWidth="lg">
           <Grid container spacing={3} className="concepts-grid">
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-1">
-              <Card className="concept-card">
-                <CardContent>
-                  <div className="concept-icon-wrap bg-blue">
-                    <CheckCircleOutlineIcon />
-                  </div>
-                  <Typography variant="h3" className="concept-title">One System</Typography>
-                  <Typography className="concept-desc">
-                    <strong>Not separate therapies</strong> — we offer one interconnected system designed to align all developmental goals.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-2">
-              <Card className="concept-card">
-                <CardContent>
-                  <div className="concept-icon-wrap bg-teal">
-                    <CheckCircleOutlineIcon />
-                  </div>
-                  <Typography variant="h3" className="concept-title">Multidimensional</Typography>
-                  <Typography className="concept-desc">
-                    <strong>Comprehensive scope</strong> — integrates Primitive reflexes, Brain nutrition, and sensory-calming Yoga.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-3">
-              <Card className="concept-card">
-                <CardContent>
-                  <div className="concept-icon-wrap bg-orange">
-                    <CheckCircleOutlineIcon />
-                  </div>
-                  <Typography variant="h3" className="concept-title">Clear Pathway</Typography>
-                  <Typography className="concept-desc">
-                    <strong>Structured milestones</strong> — know exactly what developmental milestone and focus area comes next.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-4">
-              <Card className="concept-card">
-                <CardContent>
-                  <div className="concept-icon-wrap bg-pink">
-                    <CheckCircleOutlineIcon />
-                  </div>
-                  <Typography variant="h3" className="concept-title">Beyond Therapy Room</Typography>
-                  <Typography className="concept-desc">
-                    <strong>Continuous support</strong> — includes structured home plan guidelines and active parental coaching.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            {CORE_CONCEPTS.map((concept, idx) => (
+              <Grid item xs={12} sm={6} md={3} key={idx} className={`reveal reveal-scale reveal-delay-${idx + 1}`}>
+                <Card className="concept-card">
+                  <CardContent>
+                    <div className={`concept-icon-wrap ${concept.colorClass}`}>
+                      <CheckCircleOutlineIcon />
+                    </div>
+                    <Typography variant="h3" className="concept-title">{concept.title}</Typography>
+                    <Typography className="concept-desc" dangerouslySetInnerHTML={{ __html: concept.desc }} />
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
         </Container>
       </section>
@@ -194,25 +169,14 @@ export default function SensoryContainer() {
                   {/* Inner Core Ring */}
                   <circle cx="300" cy="300" r="150" className="ring-line core-ring" />
 
-                  {/* Lines Connecting Nodes to Center */}
-                  {/* (Optionally omitted for visual clarity unless active, but we draw a clean glow) */}
-
                   {/* Center Circle: CHILD */}
                   <g className="node-group center-child">
                     <circle cx="300" cy="300" r="50" className="center-node" />
                     <text x="300" y="306" className="center-text" textAnchor="middle">CHILD</text>
                   </g>
 
-                  {/* ================= CORE NODES (6 items at radius 150) ================= */}
-                  {/* Angle spacing: 360 / 6 = 60 degrees. Offset to align nicely */}
-                  {[
-                    { id: "SI", label: "Sensory\nIntegration", angle: 270 },
-                    { id: "DLA", label: "Dev\nLanguage", angle: 330 },
-                    { id: "RI", label: "Reflex\nIntegration", angle: 30 },
-                    { id: "TA", label: "Trauma\nApproach", angle: 90 },
-                    { id: "PT", label: "Play\nTherapy", angle: 150 },
-                    { id: "BM", label: "Behavior\nMod", angle: 210 }
-                  ].map((node) => {
+                  {/* ================= CORE NODES ================= */}
+                  {CORE_NODES.map((node) => {
                     const rad = (node.angle * Math.PI) / 180;
                     const cx = 300 + 150 * Math.cos(rad);
                     const cy = 300 + 150 * Math.sin(rad);
@@ -248,18 +212,8 @@ export default function SensoryContainer() {
                     );
                   })}
 
-                  {/* ================= SUPPORTING NODES (8 items at radius 240) ================= */}
-                  {/* Angle spacing: 360 / 8 = 45 degrees. Offset by 22.5 to interleave */}
-                  {[
-                    { id: "BBN", label: "Brain\nNutrition", angle: 270 },
-                    { id: "SY", label: "Sensory\nYoga", angle: 315 },
-                    { id: "SR", label: "Sleep\nRetrain", angle: 0 },
-                    { id: "BG", label: "Brain\nGym", angle: 45 },
-                    { id: "IHP", label: "Home\nPlan", angle: 90 },
-                    { id: "PGS", label: "Parent\nSupport", angle: 135 },
-                    { id: "ED", label: "Environ\nDetox", angle: 180 },
-                    { id: "TL", label: "Therapeutic\nListen", angle: 225 }
-                  ].map((node) => {
+                  {/* ================= SUPPORTING NODES ================= */}
+                  {SUPPORTING_NODES.map((node) => {
                     const rad = (node.angle * Math.PI) / 180;
                     const cx = 300 + 240 * Math.cos(rad);
                     const cy = 300 + 240 * Math.sin(rad);
@@ -295,12 +249,10 @@ export default function SensoryContainer() {
                     );
                   })}
 
-                  {/* Ring Labels Headers - Rendered last so they draw on top of the circles */}
-                  {/* Outer Ring Labels Header (shifted up to y=22 to clear top supporting node Brain Nutrition) */}
+                  {/* Ring Labels Headers */}
                   <text x="300" y="22" className="ring-label-header supporting-header" textAnchor="middle">
                     SUPPORTING PERSPECTIVES
                   </text>
-                  {/* Inner Ring Labels Header (shifted up to y=106 to clear top core node Sensory Integration) */}
                   <text x="300" y="106" className="ring-label-header core-header" textAnchor="middle">
                     CORE PERSPECTIVES
                   </text>
@@ -359,97 +311,25 @@ export default function SensoryContainer() {
           </Typography>
 
           <Grid container spacing={3} className="phases-grid">
-            {/* Phase 1 */}
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-1">
-              <Card className="phase-card border-phase-1">
-                <CardContent>
-                  <div className="phase-number bg-phase-1">PHASE 1</div>
-                  <Typography variant="h4" className="phase-card-title">Regulation</Typography>
-                  <Typography className="phase-focus">
-                    The child is learning to feel safe, calm, and organized.
-                  </Typography>
-                  <div className="phase-notice-box">
-                    <p className="notice-label">You may notice:</p>
-                    <ul className="notice-list">
-                      <li>Frequent meltdowns</li>
-                      <li>Hyperactivity or sensory seeking</li>
-                      <li>Difficulty sitting or attending</li>
-                      <li>Poor sleep patterns</li>
-                      <li>Emotional overwhelm</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            {/* Phase 2 */}
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-2">
-              <Card className="phase-card border-phase-2">
-                <CardContent>
-                  <div className="phase-number bg-phase-2">PHASE 2</div>
-                  <Typography variant="h4" className="phase-card-title">Engagement</Typography>
-                  <Typography className="phase-focus">
-                    The child begins to connect with people, surroundings, and communication.
-                  </Typography>
-                  <div className="phase-notice-box">
-                    <p className="notice-label">You may notice:</p>
-                    <ul className="notice-list">
-                      <li>Increased eye contact</li>
-                      <li>Better response to name</li>
-                      <li>More engagement with others</li>
-                      <li>Improved imitation</li>
-                      <li>Seeking interaction more often</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            {/* Phase 3 */}
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-3">
-              <Card className="phase-card border-phase-3">
-                <CardContent>
-                  <div className="phase-number bg-phase-3">PHASE 3</div>
-                  <Typography variant="h4" className="phase-card-title">Skill Acquisition</Typography>
-                  <Typography className="phase-focus">
-                    The child starts developing functional skills.
-                  </Typography>
-                  <div className="phase-notice-box">
-                    <p className="notice-label">You may notice:</p>
-                    <ul className="notice-list">
-                      <li>Better understanding of instructions</li>
-                      <li>Improved speech and communication</li>
-                      <li>Increased participation in tasks</li>
-                      <li>Better play skills</li>
-                      <li>Improved motor coordination</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            {/* Phase 4 */}
-            <Grid item xs={12} sm={6} md={3} className="reveal reveal-scale reveal-delay-4">
-              <Card className="phase-card border-phase-4">
-                <CardContent>
-                  <div className="phase-number bg-phase-4">PHASE 4</div>
-                  <Typography variant="h4" className="phase-card-title">Functional Integration</Typography>
-                  <Typography className="phase-focus">
-                    Skills begin transferring into daily life naturally.
-                  </Typography>
-                  <div className="phase-notice-box">
-                    <p className="notice-label">You may notice:</p>
-                    <ul className="notice-list">
-                      <li>Better behavior regulation</li>
-                      <li>Improved classroom participation</li>
-                      <li>Social interaction improves</li>
-                      <li>Reduced dependence on prompts</li>
-                      <li>Better adaptability to routines</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </Grid>
+            {PHASES_LIST.map((phase) => (
+              <Grid item xs={12} sm={6} md={3} key={phase.num} className={`reveal reveal-scale reveal-delay-${phase.num}`}>
+                <Card className={`phase-card border-phase-${phase.num}`}>
+                  <CardContent>
+                    <div className={`phase-number bg-phase-${phase.num}`}>PHASE {phase.num}</div>
+                    <Typography variant="h4" className="phase-card-title">{phase.name}</Typography>
+                    <Typography className="phase-focus">{phase.focus}</Typography>
+                    <div className="phase-notice-box">
+                      <p className="notice-label">You may notice:</p>
+                      <ul className="notice-list">
+                        {phase.symptoms.map((symptom, sIdx) => (
+                          <li key={sIdx}>{symptom}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
 
           <Box className="phase-footer-cta text-center">
@@ -489,13 +369,7 @@ export default function SensoryContainer() {
           <Box className="roadmap-stepper-container">
             <div className="roadmap-line"></div>
             <Grid container spacing={2} className="roadmap-grid">
-              {[
-                { step: 1, name: "Integrative Assessment", desc: "Detailed mapping of sensory, language, and reflex profile." },
-                { step: 2, name: "Goal setting", desc: "Co-creating one shared integrated objective." },
-                { step: 3, name: "Phase 1 Therapy", desc: "Therapeutic intervention centered on regulation & calm." },
-                { step: 4, name: "Home Integration", desc: "Executing custom home plan protocols with parents." },
-                { step: 5, name: "Progress Tracking", desc: "Reviewing metrics to upgrade to the next phase." }
-              ].map((stepObj) => (
+              {ROADMAP_STEPS.map((stepObj) => (
                 <Grid item xs={12} sm={2.4} key={stepObj.step} className={`roadmap-node-col reveal reveal-scale reveal-delay-${stepObj.step}`}>
                   <div className="roadmap-node">
                     <div className="node-num">{stepObj.step}</div>
@@ -554,18 +428,18 @@ export default function SensoryContainer() {
               <Card className="comparison-card traditional-border">
                 <CardContent>
                   <Typography variant="h3" className="comparison-title traditional-color">
-                    Traditional Therapy Models
+                    {GOAL_COMPARISON.traditional.title}
                   </Typography>
                   <Typography className="comparison-lead">
-                    Traditional models often focus on isolated objectives:
+                    {GOAL_COMPARISON.traditional.lead}
                   </Typography>
                   <ul className="comparison-list traditional-list">
-                    <li>Separate sessions with separate therapists</li>
-                    <li>Separate, often competing developmental targets</li>
-                    <li>Separate progress tracking systems</li>
+                    {GOAL_COMPARISON.traditional.points.map((pt, pIdx) => (
+                      <li key={pIdx}>{pt}</li>
+                    ))}
                   </ul>
                   <Box className="comparison-result bg-traditional-light">
-                    <p>This can sometimes make progress feel disconnected, slower, or inconsistent for the child.</p>
+                    <p>{GOAL_COMPARISON.traditional.result}</p>
                   </Box>
                 </CardContent>
               </Card>
@@ -575,18 +449,18 @@ export default function SensoryContainer() {
               <Card className="comparison-card integrated-border">
                 <CardContent>
                   <Typography variant="h3" className="comparison-title integrated-color">
-                    Our Integrated Goal System
+                    {GOAL_COMPARISON.integrated.title}
                   </Typography>
                   <Typography className="comparison-lead">
-                    Bringing all clinical perspectives into alignment:
+                    {GOAL_COMPARISON.integrated.lead}
                   </Typography>
                   <ul className="comparison-list integrated-list">
-                    <li>Every therapist works toward the same developmental outcome</li>
-                    <li>Goals are connected dynamically across therapies</li>
-                    <li>The child experiences consistent learning & reinforcement</li>
+                    {GOAL_COMPARISON.integrated.points.map((pt, pIdx) => (
+                      <li key={pIdx}>{pt}</li>
+                    ))}
                   </ul>
                   <Box className="comparison-result bg-integrated-light">
-                    <p><strong>Child's development is quicker under the Integrated Goal Model.</strong></p>
+                    <p><strong>{GOAL_COMPARISON.integrated.result}</strong></p>
                   </Box>
                 </CardContent>
               </Card>
@@ -599,18 +473,16 @@ export default function SensoryContainer() {
               Development areas covered under the Integrated Goal Model:
             </Typography>
             <div className="areas-grid">
-              <div className="area-pill">Attention & Regulation</div>
-              <div className="area-pill">Communication & Speech</div>
-              <div className="area-pill">Emotional & Behavioral Development</div>
-              <div className="area-pill">Sensory Processing</div>
-              <div className="area-pill">Independence & Daily Skills</div>
+              {DEVELOPMENT_AREAS.map((area, aIdx) => (
+                <div className="area-pill" key={aIdx}>{area}</div>
+              ))}
             </div>
           </Box>
 
           {/* Same Goal But Different Approach Diagram */}
           <Box className="same-goal-diagram-container">
             <Typography variant="h3" className="diagram-title text-center">
-              Same Goal but Different Approach
+              {INTEGRATED_GOAL_EXAMPLE.title}
             </Typography>
             <Typography className="diagram-subtitle text-center">
               EXAMPLE: How a unified objective looks in practice
@@ -623,42 +495,25 @@ export default function SensoryContainer() {
                   <div className="central-goal-circle">
                     <span className="goal-tag">INTEGRATED GOAL</span>
                     <Typography variant="h4" className="goal-main-text">
-                      To Improve Functional Communication
+                      {INTEGRATED_GOAL_EXAMPLE.title}
                     </Typography>
                   </div>
                 </Grid>
 
                 {/* Branches / Connectors */}
                 <Grid item xs={12} md={7} className="branches-col">
-                  <div className="branch-card">
-                    <div className="branch-header ot-color-header">OCCUPATIONAL THERAPY</div>
-                    <div className="branch-body">
-                      <ul>
-                        <li>Support sensory regulation for interaction</li>
-                        <li>Improve motor planning for gestures and play</li>
-                      </ul>
+                  {INTEGRATED_GOAL_EXAMPLE.branches.map((branch, bIdx) => (
+                    <div className="branch-card" key={bIdx}>
+                      <div className={`branch-header ${branch.colorClass}`}>{branch.header}</div>
+                      <div className="branch-body">
+                        <ul>
+                          {branch.bullets.map((bullet, blIdx) => (
+                            <li key={blIdx}>{bullet}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="branch-card">
-                    <div className="branch-header speech-color-header">SPEECH THERAPY</div>
-                    <div className="branch-body">
-                      <ul>
-                        <li>Develop requesting and expressive language</li>
-                        <li>Improve understanding and social interaction</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="branch-card">
-                    <div className="branch-header behavior-color-header">BEHAVIOR THERAPY</div>
-                    <div className="branch-body">
-                      <ul>
-                        <li>Reinforce communication attempts</li>
-                        <li>Reduce frustration-related behaviors</li>
-                      </ul>
-                    </div>
-                  </div>
+                  ))}
                 </Grid>
               </Grid>
             </div>
@@ -827,18 +682,13 @@ export default function SensoryContainer() {
                 </Typography>
 
                 <Grid container spacing={3} className="videos-grid">
-                  {[
-                    { title: "Understanding Sensory Regulation", desc: "An overview of how vestibular, proprioceptive, and tactile regulation unlocks academic readiness." },
-                    { title: "OT, Speech & Behavior Connection", desc: "How integrating different therapies produces developmental progress faster than separate sessions." },
-                    { title: "Sensory Yoga and Bedtime Calm", desc: "Simple breathing exercises and sleep routine shifts to help soothe a child's hyperactive system." },
-                    { title: "Gut Health & Nutritional Planning", desc: "Addressing oral food aversions and picky eating textures to nourish brain pathways." }
-                  ].map((video, idx) => (
+                  {PRACTICAL_VIDEOS.map((video, idx) => (
                     <Grid item xs={12} sm={6} key={idx}>
                       <Card className="video-card">
                         <Box className="video-thumbnail-placeholder">
                           <PlayCircleOutlineIcon className="play-icon" />
                           <div className="play-overlay"></div>
-                          <span className="video-length">4:15</span>
+                          <span className="video-length">{video.length}</span>
                         </Box>
                         <CardContent>
                           <Typography variant="h4" className="video-title">{video.title}</Typography>
@@ -862,47 +712,27 @@ export default function SensoryContainer() {
                 </Typography>
 
                 <Grid container spacing={3} className="downloads-grid">
-                  {/* Item 1 */}
-                  <Grid item xs={12} sm={6}>
-                    <Card className="download-card">
-                      <CardContent>
-                        <Typography variant="h4" className="download-title">Developmental Roadmap</Typography>
-                        <Typography className="download-desc">
-                          Download the Sensory Weave Developmental Roadmap. A simple guide to help you understand your child’s developmental journey — from regulation and connection to learning and independence. Discover the foundations behind meaningful, long-term progress.
-                        </Typography>
-                        <Button
-                          variant="contained"
-                          startIcon={<GetAppIcon />}
-                          href="/sensory/pdf/Roadmap_Rehab_Rituals.pdf"
-                          download="Roadmap_Rehab_Rituals.pdf"
-                          className="download-btn"
-                        >
-                          Download Roadmap PDF
-                        </Button>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-
-                  {/* Item 2 */}
-                  <Grid item xs={12} sm={6}>
-                    <Card className="download-card">
-                      <CardContent>
-                        <Typography variant="h4" className="download-title">Sensory Weave Booklet</Typography>
-                        <Typography className="download-desc">
-                          An introductory guide to understanding autism, ADHD, speech delays, and the foundations behind meaningful developmental progress. Explore how Sensory Weave connects regulation, communication, behavior, and learning into one structured journey.
-                        </Typography>
-                        <Button
-                          variant="contained"
-                          startIcon={<GetAppIcon />}
-                          href="/sensory/pdf/Therapy_info_Booklet.pdf"
-                          download="Therapy_info_Booklet.pdf"
-                          className="download-btn"
-                        >
-                          Download Booklet PDF
-                        </Button>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+                  {DOWNLOAD_ITEMS.map((item, idx) => (
+                    <Grid item xs={12} sm={6} key={idx}>
+                      <Card className="download-card">
+                        <CardContent>
+                          <Typography variant="h4" className="download-title">{item.title}</Typography>
+                          <Typography className="download-desc">
+                            {item.desc}
+                          </Typography>
+                          <Button
+                            variant="contained"
+                            startIcon={<GetAppIcon />}
+                            href={item.href}
+                            download={item.download}
+                            className="download-btn"
+                          >
+                            Download {item.title} PDF
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                  ))}
                 </Grid>
               </Box>
             )}

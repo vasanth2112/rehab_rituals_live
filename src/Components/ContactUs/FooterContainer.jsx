@@ -143,7 +143,7 @@ export default function FooterContainer() {
                         </div>
                     </div>
                 </div>
-                <div className="footer_container_right reveal-right">
+                <div className="footer_container_right">
                     <div className="message_header">
                         <p>Your Feedback</p>
                     </div>

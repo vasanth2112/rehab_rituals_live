@@ -12,16 +12,17 @@ h1 {
   bottom: 40px;
   right: 30px;
   width: 50px;
-  z-index: 99;
+  z-index: 100000;
   cursor: pointer;
   border-radius: 50%;
- // box-shadow: rgba(0, 75, 173, 0.322) 0px 3px 8px;
- box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  // box-shadow: rgba(0, 75, 173, 0.322) 0px 3px 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .scroll-to-top:hover {
-  transform: scale(1.1); /* Scale the image slightly on hover */
+  transform: scale(1.1);
+  /* Scale the image slightly on hover */
   opacity: 1;
 }
 
@@ -30,7 +31,8 @@ h1 {
   .scroll-to-top {
     bottom: 50px;
     right: 23px;
-    width: 30px; /* Smaller size for mobile */
+    width: 30px;
+    /* Smaller size for mobile */
   }
 }
 
@@ -39,7 +41,8 @@ h1 {
   .scroll-to-top {
     bottom: 50px;
     right: 20px;
-    width: 35px; /* Medium size for tablet */
+    width: 35px;
+    /* Medium size for tablet */
   }
 }
 
@@ -48,7 +51,8 @@ h1 {
   .scroll-to-top {
     bottom: 50px;
     right: 25px;
-    width: 40px; /* Slightly larger size for larger tablets */
+    width: 40px;
+    /* Slightly larger size for larger tablets */
   }
 }
 
@@ -57,17 +61,20 @@ h1 {
   .scroll-to-top {
     bottom: 50px;
     right: 30px;
-    width: 50px; /* Default size for desktop and larger devices */
+    width: 50px;
+    /* Default size for desktop and larger devices */
   }
 }
 
 .clamp-2-lines {
   display: -webkit-box;
-  display: box; /* Fallback for older specs */
+  display: box;
+  /* Fallback for older specs */
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-clamp: 2; /* Standard */
+  line-clamp: 2;
+  /* Standard */
   overflow: hidden;
   text-overflow: ellipsis;
 }
