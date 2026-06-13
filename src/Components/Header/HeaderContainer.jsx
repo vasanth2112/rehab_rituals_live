@@ -69,12 +69,13 @@ export default function HeaderContainer() {
                     <a href="/#blogs">Blogs</a>
                     <a href="/#gallery">Gallery</a>
                     <a href="/#contact">Contact</a>
-                    <a href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals.">
                       <Button
-                        variant="contained"
-                        endIcon={<BookIcon />}
+                        component="a"
+                        href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
                         target="_blank"
                         rel="noopener noreferrer"
+                        variant="contained"
+                        endIcon={<BookIcon />}
                         sx={{
                           fontFamily: '"Josefin Sans", sans-serif',
                           backgroundColor: "#fff",
@@ -87,7 +88,7 @@ export default function HeaderContainer() {
                         }}
                       >
                         Book Appointment
-                      </Button></a>
+                      </Button>
                   </div>
                 </div>
 
@@ -233,7 +234,7 @@ export default function HeaderContainer() {
                     </p>
                   </div>
                   <div className="book reveal" style={{ display: "flex", flexDirection: "row", alignItems: "center", flexWrap: "nowrap", gap: "15px" }}>
-                    <a href="https://api.whatsapp.com/send?phone=919994927394" style={{ textDecoration: 'none' }}>
+                    <a href="https://api.whatsapp.com/send?phone=919994927394&text=Hello%20Rehab%20Rituals%2C%20I%20would%20like%20to%20connect%20with%20you%20to%20discuss%20therapy%20programs%20for%20my%20child." target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                       <div className="contact_whatsapp" style={{ margin: 0 }}>
                         <div className="wa_img">
                           <img src="./footer/social/whatsapp_direct.png" alt="whatsapp"></img>

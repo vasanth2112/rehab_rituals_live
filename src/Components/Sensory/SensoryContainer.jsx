@@ -753,9 +753,10 @@ export default function SensoryContainer() {
             </Typography>
             <Box className="cta-buttons">
               <Button
+                component="a"
                 variant="contained"
                 startIcon={<WhatsAppIcon />}
-                href="https://api.whatsapp.com/send?phone=919994927394"
+                href="https://api.whatsapp.com/send?phone=919994927394&text=Hello%20Rehab%20Rituals%2C%20I%20would%20like%20to%20learn%20more%20about%20the%20Sensory%20Weave%20program."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-wa-btn"

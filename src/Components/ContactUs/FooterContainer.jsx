@@ -72,7 +72,7 @@ export default function FooterContainer() {
                             <a href="mailto:rehabrituals@gmail.com?subject=Need%20Your%20Help%20">rehabrituals@gmail.com</a>
                         </div>
                     </div>
-                    <a href="https://api.whatsapp.com/send?phone=919994927394">
+                    <a href="https://api.whatsapp.com/send?phone=919994927394&text=Hello%20Rehab%20Rituals%2C%20I%20need%20help%20and%20would%20like%20to%20get%20in%20touch%20with%20you." target="_blank" rel="noopener noreferrer">
                         <div className="contact_whatsapp">
                             <div className="wa_img">
                                 <img src="./footer/social/whatsapp_direct.png"></img>
@@ -99,7 +99,7 @@ export default function FooterContainer() {
                             <a href="https://www.instagram.com/rehabrituals/?utm_source=qr&igsh=Ymc2ZHV3NTdvYzFl">
                                 <img src="./footer/social/instagram.png"></img>
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919994927394">
+                            <a href="https://api.whatsapp.com/send?phone=919994927394&text=Hello%20Rehab%20Rituals%2C%20I%20would%20like%20to%20connect%20with%20you%20via%20WhatsApp." target="_blank" rel="noopener noreferrer">
                                 <img src="./footer/social/whatsapp.png"></img>
                             </a>
                             <a href="mailto:rehabrituals@gmail.com?subject=Need%20Your%20Help%20">
