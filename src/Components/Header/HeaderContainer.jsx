@@ -69,9 +69,10 @@ export default function HeaderContainer() {
                     <a href="/#blogs">Blogs</a>
                     <a href="/#gallery">Gallery</a>
                     <a href="/#contact">Contact</a>
+                    <a href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals.">
                       <Button
-                        component="a"
-                        href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
+                        //    component="a"
+                        //   href="https://api.whatsapp.com/send?phone=919994927394&text=I%20would%20like%20to%20book%20an%20appointment%20with%20Rehab%20Rituals."
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="contained"
@@ -79,16 +80,19 @@ export default function HeaderContainer() {
                         sx={{
                           fontFamily: '"Josefin Sans", sans-serif',
                           backgroundColor: "#fff",
-                          color: "#004aad",
+                          color: "#004aad !important",
                           textTransform: "none",
+                          "& *": {
+                            color: "inherit !important",
+                          },
                           "&:hover": {
                             backgroundColor: "#61dafb",
-                            color: "#fff",
+                            color: "#fff !important",
                           },
                         }}
                       >
                         Book Appointment
-                      </Button>
+                      </Button></a>
                   </div>
                 </div>
 
